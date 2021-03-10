@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ meta.lang }}" class="bg-white antialiased">
+<html lang="{{ meta.lang }}" class="antialiased">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,8 @@
         {{ title }} | {{meta.title }}
         {%- endif -%}
     </title>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}">
     {% include "meta.njk" %}
 </head>

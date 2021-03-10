@@ -1,0 +1,33 @@
+<header role="banner" class="flex items-center justify-between px-12">
+  <a href="{{ build.url }}" rel="home" class="text-lg font-bold leading-tight"> <img src="/assets/images/logo.svg"
+      class="w-20" alt="logo" /></a>
+  <nav role="navigation" tabindex="-1" aria-label="Main" class="w-full h-12">
+    <ul class="w-full h-full flex justify-between items-center">
+      <li class="ml-auto mr-3 font-bold">Resources</li>
+      <li>
+        <ion-icon size="large" name="logo-github"></ion-icon>
+      </li>
+      <!-- {%- for item in collections.all | eleventyNavigation -%} {%- set isCurrent
+      = (item.url == page.url) -%} {%- set isParent = item.url != '/' and
+      item.url in page.url -%}
+      <li>
+        <a href="{% if isCurrent %}#content{% else %}{{
+            item.url | url
+          }}{% endif %}" {%
+          if
+          isCurrent
+          %}aria-current="page" {%
+          endif
+          %}>
+          {{ item.title }}
+        </a>
+      </li>
+      {%- endfor -%} -->
+    </ul>
+  </nav>
+</header>
+<style>
+  header {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  }
+</style>

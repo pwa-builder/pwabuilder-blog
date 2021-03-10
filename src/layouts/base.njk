@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}" class="bg-white antialiased">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {%- if seo.title -%}
+        {{ seo.title }}
+        {%- else -%}
+        {{ title }} | {{meta.title }}
+        {%- endif -%}
+    </title>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}">
+    {% include "meta.njk" %}
+</head>
+
+<body class="leading-normal">
+    <a href="#content" class="sr-only">skip to main content</a>
+    <div role="document" class="min-h-screen flex flex-col">
+        {% include "header.njk" %}
+        <main class="container px-6 sm:px-12 lg:px-48 pb-24 pt-4 sm:pt-12 m-auto id=" content" tabindex="-1">
+            {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
+    </div>
+    <script src="{{ '/assets/main.js' | url }}" defer></script>
+    <!-- LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
+</body>
+
+</html>

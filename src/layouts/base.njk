@@ -21,7 +21,7 @@
     <a href="#content" class="sr-only">skip to main content</a>
     <div role="document" class="min-h-screen flex flex-col">
         {% include "header.njk" %}
-        <main class="container px-6 sm:px-12 lg:px-48 pb-24 pt-4 sm:pt-12 m-auto id=" content" tabindex="-1">
+        <main class="container px-6 sm:px-12 lg:px-48 pb-24 pt-4 sm:pt-12 m-auto" id="content" tabindex="-1">
             {{ content | safe }}
         </main>
         {% include "footer.njk" %}

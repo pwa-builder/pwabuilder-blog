@@ -1,3 +1,20 @@
-<footer role="contentinfo" class="w-full p-4 flex items-center justify-center space-x-2">
-    <span class="text-xs">&copy; {{ meta.footer_title }} {{ build.timestamp | dateToFormat('yyyy') }}</span>
+<footer role="contentinfo" class="w-full px-2 py-1 flex items-center justify-center">
+    <div class="mr-12">
+        <p class="mb-3 text-xs">&copy; {{ meta.footer_title }}</p>
+        <ul class="flex">
+            <li class="mr-2"><a class="text-xs underline" href="/privacy">Our Privacy Statement</a></li>
+            <li><a class="text-xs underline" href="/terms">Terms of use</a></li>
+        </ul>
+    </div>
+    <ul class="flex justify-center items-center">
+        <li class="mx-2 my-1">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </li>
+        <li class="mx-2 my-1">
+            <ion-icon name="logo-youtube"></ion-icon>
+        </li>
+        <li class="mx-2 my-1">
+            <ion-icon name="logo-github"></ion-icon>
+        </li>
+    </ul>
 </footer>

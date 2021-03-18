@@ -1,3 +1,12 @@
 {
-  "editor.formatOnSave": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  }
 }

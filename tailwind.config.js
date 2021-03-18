@@ -1,15 +1,18 @@
 module.exports = {
-  darkMode: "media",
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
   purge: {
-    enabled: false,
+    content: [
+      './src/**/*.njk',
+      './src/**/*.js',
+      './src/**/*.svg',
+      './src/**/*.md',
+    ],
   },
+  plugins: [require('@tailwindcss/forms')],
   theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-}
+    extend: {
+      fontFamily: {
+        inter: '"Inter", sans-serif;',
+      },
+    },
+  }
+};

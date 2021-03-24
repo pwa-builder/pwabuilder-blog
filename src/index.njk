@@ -1,8 +1,16 @@
 ---
-layout: layouts/base.njk
-title: PWD Blog
+pagination:
+  data: collections.post
+  size: 6
+  alias: posts
+  reverse: true
+permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
-<div id="site">
-  <p>Edit <code>src/index.njk</code> and save to reload.</p>
-  <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">{{title}}</a>
-</div>
+
+{% extends 'page.njk' %}
+
+{% block body %}
+
+{% include "posts.njk" %}
+
+{% endblock %}

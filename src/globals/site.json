@@ -1,0 +1,24 @@
+{
+  "name": "PWA Builder Blog",
+  "description": "PWA Builder Blogging site",
+  "url": "https://github.com/pwa-builder/pwabuilder-blog",
+  "baseUrl": "/",
+  "author": {
+    "handle": "@ReeseCodes",
+    "name": "Reese Schultz"
+  },
+  "images": {
+    "twitter": "twitter.jpg",
+    "og": "og.jpg"
+  },
+  "feed": {
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://example.com/"
+  },
+  "jsonfeed": {
+    "filename": "feed.json",
+    "path": "/feed/feed.json",
+    "url": "https://example.com/feed/feed.json"
+  }
+}

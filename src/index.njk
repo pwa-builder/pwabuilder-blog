@@ -8,9 +8,6 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1
 ---
 
 {% extends 'page.njk' %}
-
 {% block body %}
-
-{% include "posts.njk" %}
-
+  {% include "posts.njk" %}
 {% endblock %}

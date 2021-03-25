@@ -93,10 +93,8 @@
   </head>
 
   <body class="flex flex-col min-h-screen">
-    {% include 'header.njk' %}
-    <main class="container mx-auto max-w-3xl p-8 flex-grow">
-      {% block body %}{% endblock %}
-    </main>
+    {% include 'header.njk' %} {% include 'sub-header.njk' %}
+    <main class="container mx-auto px-8">{% block body %}{% endblock %}</main>
     {% include 'footer.njk' %}
     <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
     <script src="{{ site.baseUrl }}assets/main.bundle.js"></script>

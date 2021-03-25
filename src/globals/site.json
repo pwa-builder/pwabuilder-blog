@@ -3,13 +3,11 @@
   "description": "PWA Builder Blogging site",
   "url": "https://github.com/pwa-builder/pwabuilder-blog",
   "baseUrl": "/",
-  "author": {
-    "handle": "@ReeseCodes",
-    "name": "Reese Schultz"
-  },
   "images": {
     "twitter": "twitter.jpg",
-    "og": "og.jpg"
+    "og": "og.jpg",
+    "subHeader": "sub-header-background.png",
+    "logo": "logo.svg"
   },
   "feed": {
     "filename": "feed.xml",

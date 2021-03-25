@@ -1,0 +1,46 @@
+<section
+  class="sub-header flex flex-col relative bg-cover bg-center bg-no-repeat h-64"
+  role="sub-header"
+>
+  <div class="container mx-auto px-8">
+    <div class="w-full flex justify-around items-center pt-2">
+      <nav
+        aria-label="sub-navigation"
+        class="w-full h-12 flex justify-between"
+        role="navigation"
+        tabindex="-1"
+      >
+        <button>PWA Builder Resource Hub</button>
+        <ul class="flex justify-around items-center">
+          <li class="mx-3 px-2 py-1">
+            <a href="#">Blog</a>
+          </li>
+          <li class="mx-3 px-2 py-1">
+            <a href="#">Components</a>
+          </li>
+          <li class="mx-3 px-2 py-1">
+            <a href="#">Demo's</a>
+          </li>
+          <li class="mx-3 px-2 py-1">
+            <a href="#">
+              <ion-icon name="search-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h2 class="mb-2">PWA Builder Blog</h2>
+      <p class="max-w-lg">
+        Add that special something to supercharge your PWA. These cross-platform
+        features can make your website work more like an app.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sub-header {
+    background-image: url({{ site.images.subHeader }});
+  }
+</style>

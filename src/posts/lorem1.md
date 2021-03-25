@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Lorem Ipsum
+title: Lorem Ipsum1
 excerpt: "You know what time it is: lorem ipsum time."
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus euismod quis. Ac auctor augue mauris augue.
 date: 1918-11-04
 updatedDate: 1918-11-04
+image: og.jpg
 trending: true
 featured: true
-image: og.jpg
 tags:
   - post
   - stoicism

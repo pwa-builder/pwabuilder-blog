@@ -11,6 +11,8 @@ featured: true
 tags:
   - post
   - stoicism
+  - another tag
+  - one more
 ---
 
 ### Lorem

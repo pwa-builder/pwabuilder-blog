@@ -13,6 +13,11 @@ module.exports = {
       fontFamily: {
         inter: '"Inter", sans-serif;',
       },
+      colors: {
+        primary: "var(--font-color)",
+        link: "var(--link-color)",
+      }
     },
+
   }
 };

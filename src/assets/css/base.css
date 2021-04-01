@@ -39,7 +39,7 @@
 }
 
 /* Dark mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --font-color: #ffffff;
     --secondary-font-color: #eeeeee;
@@ -48,7 +48,7 @@
     --primary-color: #ffffff;
     --secondary-color: #eeeeee;
   }
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -150,58 +150,3 @@ code {
 .js-focus-visible :focus:not([data-focus-visible-added]) {
   @apply outline-none;
 }
-
-/* * {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
-  :hover {
-    outline: 1px solid rgba(255, 0, 0, 0.6);
-  }
-}
-* * {
-  outline: 1px solid rgba(0, 255, 0, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 255, 0, 0.6);
-  }
-}
-* * * {
-  outline: 1px solid rgba(0, 0, 255, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 0, 255, 0.6);
-  }
-}
-* * * * {
-  outline: 1px solid rgba(255, 0, 255, 0.2);
-  :hover {
-    outline: 1px solid rgba(255, 0, 0, 0.6);
-  }
-}
-* * * * * {
-  outline: 1px solid rgba(0, 255, 255, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 255, 0, 0.6);
-  }
-}
-* * * * * * {
-  outline: 1px solid rgba(255, 255, 0, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 0, 255, 0.6);
-  }
-}
-* * * * * * * {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
-  :hover {
-    outline: 1px solid rgba(255, 0, 0, 0.6);
-  }
-}
-* * * * * * * * {
-  outline: 1px solid rgba(0, 255, 0, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 255, 0, 0.6);
-  }
-}
-* * * * * * * * * {
-  outline: 1px solid rgba(0, 0, 255, 0.2);
-  :hover {
-    outline: 1px solid rgba(0, 0, 255, 0.6);
-  }
-} */

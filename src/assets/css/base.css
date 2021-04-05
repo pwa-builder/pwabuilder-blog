@@ -1,26 +1,10 @@
 /* Prism Code Highlighting Theme (see https://prismjs.com) */
 @import url("https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-dracula.css");
-
-@font-face {
-  font-family: "Hind";
-  src: url("/fonts/Hind-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Hind";
-  src: url("/fonts/Hind-Bold.ttf");
-  font-weight: 700;
-  font-style: bold;
-  font-display: swap;
-}
+/* Using google fonts for now hosted fonts not working will look into it later */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
 
 :root {
-  --font-family: Hind;
-  --font-color: #292c3a;
-  --secondary-font-color: #808080;
+  --font-family: "Hind", sans-serif;
   --font-bold: 700;
   --font-medium: 400;
 
@@ -31,15 +15,17 @@
   --large-font-size: 32px;
   --xlarge-font-size: 44px;
 
-  --primary-background-color: #f4f4f4;
-  --primary-color: #292c3a;
-  --secondary-color: #f4f4f4;
+  --primary-font-color: #292c3a;
+  --secondary-font-color: #808080;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #292c3a;
 
   --button-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   --button-radius: 44px;
   --mobile-button-radius: 61px;
   --mobile-button-height: 64px;
-  --mobile-button-fontsize: 22px;
+  --mobile-button-font-size: 22px;
   --desktop-button-height: 40px;
 
   --input-radius: 8px;
@@ -55,12 +41,11 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-color: #f4f4f4;
+    --primary-font-color: #ffffff;
     --secondary-font-color: #eeeeee;
 
-    --primary-background-color: black;
-    --primary-color: #f4f4f4;
-    --secondary-color: #eeeeee;
+    --primary-background-color: #000000;
+    --secondary-background-color: #292c3a;
   }
 }
 
@@ -78,7 +63,7 @@ body {
   font-size: min(max(var(--font-size), 4vw), 22px);
   font-family: var(--font-family), sans-serif;
   line-height: 1.5;
-  color: var(--font-color);
+  color: var(--primary-font-color);
   background: var(--primary-background-color);
   padding: 0;
   margin: 0;
@@ -103,23 +88,23 @@ h5 {
 }
 
 h1 {
-  @apply text-5xl;
+  @apply text-4xl;
 }
 
 h2 {
-  @apply text-3xl;
-}
-
-h3 {
   @apply text-2xl;
 }
 
-h4 {
+h3 {
   @apply text-xl;
 }
 
+h4 {
+  @apply text-lg;
+}
+
 a {
-  @apply font-bold;
+  @apply text-base font-bold;
 }
 
 a:hover {
@@ -127,7 +112,7 @@ a:hover {
 }
 
 p {
-  @apply text-lg;
+  @apply text-base;
 }
 
 pre {
@@ -161,12 +146,6 @@ code {
   }
 }
 
-/**
- * Selectively disable the default focus style by selecting for the case when the polyfill 
- * is loaded and [data-focus-visible-added] attribute is not applied to the element:
- *
- * @link https://github.com/WICG/focus-visible#2-update-your-css
- */
 .js-focus-visible :focus:not([data-focus-visible-added]) {
   @apply outline-none;
 }

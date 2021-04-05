@@ -1,0 +1,63 @@
+<section
+  class="sub-header dark:bg-secondary flex flex-col relative bg-cover bg-center bg-no-repeat h-64"
+  role="sub-header"
+>
+  <div class="container mx-auto px-8">
+    <div class="w-full flex justify-around items-center pt-2">
+      <nav
+        aria-label="sub-navigation"
+        class="w-full h-12 flex justify-between"
+        role="navigation"
+        tabindex="-1"
+      >
+        {% if '/post' in page.url %}
+          <a class="inline-flex items-center" href="/">
+            <ion-icon class="mr-1" name="chevron-back-outline"></ion-icon>Back</a>
+        {% else %}
+          <button>PWA Builder Resource Hub</button>
+        {% endif %}
+
+        <ul class="flex justify-around items-center">
+          <li class="mx-3 px-2 py-1">
+            <a href="/blogs">Blog</a>
+          </li>
+          <li class="mx-3 px-2 py-1">
+            <a href="#">Components</a>
+          </li>
+          <li class="mx-3 px-2 py-1">
+            <a href="#">Demo's</a>
+          </li>
+          <li>
+            <a class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
+              <ion-icon name="search-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    {% if '/post' in page.url %}
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="mb-2">
+          {{ title }}</h1>
+        {% if excerpt %}
+          <p class="max-w-lg">{{ excerpt }}</p>
+        {% endif %}
+
+      </div>
+    {% else  %}
+      <div>
+        <h1 class="mb-2">
+          {{ site.name }}</h1>
+        <p class="max-w-lg">
+          {{ site.excerpt }}
+        </p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .sub-header {
+    background-image: url("/sub-header-background.png");
+  }
+</style>

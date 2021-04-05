@@ -1,0 +1,3 @@
+.featured-post:first-child {
+  grid-column: span 2 / span 2;
+}

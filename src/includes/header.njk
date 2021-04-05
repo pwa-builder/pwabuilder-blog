@@ -1,12 +1,11 @@
-<header class="flex items-center justify-between px-12" role="banner">
+<header class="header flex items-center justify-between px-12" role="banner">
   <a href="{{ build.url }}" rel="home" class="text-lg font-bold leading-tight">
-    <img alt="logo" class="w-20" src="/logo.svg"/></a>
+    <img alt="logo" class="w-20" src="/logo.svg"
+/></a>
   <nav aria-label="Main" class="w-full h-12" role="navigation" tabindex="-1">
     <ul class="w-full h-full flex justify-between items-center">
       <li class="ml-auto mr-3 font-bold">
-        <a href="https://github.com/pwa-builder/pwabuilder-blog">
-          Resources
-        </a>
+        <a href="https://github.com/pwa-builder/pwabuilder-blog"> Resources </a>
       </li>
       <li>
         <a href="https://github.com/pwa-builder/pwabuilder-blog">
@@ -16,3 +15,9 @@
     </ul>
   </nav>
 </header>
+
+<style>
+  .header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+</style>

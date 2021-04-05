@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media',
   purge: {
     content: [
       './src/**/*.njk',
@@ -11,8 +12,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: '"Inter", sans-serif;',
+        hind: '"Hind", sans-serif;',
       },
+      colors: {
+        "primary-font": "var(--primary-font-color)",
+        "secondary-font": "var(--secondary-font-color)",
+        primary: "var(--primary-background-color)",
+        secondary: "var(--secondary-background-color)",
+        "mobile-link": "var(--mobile-link-color)",
+        link: "var(--link-color)",
+      }
     },
+
   }
 };

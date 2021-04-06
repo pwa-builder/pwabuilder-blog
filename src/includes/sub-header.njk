@@ -19,7 +19,7 @@
 
         <ul class="flex justify-around items-center">
           <li class="mx-3 px-2 py-1">
-            <a href="/blogs">Blog</a>
+            <a href="/">Blog</a>
           </li>
           <li class="mx-3 px-2 py-1">
             <a href="#">Components</a>
@@ -35,7 +35,8 @@
         </ul>
       </nav>
     </div>
-    {% if '/post' in page.url %}
+    {{ page.data }}
+    {% if '/post' or '/tags' in page.url %}
       <div class="flex flex-col justify-center items-center">
         <h1 class="mb-2">
           {{ title }}</h1>

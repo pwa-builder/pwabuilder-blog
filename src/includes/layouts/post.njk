@@ -2,7 +2,7 @@
 permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug }}{% endif %}/index.html"
 ---
 
-{% extends 'page.njk' %}
+{% extends 'layouts/base.njk' %}
 {% block body %}
   <div >
     <div class="flex justify-between items-center">
@@ -73,4 +73,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
       </div>
     </div>
   </div>
+  {% include "recommended.njk" %}
+
 {% endblock %}
+

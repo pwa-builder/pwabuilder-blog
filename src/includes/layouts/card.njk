@@ -1,5 +1,5 @@
 {% macro featured(posts) %}
-  <div class="featured-posts grid auto-cols-fr lg:grid-cols-3 gap-3 my-8">
+  <div class="featured-posts lg:grid lg:grid-cols-3 gap-3 my-8">
     {% for post in posts %}
       {% if not post.data.draft and post.data.featured %}
         {{card(post)}}
@@ -9,7 +9,7 @@
 {% endmacro %}
 
 {% macro recommended(posts) %}
-  <div class="recommended-posts grid auto-cols-fr lg:grid-cols-3 gap-3 my-8">
+  <div class="recommended-posts grid auto-cols-fr gap-3 my-8">
     {% for post in posts %}
       {% if not post.data.draft and post.data.featured %}
         {{card(post)}}
@@ -40,17 +40,17 @@
 {% macro card(post) %}
   <div class="w-full h-full featured-post relative shadow rounded">
     <span
-        class="absolute text-white top-0 left-0 p-2"
+        class="absolute text-primary-font top-0 left-0 p-2"
         datetime="{{ post.data.date }}"
       >
       {{ post.data.date | dateDisplay }}
     </span>
-    <img class="rounded-t-sm w-full object-fill object-center" src="{{ post.data.image }}" alt="{{ post.data.image }}"/>
+    <img class="rounded-t-sm w-full object-fill object-center" src="/{{ post.data.image }}" alt="{{ post.data.image }}"/>
     <div class="p-3 flex flex-col">
       <h2 class="mt-1 mb-4">
         <a class="block" href="{{ post.url | url }}">{{ post.data.title }}</a>
       </h2>
-      <p class="opacity-75 mb-4">{{ post.data.excerpt }}</p>
+      <p class="opacity-75 mb-8">{{ post.data.excerpt }}</p>
       <a class="text-link p-1 text-xs" href="{{ post.url | url }}">Keep reading...</a>
     </div>
   </div>

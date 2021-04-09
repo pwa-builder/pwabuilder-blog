@@ -1,14 +1,14 @@
 module.exports = {
-  darkMode: 'media',
+  darkMode: "media",
   purge: {
     content: [
-      './src/**/*.njk',
-      './src/**/*.js',
-      './src/**/*.svg',
-      './src/**/*.md',
+      "./src/**/*.njk",
+      "./src/**/*.js",
+      "./src/**/*.svg",
+      "./src/**/*.md",
     ],
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require("@tailwindcss/forms")],
   theme: {
     extend: {
       fontFamily: {
@@ -21,8 +21,11 @@ module.exports = {
         secondary: "var(--secondary-background-color)",
         "mobile-link": "var(--mobile-link-color)",
         link: "var(--link-color)",
-      }
+      },
+      minHeight: {
+        12: "3rem",
+        64: "16rem",
+      },
     },
-
-  }
-};
+  },
+}

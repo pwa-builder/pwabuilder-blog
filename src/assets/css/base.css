@@ -16,7 +16,7 @@
   --xlarge-font-size: 44px;
 
   --primary-font-color: #292c3a;
-  --secondary-font-color: #808080;
+  --secondary-font-color: #eeeeee;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #292c3a;
@@ -149,3 +149,63 @@ code {
 .js-focus-visible :focus:not([data-focus-visible-added]) {
   @apply outline-none;
 }
+
+/*
+Leave it for testing margins, paddings, spacing
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+  :hover {
+    outline: 1px solid rgba(255, 0, 0, 0.6);
+  }
+}
+* * {
+  outline: 1px solid rgba(0, 255, 0, 0.2);
+  :hover {
+    outline: 1px solid rgba(0, 255, 0, 0.6);
+  }
+}
+* * * {
+  outline: 1px solid rgba(0, 0, 255, 0.2);
+  :hover {
+    outline: 1px solid rgba(0, 0, 255, 0.6);
+  }
+}
+* * * * {
+  outline: 1px solid rgba(255, 0, 255, 0.2);
+  :hover {
+    outline: 1px solid rgba(255, 0, 0, 0.6);
+  }
+}
+* * * * * {
+  outline: 1px solid rgba(0, 255, 255, 0.2);
+  :hover {
+    outline: 1px solid rgba(0, 255, 0, 0.6);
+  }
+}
+* * * * * * {
+  outline: 1px solid rgba(255, 255, 0, 0.2);
+}
+:hover {
+  outline: 1px solid rgba(0, 0, 255, 0.6);
+}
+* * * * * * * {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+:hover {
+  outline: 1px solid rgba(255, 0, 0, 0.6);
+}
+* * * * * * * * {
+  outline: 1px solid rgba(0, 255, 0, 0.2);
+  :hover {
+    outline: 1px solid rgba(0, 255, 0, 0.6);
+  }
+}
+* * * * * * * * * {
+  outline: 1px solid rgba(0, 0, 255, 0.2);
+  :hover {
+    outline: 1px solid rgba(0, 0, 255, 0.6);
+  }
+}
+
+*/

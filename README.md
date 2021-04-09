@@ -14,7 +14,6 @@ View the [demo](https://reeseschultz.github.io/11r/).
 - [Prism](https://prismjs.com/) syntax highlighting for code with copy button scripting included via [clipboard.js](https://clipboardjs.com/). See `src/styles/base.css` for the theme; and `src/scripts/copy.js`, which is used by `main.js`.
 - [Rollup](https://rollupjs.org) for bundling and compiling. See `rollup.config.js`.which is used by `main.js`.
 - [Pagination](https://www.11ty.dev/docs/pagination/).
-- Deploy script for [GitHub Pages](https://pages.github.com/) via `deploy.sh`, using the `gh-pages` branch. Be sure to edit said script to work with your repository. Remember to also configure the repository appropriately.
 - Exemplary [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) usage.
 - SEO mostly done for you. Ensure you replace the data referenced in `src/globals/site.json`, including the images in `public/`.
 

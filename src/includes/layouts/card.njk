@@ -29,7 +29,7 @@
             <a class="block text-2xl" href="{{ post.url | url }}">{{ post.data.title }}</a>
           </h2>
           <p class="mb-4 opacity-75">{{ post.data.description }}</p>
-          <a class="" href="{{ site.baseUrl }}">Continue reading {{ post.data.title }}</a>
+          <a class="" href="{{ post.url | url }}">Continue reading {{ post.data.title }}</a>
         </div>
       {% endif %}
     {% endfor %}

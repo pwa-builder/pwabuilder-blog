@@ -5,11 +5,9 @@
   "url": "https://github.com/pwa-builder/pwabuilder-blog",
   "baseUrl": "/",
   "images": {
-    "twitter": "twitter.jpg",
-    "og": "og.jpg",
     "subHeader": "sub-header-background.png",
-    "logo": "logo.svg",
-    "placeholder": "placeholder.png"
+    "placeholder": "placeholder.png",
+    "logo": "logo.svg"
   },
   "feed": {
     "filename": "feed.xml",

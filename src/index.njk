@@ -7,7 +7,7 @@ pagination:
 permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 
-{% extends 'page.njk' %}
+{% extends 'layouts/home.njk' %}
 {% block body %}
   {% include "posts.njk" %}
 {% endblock %}

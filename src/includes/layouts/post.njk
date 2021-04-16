@@ -2,10 +2,10 @@
 permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug }}{% endif %}/index.html"
 ---
 
-{% extends 'page.njk' %}
+{% extends 'layouts/base.njk' %}
 {% block body %}
-  <div >
-    <div class="flex justify-between items-center">
+  <div class="flex flex-col justify-center items-start">
+    <div class="w-full flex justify-between items-center">
       <div>
         <h3>
           {{title}}</h3>
@@ -26,7 +26,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
           <span>{{author.name}}</span>
         {% endif %}
       </div>
-      <button class="bg-primary px-5 py-1 shadow rounded-full">Share</button>
+      <button class="share bg-primary capitalize px-5 py-1 shadow rounded-full font-bold ml-auto">Share</button>
     </div>
 
     <div class="my-8">
@@ -40,17 +40,17 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
             {%- if tag !== "post" -%}
               <a
       class="tag {{ tag | replace('.', '') }} mr-2 font-light"
-      href="{{ site.baseUrl }}tag/{{ tag }}"
+      href="{{ site.baseUrl }}tags/{{ tag }}"
       >{{ tag }}</a
     >
             {%- endif -%}
           {% endfor %}
         </div>
       {% endif %}
-      <button class="bg-primary px-5 py-1 shadow rounded-full font-bold">Share</button>
+      <button class="share bg-primary capitalize px-5 py-1 shadow rounded-full font-bold">Share</button>
     </div>
     <hr class="opacity-10">
-    <div class="flex items-center justify-between">
+    <div class="w-full flex items-center justify-between">
       <div>
         {%- set nextPost = collections['postsWithoutDrafts'] |
   getNextCollectionItem(page) %}
@@ -72,5 +72,9 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
         {% endif %}
       </div>
     </div>
+
+    {% include "recommended.njk" %}
+    <a class="bg-secondary text-secondary-font rounded-full px-8 py-2 mx-auto" href="{{ site.baseUrl }}">Back to Blog Home</a>
   </div>
+
 {% endblock %}

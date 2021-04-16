@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: home.njk
+eleventyComputed:
+  title: Category {{ tag }}
+permalink: /tags/{{ tag | slug }}/
+---
+<h1>Search Results</h1>
+
+{% set posts = collections[ tag ] %}
+{% include "postslist.njk" %}

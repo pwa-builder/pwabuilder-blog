@@ -1,23 +1,25 @@
 ---
 layout: post
-title: Lorem Ipsum1
-excerpt: "You know what time it is: lorem ipsum time."
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus euismod quis. Ac auctor augue mauris augue.
-date: 1918-11-04
-updatedDate: 1918-11-04
-image: og.jpg
+title: Title
+excerpt: Short description
+description: Long description
+date: 2021-01-01
+updatedDate: 2021-01-01
 trending: true
 featured: true
+image: placeholder.png
+author:
+  name: John Doe
 tags:
   - post
   - stoicism
-  - another tag
-  - one more
+  - template
 ---
 
-### Lorem
+### Sub title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus euismod quis. Ac auctor augue mauris augue. Convallis tellus id interdum velit laoreet id donec ultrices. Aliquam eleifend mi in nulla posuere. Pretium quam vulputate dignissim suspendisse in est. Orci sagittis eu volutpat odio facilisis mauris sit. Non nisi est sit amet facilisis magna etiam tempor. Id diam maecenas ultricies mi eget. Sed velit dignissim sodales ut. Purus semper eget duis at. Pellentesque sit amet porttitor eget dolor morbi. Faucibus a pellentesque sit amet porttitor. Orci a scelerisque purus semper eget duis. Mauris commodo quis imperdiet massa tincidunt. Pulvinar elementum integer enim neque. In vitae turpis massa sed elementum. Rhoncus dolor purus non enim.
+![test](/placeholder.png)
 
 ### Ipsum
 

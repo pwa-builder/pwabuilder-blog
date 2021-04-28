@@ -5,8 +5,8 @@ excerpt: There are many ways to enable inking on the web, but they all involve t
 description: There are many ways to enable inking on the web, but they all involve their challenges to set up. Do you need to support 2D drawing or 3D rendering? How will you minimize rendering latency? How should the drawing respond to browser events like window resizing, tab switching, or zooming? What kinds of input do you want to handle? What do you want to do with a finished drawing?
 date: 2021-07-15
 updatedDate: 2021-07-15
-trending: false
-featured: true
+trending: true
+featured: false
 image: pwa-linking.png
 author:
   name: Killian McCoy

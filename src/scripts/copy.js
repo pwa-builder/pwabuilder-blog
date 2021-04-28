@@ -4,16 +4,15 @@ import ClipboardJS from "clipboard"
 
 const handleCodeCopying = () => {
   const preTags = document.querySelectorAll("pre")
-
   const isPrismClass = (preTag) =>
     preTag.className.substring(0, 8) === "language"
-
+  const copy = `<div class="copy" id="code"><ion-icon name="copy-outline"></ion-icon></div>`
   if (preTags !== null) {
     for (let i = 0; i < preTags.length; i++) {
       if (!isPrismClass(preTags[i])) continue
-      preTags[i].innerHTML = `<div class="copy" id="code">
-      <ion-icon name="copy-outline"></ion-icon></div>
-      <code class="${preTags[i].className}">${preTags[i].innerHTML}</code>`
+      preTags[
+        i
+      ].innerHTML = `${copy} <code class="${preTags[i].className}">${preTags[i].innerHTML}</code>`
     }
   }
 

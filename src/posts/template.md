@@ -12,7 +12,6 @@ author:
   name: John Doe
 tags:
   - post
-  - stoicism
   - template
 ---
 

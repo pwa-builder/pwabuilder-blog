@@ -57,3 +57,29 @@ Tags are styled in `src/styles/tags.css`. Coloring custom tags works as such:
 Find a problem, or have an improvement in mind? Great. Go ahead and submit a pull request. Note that the maintainer offers no assurance he will respond to you, fix bugs or add features on your behalf in a timely fashion, if ever. All that said, [GitHub Issues](https://github.com/reeseschultz/11r/issues/new/choose) is fine for constructive discussion.
 
 By submitting a pull request, you agree to license your work under [this project's MIT license](https://github.com/reeseschultz/11r/blob/main/LICENSE).
+
+## Blog Template
+
+```md
+---
+layout: post
+title: Title
+excerpt: Short description
+description: Long description
+date: 2021-01-01
+updatedDate: 2021-01-01
+trending: true
+featured: true
+image: placeholder.png
+author:
+name: John Doe
+tags:
+  - post
+  - template
+---
+
+### Sub title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus euismod quis. Ac auctor augue mauris augue. Convallis tellus id interdum velit laoreet id donec ultrices. Aliquam eleifend mi in nulla posuere. Pretium quam vulputate dignissim suspendisse in est. Orci sagittis eu volutpat odio facilisis mauris sit.
+![test](/placeholder.png)
+```

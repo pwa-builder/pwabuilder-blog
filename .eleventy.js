@@ -1,6 +1,16 @@
 const siteSettings = require("./src/globals/site.json")
 
 module.exports = (config) => {
+  const markdownIt = require("markdown-it")
+  config.setLibrary(
+    "md",
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true,
+      typographer: true,
+    })
+  )
   config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"))
   config.addPlugin(require("@11ty/eleventy-plugin-rss"))
 

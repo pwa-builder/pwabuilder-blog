@@ -1,5 +1,5 @@
 ---
-permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug }}{% endif %}/index.html"
+permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug }}{% endif %}/index.html"
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -52,7 +52,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
     <hr class="opacity-10">
     <div class="w-full flex items-center justify-between">
       <div>
-        {%- set nextPost = collections['postsWithoutDrafts'] |
+        {%- set nextPost = collections['docsWithoutDrafts'] |
   getNextCollectionItem(page) %}
         {%- if nextPost %}
           <p class="uppercase text-xs mt-6">Next</p>
@@ -62,7 +62,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
         {% endif %}
       </div>
       <div>
-        {%- set previousPost = collections['postsWithoutDrafts'] |
+        {%- set previousPost = collections['docsWithoutDrafts'] |
   getPreviousCollectionItem(page) %}
         {%- if previousPost %}
           <p class="uppercase text-xs mt-6">Previous</p>

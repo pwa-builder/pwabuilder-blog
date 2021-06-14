@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
-    "build:11ty": "eleventy --quiet",
+    "build:blog": "eleventy",
     "build:rollup": "rollup -c",
     "clean": "rimraf dist",
     "dev": "npm-run-all clean build:* -p dev:*",

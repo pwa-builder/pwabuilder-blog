@@ -18,7 +18,7 @@ module.exports = (config) => {
   config.addFilter("filterTagList", (tags) => {
     // should match the list in tags.njk
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts", "docs", "doc"].indexOf(tag) === -1
     )
   })
   config.addCollection("tagList", function (collection) {
@@ -30,6 +30,8 @@ module.exports = (config) => {
     return [...tagSet]
   })
   config.addPassthroughCopy({ public: "./" })
+  config.addPassthroughCopy("**/*.jpg")
+  config.addPassthroughCopy("**/*.png")
 
   config.setBrowserSyncConfig({
     files: ["dist/**/*"],
@@ -41,6 +43,12 @@ module.exports = (config) => {
   config.addCollection("postsWithoutDrafts", (collection) =>
     [...collection.getFilteredByGlob("src/posts/*.md")].filter(
       (post) => !post.data.draft
+    )
+  )
+
+  config.addCollection("docsWithoutDrafts", (collection) =>
+    [...collection.getFilteredByGlob("src/docs/*.md")].filter(
+      (docs) => !docs.data.draft
     )
   )
 

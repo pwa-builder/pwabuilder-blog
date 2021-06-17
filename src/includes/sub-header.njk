@@ -10,11 +10,11 @@
         role="navigation"
         tabindex="-1"
       >
-        {% if '/post' in page.url %}
+        {% if '/post' in page.url or '/doc' in page.url %}
           <a class="inline-flex items-center" href="/">
             <ion-icon class="mr-1" name="chevron-back-outline"></ion-icon>Back</a>
         {% else %}
-          <button>PWA Builder Resource Hub</button>
+          <button>PWA Builder Blog & Documentation</button>
         {% endif %}
 
         <ul class="flex justify-around items-center my-3">
@@ -22,10 +22,10 @@
             <a href="/">Blog</a>
           </li>
           <li class="mx-3 px-2 py-1">
-            <a href="#">Components</a>
+            <a href="/docs">Documentation</a>
           </li>
           <li class="mx-3 px-2 py-1">
-            <a href="#">Demo's</a>
+            <a href="#">Demos</a>
           </li>
           <li>
             <a class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
@@ -36,7 +36,7 @@
       </nav>
     </div>
     {{ page.data }}
-    {% if '/post' in page.url %}
+    {% if '/post' in page.url or '/doc' in page.url %}
       <div class="flex flex-col justify-center items-center">
         <h1 class="mb-2">
           {{ title }}</h1>

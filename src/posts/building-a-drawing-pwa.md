@@ -8,6 +8,8 @@ updatedDate: 2020-07-30
 trending: true
 featured: false
 image: drawing.png
+isPost: true
+backUrl: '/'
 author:
   name: Justin Willis
 tags:

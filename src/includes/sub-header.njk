@@ -10,23 +10,19 @@
         role="navigation"
         tabindex="-1"
       >
-        {% if '/post' in page.url or '/doc' in page.url %}
-          <a class="inline-flex items-center" href="/">
+        {% if isPost or isDocumentation %}
+            <a class="inline-flex items-center" href="{{ backUrl }}">
             <ion-icon class="mr-1" name="chevron-back-outline"></ion-icon>Back</a>
         {% else %}
-          <button>PWA Builder Blog & Documentation</button>
+          <p>PWA Builder Ressource Hub</p>
         {% endif %}
 
-        <ul class="flex justify-around items-center my-3">
-          <li class="mx-3 px-2 py-1">
-            <a href="/">Blog</a>
-          </li>
-          <li class="mx-3 px-2 py-1">
-            <a href="/docs">Documentation</a>
-          </li>
-          <li class="mx-3 px-2 py-1">
-            <a href="#">Demos</a>
-          </li>
+        <ul class="flex justify-around my-3">
+            {% for item in navigation.items %}
+            <li class="mx-3 px-2 py-1">
+              <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+            </li>
+            {% endfor %}
           <li>
             <a class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
               <ion-icon name="search-outline"></ion-icon>
@@ -36,38 +32,60 @@
       </nav>
     </div>
     {{ page.data }}
-    {% if '/post' in page.url or '/doc' in page.url %}
-      <div class="flex flex-col justify-center items-center">
-        <h1 class="mb-2">
-          {{ title }}</h1>
-        {% if excerpt %}
-          <p class="max-w-lg">{{ excerpt }}</p>
+    
+      {% if '/post' in page.url %}
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="mb-2">
+            {{ title }}</h1>
+          {% if excerpt %}
+            <p class="max-w-lg">{{ excerpt }}</p>
+          {% endif %}
+        </div>
+      {% elif '/tags' in page.url %}
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="mb-2">
+            {{ title }}</h1>
+          {% if excerpt %}
+            <p class="max-w-lg">{{ excerpt }}</p>
+          {% endif %}
+        </div>
+      {% elif '/docs' in page.url %}
+        {% if isDocumentation %}
+        {% else %}
+          <div>
+            <h1 class="mb-2">
+              PWA Builder documentation</h1>
+          </div>
         {% endif %}
-
-      </div>
-    {% elif '/tags' in page.url %}
-      <div class="flex flex-col justify-center items-center">
-        <h1 class="mb-2">
-          {{ title }}</h1>
-        {% if excerpt %}
-          <p class="max-w-lg">{{ excerpt }}</p>
-        {% endif %}
-
-      </div>
-    {% else  %}
-      <div>
-        <h1 class="mb-2">
-          {{ site.name }}</h1>
-        <p class="max-w-lg">
-          {{ site.excerpt }}
-        </p>
-      </div>
-    {% endif %}
+      {% else  %}
+        <div>
+          <h1 class="mb-2">
+            {{ site.name }}</h1>
+          <p class="max-w-lg">
+            {{ site.excerpt }}
+          </p>
+        </div>
+      {% endif %}
   </div>
 </section>
 
 <style>
   .sub-header {
     background-image: url("/sub-header-background.png");
+  }
+
+  .min-h-64 {
+    min-height: 1em;
+  }
+
+  a.activeTab::after {    
+    content: "";
+    display: block;
+    height: .1rem;
+    background: #342a6a;
+  }
+
+  a.activeTab:hover {    
+    text-decoration: none;
   }
 </style>

@@ -8,6 +8,8 @@ updatedDate: 2020-07-09
 trending: false
 featured: true
 image: microsoft-google.png
+isPost: true
+backUrl: '/'
 author:
   name: Judah Gabriel Himango
 tags:

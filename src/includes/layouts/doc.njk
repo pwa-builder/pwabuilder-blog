@@ -2,7 +2,8 @@
 permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug }}{% endif %}/index.html"
 ---
 
-{% extends 'layouts/base.njk' %}
+var isArticle = true;
+{% extends 'layouts/basedoc.njk' %}
 {% block body %}
   <div class="flex flex-col justify-center items-start">
     <div class="w-full flex justify-between items-center">

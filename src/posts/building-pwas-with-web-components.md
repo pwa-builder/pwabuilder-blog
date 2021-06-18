@@ -8,6 +8,8 @@ updatedDate: 2021-01-11
 trending: false
 featured: true
 image: web-components.png
+isPost: true
+backUrl: '/'
 author:
   name: Justin Willis
 tags:

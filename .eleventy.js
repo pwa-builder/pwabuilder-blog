@@ -30,8 +30,8 @@ module.exports = (config) => {
     return [...tagSet]
   })
   config.addPassthroughCopy({ public: "./" })
-  config.addPassthroughCopy("**/*.jpg")
-  config.addPassthroughCopy("**/*.png")
+  config.addPassthroughCopy("src/**/*.jpg")
+  config.addPassthroughCopy("src/**/*.png")
 
   config.setBrowserSyncConfig({
     files: ["dist/**/*"],

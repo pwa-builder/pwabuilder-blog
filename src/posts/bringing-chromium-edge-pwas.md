@@ -7,6 +7,8 @@ updatedDate: 2020-10-20
 trending: false
 featured: true
 image: chromium.png
+isPost: true
+backUrl: '/'
 author:
   name: Justin Willis
 tags:

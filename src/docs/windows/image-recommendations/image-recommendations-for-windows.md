@@ -7,14 +7,14 @@ updatedDate: 2021-04-06
 trending: false
 featured: true
 image: chromium.png
+isDocumentation: true
+backUrl: '/docs'
 author:
   name: PWA Builder documentation
 tags:
   - docs
   - Windows
 ---
-
-## Image recommendations for Windows PWA packages
 
 Your PWA for Windows should have a square, 512x512 or larger PNG image from which PWABuilder will generate the [recommended Windows app images](https://docs.microsoft.com/en-us/windows/uwp/design/style/app-icons-and-logos).
 

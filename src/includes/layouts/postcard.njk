@@ -37,6 +37,25 @@
   </div>
 {% endmacro %}
 
+{% macro tag(posts) %}
+  <div class="grid gap-3 my-8">
+    {% for post in posts %}
+      {% if not post.data.draft %}
+        <div class="mb-4">
+          <span class="text-xs" datetime="{{ post.data.date }}">{{ post.data.date | dateDisplay }}
+          </span>
+          <h2 class="mt-1 mb-4">
+            <a class="block text-2xl" href="{{ post.url | url }}">{{ post.data.title }}</a>
+          </h2>
+          <p class="mb-4 opacity-75">{{ post.data.description }}</p>
+          <a class="" href="{{ post.url | url }}">Continue reading {{ post.data.title }}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+{% endmacro %}
+
 {% macro card(post) %}
   <div class="w-full h-full featured-post relative shadow rounded">
     <span

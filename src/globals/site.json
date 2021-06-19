@@ -2,7 +2,7 @@
   "name": "PWA Builder Blog",
   "excerpt": "Learn about the latest updates of PWA Builder and how to build great PWAs across platforms",
   "description": "PWA Builder Blog & Documentation site",
-  "url": "https://github.com/pwa-builder/pwabuilder-blog",
+  "url": "https://blog.pwabuilder.com",
   "baseUrl": "/",
   "images": {
     "subHeader": "sub-header-background.png",

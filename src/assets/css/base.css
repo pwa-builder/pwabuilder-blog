@@ -38,6 +38,10 @@
   --light-primary-color: rgba(255, 255, 255, 0.6);
 }
 
+/* blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  
+} */
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -71,11 +75,51 @@ body {
   @apply antialiased;
 }
 
-p,
-li,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p, blockquote {
+  margin: revert;
+}
+
+blockquote {
+  box-shadow: inset 3px 0 0 0 rgb(41 41 41);
+  padding-left: 1rem;
+}
+
+.figcaption_hack {
+  color: rgba(117, 117, 117, 1);
+  font-size: 0.6rem;
+  font-weight: var(--font-bold);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+  display: block;
+}
+
+img, video {
+  margin: auto;
+}
+
+li {
+  font-size: 0.8rem;
+}
+
+li > a {
+  font-size: 0.8rem;
+}
+
 a {
-  font-size: 1rem;
-  transition: all 200ms ease-in;
+  color:#342a6a;
+  text-decoration: underline;
+}
+
+ol, ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  list-style: square;
 }
 
 h1,

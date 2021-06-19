@@ -11,15 +11,19 @@ module.exports = {
       let response = '';
   
       if (itemUrl === pageUrl) {
-        response = ' aria-current="page" class="activeTab"';
+        response = ' aria-current="page" class="activeTab subheaderA"';
       }
   
       if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-        response += ' data-state="active" class="activeTab"';
+        response += ' data-state="active" class="activeTab subheaderA"';
       }
 
       if (itemUrl === "/" && pageUrl.indexOf("/posts") === 0) {
-        response += ' data-state="active" class="activeTab"';
+        response += ' data-state="active" class="activeTab subheaderA"';
+      }
+
+      if (response === '') {
+        response += ' class="subheaderA"';
       }
   
       return response;

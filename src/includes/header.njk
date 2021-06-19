@@ -3,12 +3,12 @@
     <img alt="logo" class="w-20" src="/logo.svg"
 /></a>
   <nav aria-label="Main" class="w-full h-12" role="navigation" tabindex="-1">
-    <ul class="w-full h-full flex justify-between items-center">
+    <ul class="w-full h-full flex justify-between items-center headerUl">
       <li class="ml-auto mr-3 font-bold">
-        <a href="https://github.com/pwa-builder/pwabuilder-blog" target="_blank"> Contribute </a>
+        <a class="headerA" href="https://github.com/pwa-builder/pwabuilder-blog" target="_blank"> Contribute </a>
       </li>
       <li>
-        <a href="https://github.com/pwa-builder/pwabuilder-blog" target="_blank">
+        <a class="headerA" href="https://github.com/pwa-builder/pwabuilder-blog" target="_blank">
           <ion-icon name="logo-github" size="large"></ion-icon>
         </a>
       </li>
@@ -19,5 +19,19 @@
 <style>
   .header {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .headerA {
+     text-decoration: none;
+     color: rgb(41, 44, 58);
+  }
+
+  .headerUl {
+    list-style: none;
+    margin-top: 0;
+  }
+
+  .headerUl li {
+    list-style: none;
   }
 </style>

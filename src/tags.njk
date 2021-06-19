@@ -3,14 +3,11 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter:
+  filter: 
     - all
     - nav
     - post
-    - posts
     - doc
-    - docs
-    - tagList
   addAllPagesToCollections: true
 layout: home.njk
 eleventyComputed:
@@ -20,4 +17,4 @@ permalink: /tags/{{ tag | slug }}/
 <h1>Search Results</h1>
 
 {% set posts = collections[ tag ] %}
-{% include "postslist.njk" %}
+{% include "taglist.njk" %}

@@ -11,13 +11,13 @@
         tabindex="-1"
       >
         {% if isPost or isDocumentation %}
-            <a class="inline-flex items-center" href="{{ backUrl }}">
+            <a class="inline-flex items-center subheaderA" href="{{ backUrl }}">
             <ion-icon class="mr-1" name="chevron-back-outline"></ion-icon>Back</a>
         {% else %}
           <p>PWA Builder Ressource Hub</p>
         {% endif %}
 
-        <ul class="flex justify-around my-3">
+        <ul class="flex justify-around my-3 subheaderUl">
             {% for item in navigation.items %}
             <li class="mx-3 px-2 py-1">
               <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
@@ -50,8 +50,7 @@
           {% endif %}
         </div>
       {% elif '/docs' in page.url %}
-        {% if isDocumentation %}
-        {% else %}
+        {% if not isDocumentation %}
           <div>
             <h1 class="mb-2">
               PWA Builder Documentation</h1>
@@ -87,5 +86,18 @@
 
   a.activeTab:hover {    
     text-decoration: none;
+  }
+
+  .subheaderA {
+     text-decoration: none;
+     color: rgb(41, 44, 58);
+  }
+
+  .subheaderUl {
+    list-style: none;
+  }
+
+  .subheaderUl li {
+    list-style: none;
   }
 </style>

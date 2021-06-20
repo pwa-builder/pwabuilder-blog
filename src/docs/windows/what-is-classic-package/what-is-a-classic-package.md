@@ -2,8 +2,9 @@
 layout: doc
 title: What is a classic package
 excerpt: Why 2 different MSIX files?
-date: 2021-04-06
-updatedDate: 2021-04-06
+description: PWABuilder's Windows platform generates 2 versions of your app, know why
+date: 2021-06-24
+updatedDate: 2021-06-24
 trending: false
 featured: false
 isDocumentation: true
@@ -12,6 +13,7 @@ author:
   name: PWA Builder documentation
 tags:
   - docs
+  - Documentation
   - Windows
 ---
 

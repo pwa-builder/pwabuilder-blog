@@ -2,10 +2,11 @@
 layout: doc
 title: Image recommendations for Windows PWA packages
 excerpt: Everything you need to know on how to control the look & feel of your icons on the Windows platform
-date: 2021-04-06
-updatedDate: 2021-04-06
+description: Your PWA for Windows should have a square, 512x512 or larger PNG image but sometimes more
+date: 2021-06-24
+updatedDate: 2021-06-24
 trending: false
-featured: true
+featured: false
 image: chromium.png
 isDocumentation: true
 backUrl: '/docs'
@@ -13,6 +14,7 @@ author:
   name: PWA Builder documentation
 tags:
   - docs
+  - Documentation
   - Windows
 ---
 

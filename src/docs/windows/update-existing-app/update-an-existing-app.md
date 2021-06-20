@@ -1,9 +1,10 @@
 ---
 layout: doc
-title: Update an existing app in the Store
+title: Update an existing app in the Microsoft Store
 excerpt: Sometimes, you'll need to do an update
-date: 2021-04-06
-updatedDate: 2021-04-06
+description: This guide shows how to publish your PWA as an update to an existing app in the Store
+date: 2021-06-24
+updatedDate: 2021-06-24
 trending: false
 featured: false
 isDocumentation: true
@@ -12,10 +13,11 @@ author:
   name: PWA Builder documentation
 tags:
   - docs
+  - Documentation
   - Windows
 ---
 
-This guide shows how to publish your PWA as an update to an existing app in the Store. If you don't have an app in the Store yet, you should instead [publish a new app](/publish-new-app.md).
+This guide shows how to publish your PWA as an update to an existing app in the Microsoft Store. If you don't have an app in the Store yet, you should instead [publish a new app](/publish-new-app.md).
 
 ## Choose the app you want to update
 

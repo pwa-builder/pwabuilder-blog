@@ -2,8 +2,9 @@
 layout: doc
 title: Finding your Windows Publisher info
 excerpt: How to get the 3 important details to create your MSIX package
-date: 2021-04-06
-updatedDate: 2021-04-06
+description: How to get the 3 important details to create your MSIX package
+date: 2021-06-24
+updatedDate: 2021-06-24
 trending: false
 featured: false
 isDocumentation: true
@@ -12,6 +13,7 @@ author:
   name: PWA Builder documentation
 tags:
   - docs
+  - Documentation
   - Windows
 ---
 

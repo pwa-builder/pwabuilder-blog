@@ -1,0 +1,6 @@
+{% import "layouts/doccard.njk" as cardLayouts %}
+
+<section class="my-8">
+  <h3 class="text-center">Documentation you may like...</h3>
+  {{ cardLayouts.recommended(collections.docs) }}
+</section>

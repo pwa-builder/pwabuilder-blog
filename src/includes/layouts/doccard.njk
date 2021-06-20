@@ -11,7 +11,7 @@
 {% macro recommended(docs) %}
   <div class="recommended-posts grid auto-cols-fr gap-3 my-8">
     {% for doc in docs %}
-      {% if not doc.data.draft and doc.data.featured %}
+      {% if not doc.data.draft and doc.data.recommended %}
         {{card(doc)}}
       {% endif %}
     {% endfor %}
@@ -40,7 +40,7 @@
 {% macro card(doc) %}
   <div class="w-full h-full featured-post relative shadow rounded">
     <span
-        class="absolute text-primary-font top-0 left-0 p-2"
+        class="text-primary-font top-0 left-0 p-2"
         datetime="{{ doc.data.date }}"
       >
       {{ doc.data.date | dateDisplay }}

@@ -40,15 +40,15 @@ When you are going to build a new app (of any kind) there are a series of decisi
 - Quality: As with any software project, the harder the codebase is to work on, the buggier it tends to be. Because of the above two challenges, we have also had to deal with a fair bit of tech debt. We think with our new focus on simplicity we can move much faster while still maintaining a high level of quality.
 - Developer experience: Maintaining a familiar developer experience is also incredibly important to us as it allows both community members and new members on the PWABuilder team to easily jump into the project and understand what is going on.
 
-Based on the above we have found that browser native, Web Components based solutions combined with tooling that is focused on simplicity and sticking to web standards gives us the easiest path to meeting these goals. LetΓÇÖs dive into the details of this approach!
+Based on the above we have found that browser native, Web Components based solutions combined with tooling that is focused on simplicity and sticking to web standards gives us the easiest path to meeting these goals. Let's dive into the details of this approach!
 
 ## Web Components? lit-element?
 
-[Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)! How do I build a whole app with them? DonΓÇÖt I need something like [React](https://reactjs.org/) or [Angular](https://angular.io/) to build the app? LetΓÇÖs answer those questions and more!
+[Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)! How do I build a whole app with them? Don't I need something like [React](https://reactjs.org/) or [Angular](https://angular.io/) to build the app? Let's answer those questions and more!
 
 ### What are Web Components?
 
-First, letΓÇÖs touch on what [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) are. Web Components are a collection of Web APIs that allow you to build components. You can think of this as the same as components you build with something like React or Angular, but there are some key differences with Web Components. They are currently supported in all browsers besides Internet Explorer.
+First, let's touch on what [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) are. Web Components are a collection of Web APIs that allow you to build components. You can think of this as the same as components you build with something like React or Angular, but there are some key differences with Web Components. They are currently supported in all browsers besides Internet Explorer.
 
 ![alt](https://miro.medium.com/max/4386/1*OacB87rEsMNfIO213Evt3g.png)
 
@@ -106,7 +106,7 @@ Continuing with our Web Standards first approach, modern CSS now has built in AP
 
 \- [Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties): CSS now has CSS variables! CSS variables work great with Web Components and work extremely similar to variables in SASS.
 
-\- [Style Encapsulation](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM): Shadow DOM is part of the Web Components spec and helps fix the classic CSS cascade issue. Shadow DOM enables you to encapsulate your styles ΓÇ£insideΓÇ¥ of your component, ensuring that CSS elsewhere in your app does not accidentally override CSS in your component. However, using both CSS Variables and the Shadow Parts API we can enable specific pieces of our components to be style-able from outside of the component. This is helpful when you want a component to have certain styles customizable but still have default styles too.
+\- [Style Encapsulation](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM): Shadow DOM is part of the Web Components spec and helps fix the classic CSS cascade issue. Shadow DOM enables you to encapsulate your styles "inside" of your component, ensuring that CSS elsewhere in your app does not accidentally override CSS in your component. However, using both CSS Variables and the Shadow Parts API we can enable specific pieces of our components to be style-able from outside of the component. This is helpful when you want a component to have certain styles customizable but still have default styles too.
 
 ## Build Tools
 

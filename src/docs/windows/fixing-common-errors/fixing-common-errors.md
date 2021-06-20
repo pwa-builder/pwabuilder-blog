@@ -2,8 +2,9 @@
 layout: doc
 title: Fixing common errors in Microsoft Store app submissions
 excerpt: FAQ
-date: 2021-04-06
-updatedDate: 2021-04-06
+description: FAQ
+date: 2021-06-24
+updatedDate: 2021-06-24
 trending: true
 featured: false
 isDocumentation: true
@@ -12,6 +13,7 @@ author:
   name: PWA Builder documentation
 tags:
   - docs
+  - Documentation
   - Windows
 ---
 

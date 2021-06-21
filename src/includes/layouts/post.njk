@@ -40,7 +40,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
             {%- if tag !== "post" -%}
               <a
       class="tag {{ tag | replace('.', '') }} mr-2 font-light"
-      href="{{ site.baseUrl }}tags/{{ tag }}"
+      href="{{ site.baseUrl }}tags/{{ tag | slug }}"
       >{{ tag }}</a
     >
             {%- endif -%}

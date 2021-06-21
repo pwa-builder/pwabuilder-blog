@@ -52,6 +52,12 @@ module.exports = (config) => {
     )
   )
 
+  config.addCollection("demosWithoutDrafts", (collection) =>
+  [...collection.getFilteredByGlob("src/demos/*.md")].filter(
+    (demos) => !demos.data.draft
+  )
+)
+
   return {
     pathPrefix: siteSettings.baseUrl,
     dir: {

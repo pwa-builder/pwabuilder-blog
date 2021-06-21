@@ -1,0 +1,8 @@
+{% import "layouts/doccard.njk" as cardLayouts %}
+
+<section class="my-8">
+  <h3 class="text-center">Our selected demos</h3>
+  {{ cardLayouts.featured(docs)}}
+  <h3 class="text-center">More demos from the community</h3>
+  {{ cardLayouts.trending(docs)}}
+</section>

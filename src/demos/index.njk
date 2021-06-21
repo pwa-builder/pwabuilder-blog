@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.docs
+  size: 12
+  alias: demos
+  reverse: true
+permalink: "/demos/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+{% extends 'layouts/home.njk' %}
+{% block body %}
+  {% include "demos.njk" %}
+{% endblock %}

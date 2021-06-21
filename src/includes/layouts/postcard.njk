@@ -64,7 +64,9 @@
       >
       {{ post.data.date | dateDisplay }}
     </span>
-    <img class="rounded-t-sm w-full object-fill object-center" src="/{{ post.data.image }}" alt="{{ post.data.image }}"/>
+    <a href="{{ post.url | url }}">
+      <img class="rounded-t-sm w-full object-fill object-center" src="/{{ post.data.image }}" alt="{{ post.data.title }}"/>
+    </a>
     <div class="p-3 flex flex-col">
       <h2 class="mt-1 mb-4">
         <a class="block" href="{{ post.url | url }}">{{ post.data.title }}</a>

@@ -37,10 +37,10 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug 
       {% if tags %}
         <div>
           {% for tag in tags %}
-            {%- if tag !== "post" -%}
+            {%- if tag !== "post" and tag !== "docs" -%}
               <a
       class="tag {{ tag | replace('.', '') }} mr-2 font-light"
-      href="{{ site.baseUrl }}tags/{{ tag }}"
+      href="{{ site.baseUrl }}tags/{{ tag | slug }}"
       >{{ tag }}</a
     >
             {%- endif -%}
@@ -74,7 +74,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug 
     </div>
 
     {% include "recommended.njk" %}
-    <a class="bg-secondary text-secondary-font rounded-full px-8 py-2 mx-auto" href="{{ site.baseUrl }}">Back to Blog Home</a>
+    <a class="bg-secondary text-secondary-font rounded-full px-8 py-2 mx-auto" href="/docs">Back to Documentation Home</a>
   </div>
 
 {% endblock %}

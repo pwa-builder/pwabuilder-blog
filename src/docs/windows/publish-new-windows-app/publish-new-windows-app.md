@@ -18,8 +18,6 @@ tags:
   - Windows
 ---
 
-# Publish a new app to the Microsoft Store
-
 This guide shows how to publish your PWA as a new app in the Store. If you already have an app in the Store, you should instead [update your existing app](/docs/update-an-existing-app-in-the-microsoft-store/).
 
 ## Enroll in Windows developer program

@@ -7,6 +7,7 @@ date: 2021-06-24
 updatedDate: 2021-06-24
 trending: false
 featured: false
+image: docs/windows/windows-store-documentation/StoreLogo.png
 isDocumentation: true
 backUrl: '/docs'
 author:
@@ -15,6 +16,7 @@ tags:
   - docs
   - Documentation
   - Windows
+  - Microsoft Store
 ---
 
 You've successfully generated a Microsoft Store app package for your PWA. 😎 

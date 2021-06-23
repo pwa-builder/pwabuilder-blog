@@ -17,6 +17,7 @@ tags:
   - docs
   - Documentation
   - Android
+  - PlayStore
 ---
 
 **Under construction...**

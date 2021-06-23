@@ -5,6 +5,7 @@ pagination:
   alias: demos
   reverse: true
 permalink: "/demos/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+image: demo-card.webp
 ---
 
 {% extends 'layouts/home.njk' %}

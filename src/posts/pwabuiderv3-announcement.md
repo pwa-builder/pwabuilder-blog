@@ -12,11 +12,13 @@ isPost: true
 draft: true
 backUrl: '/'
 author:
-  name: David Rousset 
+  name: David Rousset
+  twitter: https://twitter.com/davrous
+  title: Program Manager APS W+D 
 tags:
   - post
   - Chromium
-  - Edge
+  - Microsoft Edge
   - PWA
   - Microsoft Store
 ---

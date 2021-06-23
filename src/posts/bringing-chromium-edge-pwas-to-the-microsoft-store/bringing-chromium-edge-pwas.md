@@ -11,7 +11,9 @@ image: posts/bringing-chromium-edge-pwas-to-the-microsoft-store/chromium.png
 isPost: true
 backUrl: '/'
 author:
-  name: Justin Willis 
+  name: Justin Willis
+  twitter: https://twitter.com/Justinwillis96
+  title: Software Engineer APS W+D 
 tags:
   - post
   - Chromium

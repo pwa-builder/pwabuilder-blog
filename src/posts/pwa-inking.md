@@ -12,11 +12,9 @@ author:
   name: Killian McCoy
 tags:
   - post
-  - PWA
-  - Microsoft
-  - MicrosoftEdge
+  - Inking
+  - Microsoft Edge
   - Windows
-  - WebGL
 ---
 
 <iframe src="https://giphy.com/embed/gfrRt9TzYCv24qaoCl" width="480" height="308" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gfrRt9TzYCv24qaoCl">via GIPHY</a></p>

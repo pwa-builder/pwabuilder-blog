@@ -2,7 +2,7 @@
 layout: post
 title: Building PWAs with Web Components!
 excerpt: Looking to build a Progressive Web App but not sure where to start?
-description: There are many ways to enable inking on the web, but they all involve their challenges to set up. Do you need to support 2D drawing or 3D rendering? How will you minimize rendering latency? How should the drawing respond to browser events like window resizing, tab switching, or zooming? What kinds of input do you want to handle? What do you want to do with a finished drawing?
+description: There are MANY ways to build great Progressive Web Apps, but today I wanted to share an approach that we have been exploring, building PWAs with Web Components based solutions!
 date: 2021-01-11
 updatedDate: 2021-01-11
 trending: false
@@ -12,6 +12,8 @@ isPost: true
 backUrl: '/'
 author:
   name: Justin Willis
+  twitter: https://twitter.com/Justinwillis96
+  title: Software Engineer APS W+D 
 tags:
   - post
   - web-components

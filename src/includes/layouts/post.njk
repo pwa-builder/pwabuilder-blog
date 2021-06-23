@@ -7,8 +7,6 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
   <div class="flex flex-col justify-center items-start">
     <div class="w-full flex justify-between items-center">
       <div>
-        {# <h3>
-          {{title}}</h3> #}
         {% if date %}
           {% if updatedDate and(date | string) !== (updatedDate | string) %}
             <p class="text-sm italic">Last updated on<span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span
@@ -23,7 +21,8 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
           {% endif %}
         {% endif %}
         {% if author %}
-          <span>{{author.name}}</span>
+          <span><a href="{{author.twitter}}" target="_blank">{{author.name}}</a></span>
+          <div>{{author.title}}</div>
         {% endif %}
       </div>
       <button class="share bg-primary capitalize px-5 py-1 shadow rounded-full font-bold ml-auto">Share</button>

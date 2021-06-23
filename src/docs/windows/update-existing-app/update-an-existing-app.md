@@ -7,6 +7,7 @@ date: 2021-06-24
 updatedDate: 2021-06-24
 trending: false
 featured: false
+image: docs/windows/windows-store-documentation/StoreLogo.png
 isDocumentation: true
 backUrl: '/docs'
 author:

@@ -12,6 +12,8 @@ isPost: true
 backUrl: '/'
 author:
   name: Judah Gabriel Himango
+  twitter: https://twitter.com/JudahGabriel
+  title: Software Engineer APS W+D 
 tags:
   - post
   - Microsoft

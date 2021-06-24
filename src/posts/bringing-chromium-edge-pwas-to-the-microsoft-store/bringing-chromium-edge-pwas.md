@@ -7,7 +7,7 @@ date: 2020-10-20
 updatedDate: 2020-10-20
 trending: false
 featured: true
-image: posts/bringing-chromium-edge-pwas-to-the-microsoft-store/chromium.png
+image: posts/bringing-chromium-edge-pwas-to-the-microsoft-store/BringingChromiumEdgePWAsMicrosoftStore.jpg
 isPost: true
 backUrl: '/'
 author:

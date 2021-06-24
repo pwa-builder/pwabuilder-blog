@@ -55,7 +55,7 @@ The newly launched Windows 11, Microsoft Edge, and the new Microsoft Store all b
 
 We are excited to see a growing number of PWAs in the Microsoft Store, like <a href="https://www.microsoft.com/en-us/p/clipchamp-video-editor/9p1j8s7ccwwt" target="_blank">ClipChamp</a>, <a href="https://www.microsoft.com/en-us/p/facebook/9wzdncrfj2wl" target="_blank">Facebook</a>, <a href="https://www.microsoft.com/en-us/p/fiton-free-fitness-workouts-personalized-plans/9ndprqsm3vfk" target="_blank">FitOn</a>, <a href="https://www.microsoft.com/en-us/p/instagram/9nblggh5l9xt" target="_blank">Instagram</a>, <a href="https://www.microsoft.com/en-us/p/twitter/9wzdncrfj140" target="_blank">Twitter</a> and many more. There’s never been a better time to bring your PWA to the Microsoft store, and we invite you to join us! 
 
-To start, simply add the URL to your PWA here. Based on features your PWA supports, you will be assigned a score that indicates the quality of your PWA. If you want to improve your score so your PWA integrates more seamlessly with the Windows platform, you can see our recommendations on how to do so. You can also see how your PWA compares to others tested on the platform. 
+To start, simply add the URL to your PWA [here](https://www.pwabuilder.com). Based on features your PWA supports, you will be assigned a score that indicates the quality of your PWA. If you want to improve your score so your PWA integrates more seamlessly with the Windows platform, you can see our recommendations on how to do so. You can also see how your PWA compares to others tested on the platform. 
 
 ![Screenshot of the home page of the new PWA Builder v3](/posts/introducing-the-brand-new-pwa-builder/ScreenshotNewPWABuilder002.jpg)
 

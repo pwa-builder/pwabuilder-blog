@@ -116,6 +116,12 @@ a {
   text-decoration: underline;
 }
 
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--link-color);
+  }
+}
+
 ol, ul {
   margin-top: 1rem;
   padding-left: 2rem;

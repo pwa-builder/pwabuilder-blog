@@ -38,21 +38,6 @@
   --light-primary-color: rgba(255, 255, 255, 0.6);
 }
 
-/* blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
-  
-} */
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-font-color: #ffffff;
-    --secondary-font-color: #eeeeee;
-
-    --primary-background-color: #000000;
-    --secondary-background-color: #292c3a;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -114,12 +99,6 @@ li > a {
 a {
   color:#342a6a;
   text-decoration: underline;
-}
-
-@media (prefers-color-scheme: dark) {
-  a {
-    color: var(--link-color);
-  }
 }
 
 ol, ul {

@@ -4,8 +4,8 @@ title: Simulate your PWA on Windows 11
 excerpt: This guide shows you how to use and customize the PWA simulator
 description: This guide shows you how to use and customize the PWA simulator
 date: 2021-08-03
-trending: false
-featured: false
+trending: true
+featured: true
 image: docs/windows/pwa-simulator/store-preview.png
 isDocumentation: true
 backUrl: '/docs'

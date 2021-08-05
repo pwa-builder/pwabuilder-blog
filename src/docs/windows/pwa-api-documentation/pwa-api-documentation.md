@@ -7,7 +7,7 @@ date: 2021-08-05
 updatedDate: 2021-08-05
 trending: false
 featured: false
-image: docs/windows/windows-store-documentation/StoreLogo.png
+image: docs/windows/pwa-api-documentation/shortcuts.png
 isDocumentation: true
 backUrl: "/docs"
 author:
@@ -32,7 +32,7 @@ With Progressive Web Apps, you have 2 channels that users can use to get your PW
 
 With the new Chromium based Edge, users can install your PWA right from the browser. When a user navigates to the URL to your PWA in Edge they will be prompted with an “install” icon in the URL bar as the screenshot below shows. Once this install button is clicked, the following UI is shown to the user:
 
-[image coming soon]()
+<img src="/docs/windows/pwa-api-documentation/in-browser-install.png" width="350px" /> 
 
 This UI provides more info to the user about the PWA, and then the user can choose to install your PWA.
 
@@ -43,20 +43,22 @@ To ensure your PWA is installable, make sure you meet the requirements listed he
 
 PWAs can also be installed from the Microsoft Store just like any other app. In fact, the [new Microsoft Store](https://blogs.windows.com/windowsexperience/2021/06/24/building-a-new-open-microsoft-store-on-windows-11/) and updated policies make it easier than ever to get your PWA into the store, even if you use your own payment systems! For more developer information on how this works, check out [our docs](https://blog.pwabuilder.com/posts/bringing-chromium-edge-pwas-to-the-microsoft-store/).
 
+<img src="/docs/windows/pwa-api-documentation/in-store.png" width="350px" /> 
+
 **How To**
 [PWABuilder](https://www.pwabuilder.com) can automatically package and submit Chromium Based Edge PWAs to the store, ensuring that your PWA works the same whether its installed from the Store or Edge itself.
 
 Once your PWA has been installed by the user (either through the Store or Edge) Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
 
-[images coming soon]()
+<img src="/docs/windows/pwa-api-documentation/taskbar.png" width="350px" /> 
 
 Your PWA will also open in its own Window:
 
-[images coming soon]()
+<img src="/docs/windows/pwa-api-documentation/in-window.png" width="350px" /> 
 
 And finally, it will also show up in your App Settings:
 
-[images coming soon]()
+<img src="/docs/windows/pwa-api-documentation/app-settings.png" width="350px" /> 
 
 ## File Handling and Integrating with the File Explorer
 
@@ -77,7 +79,7 @@ Check out [this tutorial](https://web.dev/file-system-access/) to learn how to u
 
 Sharing content, and ingesting shared content, has always required custom UI and logic from the developer, until today! Your PWA can easily share content using the native Share UI built into Windows:
 
-[image coming soon]()
+<img src="/docs/windows/pwa-api-documentation/share.png" width="350px" /> 
 
 **How To**
 Check out [this tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) to learn how to use the Web Share API and enable this functionality in your PWA
@@ -91,8 +93,6 @@ Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progre
 
 Finally, your PWA can use the early File Handlers API to register as a File Handler for certain file types. This enables you to open a file directly into a PWA, just as you can open images directly into the Photos app from the File Explorer:
 
-[image coming soon]()
-
 **How To**
 The File Handlers API is very early and still being worked on. Check out the API Explainer and some sample code to learn how to start using this API today.
 
@@ -102,6 +102,8 @@ Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enab
 
 - Mail Applications for example, as you can let users jump straight to writing a new email from a right click on your App Icon in the start menu and taskbar!
 - Social Media Apps such as Twitter, which enables users to jump straight into creating a tweet, the notifications screen, reading their DMs and more, all from a right click of the Twitter icon.
+
+<img src="/docs/windows/pwa-api-documentation/shortcuts.png" width="350px" /> 
 
 **How To**
 Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#use-shortcuts-to-provide-quick-access-to-features) to learn how to add shortcuts to your PWA.

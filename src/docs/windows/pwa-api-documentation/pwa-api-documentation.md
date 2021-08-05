@@ -64,13 +64,7 @@ And finally, it will also show up in your App Settings:
 
 Handling files has always been a challenge for Web Apps as they have never had the same file handling capability as native apps. For example, you could not simply open a file from the File System, download a file or securely write to a file on the users device. With the [File System API](https://web.dev/file-system-access/), your PWA can now use files with the normal experience users expect from apps.
 
-Your PWA can prompt the user to open a file:
-
-[images coming soon]()
-
-And you can also easily save a file:
-
-[images coming soon]()
+Your PWA can prompt the user to open a file, open mutiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
 
 **How To**
 Check out [this tutorial](https://web.dev/file-system-access/) to learn how to use the File System Access API and enable this functionality in your PWA.
@@ -84,9 +78,7 @@ Sharing content, and ingesting shared content, has always required custom UI and
 **How To**
 Check out [this tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) to learn how to use the Web Share API and enable this functionality in your PWA
 
-Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it:
-
-[image coming soon]()
+Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it.
 
 **How To**
 Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#identify-your-app-as-a-share-target) to learn how to use the Share Target API and enable this functionality in your PWA.

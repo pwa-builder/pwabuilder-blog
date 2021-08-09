@@ -37,7 +37,7 @@ With the new Chromium based Edge, users can install your PWA right from the brow
 This UI provides more info to the user about the PWA, and then the user can choose to install your PWA.
 
 **How To**
-To ensure your PWA is installable, make sure you meet the requirements listed here, [PWABuilder](https://www.pwabuilder.com) can help you meet these requirements if your PWA does not already.
+To ensure your PWA is installable, make sure you meet the requirements [listed here](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs), [PWABuilder](https://www.pwabuilder.com) can help you meet these requirements if your PWA does not already.
 
 ### The Microsoft Store
 
@@ -48,6 +48,7 @@ PWAs can also be installed from the Microsoft Store just like any other app. In 
 **How To**
 [PWABuilder](https://www.pwabuilder.com) can automatically package and submit Chromium Based Edge PWAs to the store, ensuring that your PWA works the same whether its installed from the Store or Edge itself.
 
+## App Experience on Windows
 Once your PWA has been installed by the user (either through the Store or Edge) Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
 
 <img src="/docs/windows/pwa-api-documentation/taskbar.png" width="350px" /> 
@@ -75,17 +76,17 @@ Sharing content, and ingesting shared content, has always required custom UI and
 
 <img src="/docs/windows/pwa-api-documentation/share.png" width="350px" /> 
 
-**How To**
+**How To: Share**
 Check out [this tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) to learn how to use the Web Share API and enable this functionality in your PWA
 
 Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it.
 
-**How To**
+**How To: Share Target**
 Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#identify-your-app-as-a-share-target) to learn how to use the Share Target API and enable this functionality in your PWA.
 
 Finally, your PWA can use the early File Handlers API to register as a File Handler for certain file types. This enables you to open a file directly into a PWA, just as you can open images directly into the Photos app from the File Explorer:
 
-**How To**
+**How To: File Handling**
 The File Handlers API is very early and still being worked on. Check out the API Explainer and some sample code to learn how to start using this API today.
 
 ## Shortcuts
@@ -109,7 +110,7 @@ Check out [this tutorial](https://web.dev/async-clipboard/) to learn how to use 
 
 ## Offline
 
-Progressive Web Apps, unlike traditional web apps, can not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use. Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs [link incoming](). Let’s go through a few of these APIs:
+Progressive Web Apps, unlike traditional web apps, can not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use. Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs (Use [PWABuilder](https://www.pwabuilder.com) to easily grab one, or check out our recommendations [here](/posts/building-pwas-with-web-components!/)). Let’s go through a few of these APIs:
 
 - Service Worker Cache API: The Cache API enables you to cache assets such as HTML, CSS, JavaScript, images, fonts and more to storage, ensuring that your app not only loads while the user is offline, but also loads much faster than coming over the network. This improved loading performance is becoming more important with the rise of always connected PC’s that may not always be on the fastest or most stable internet connection.
 - Background Sync: The Background Sync API enables PWAs to retry network requests made while offline once the users device is back online. This enables common useful scenarios for your users such as the ability to post or upload content while the user is offline. The post or upload will be completed once the device is back online.

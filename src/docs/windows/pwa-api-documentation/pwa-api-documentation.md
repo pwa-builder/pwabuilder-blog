@@ -5,7 +5,7 @@ excerpt: One of the main challenges for web apps on Windows has always been that
 description: Learn about new advanced capabilities available in Edge and Windows that can raise the quality of your user experience and make your PWA feel native on Windows!
 date: 2021-08-05
 updatedDate: 2021-08-05
-trending: false
+trending: true
 featured: false
 image: docs/windows/pwa-api-documentation/shortcuts.png
 isDocumentation: true
@@ -156,3 +156,12 @@ PWAs can also connect with external devices such as the camera, Bluetooth device
 
 **How To**
 To learn how to connect to and interact with the camera and mic on a device check out [this documentation](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) on the MediaDevices API. For Bluetooth devices, [this documentation](https://web.dev/bluetooth/) should be helpful. For USB, the [Web USB API](https://web.dev/usb/) is what you’re looking for. For interacting with other devices, including printers, Windows Hello and other sensors on the user’s device, Serial devices and more, we recommend [this documentation](https://web.dev/devices-introduction/).
+
+## Customizing the title bar
+
+Want to customize your title bar just like VSCode, Microsoft Teams and other apps on Windows? The Window Controls Overlay API allows you to put custom HTML content in the title bar! This removes the system title bar enabling you to achieve a fully custom UI for your app.
+
+<img src="/docs/windows/pwa-api-documentation/title-bar.png" width="350px" /> 
+
+**How To**
+To learn how to use the Window Controls Overlay API check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#window-controls-overlay-for-installed-desktop-web-apps) from the Edge team that includes examples and goes through all the details you need.

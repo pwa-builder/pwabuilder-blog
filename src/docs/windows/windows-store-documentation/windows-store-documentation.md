@@ -33,6 +33,7 @@ Related documentation:
 - [Fixing common errors in Microsoft Store app submissions](/docs/fixing-common-errors-in-microsoft-store-app-submissions/)
 - [Update an existing app in the Store](/docs/update-an-existing-app-in-the-store/)
 - [What is a classic package](/docs/what-is-a-classic-package/)
+- [Make your PWA feel like an app on Windows](/docs/pwa-api-documentation)
 
 
 

@@ -66,6 +66,7 @@ The simulator exposes the parts below for customization with the <a href="https:
 - `input-title`: The title of the form for entering the PWA's URL.
 - `input-field`: The text field for entering the PWA's URL.
 - `input-button`: The button that submits the form for entering the PWA's URL.
+- `status-message`: The text that announces changes in the preview manifest.
 
 The following <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*" target="_blank">CSS variables</a> can also be provided:
 - `--font-family`: The component's main font family.

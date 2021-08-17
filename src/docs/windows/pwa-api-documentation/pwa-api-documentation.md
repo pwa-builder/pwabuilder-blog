@@ -87,7 +87,7 @@ Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progre
 Finally, your PWA can use the early File Handlers API to register as a File Handler for certain file types. This enables you to open a file directly into a PWA, just as you can open images directly into the Photos app from the File Explorer:
 
 **How To: File Handling**
-The File Handlers API is very early and still being worked on. Check out the API Explainer and some sample code to learn how to start using this API today.
+Check out [this documentation](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#file-handling) to learn more!
 
 ## Shortcuts
 

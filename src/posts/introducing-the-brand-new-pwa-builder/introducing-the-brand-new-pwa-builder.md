@@ -37,7 +37,7 @@ With the brand new PWA builder, the core value we provide to web developers rema
 The result is a <a href="https://www.pwabuilder.com" target="_blank">brand-new experience</a> we’re introducing today to build quality PWAs and package them for app stores! 
 
 <a href="https://www.pwabuilder.com" target="_blank">
-<img src="/posts/introducing-the-brand-new-pwa-builder/ScreenshotNewPWABuilder001.jpg" alt="Screenshot of the home page of the new PWA Builder v3">
+<img loading="lazy" src="/posts/introducing-the-brand-new-pwa-builder/ScreenshotNewPWABuilder001.jpg" alt="Screenshot of the home page of the new PWA Builder v3">
 </a>
 
 ## PWAs and Windows – better together than ever before

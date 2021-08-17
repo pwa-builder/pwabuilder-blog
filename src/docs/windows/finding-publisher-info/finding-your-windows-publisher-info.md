@@ -28,13 +28,13 @@ To get this information, go to [Windows Partner Center](https://partner.microsof
 
 Choose `Product Management` -> `Product Identity`:
 
-<img src="/docs/windows/finding-publisher-info/required-data-from-partner-center.png" />
+<img loading="lazy" src="/docs/windows/finding-publisher-info/required-data-from-partner-center.png" />
 
 You'll see the Package ID, Publisher ID, and publisher display name. You'll need all three of these to publish in the Store.
 
 On PWABuilder when generating your Windows app, add these values to the Windows package options:
 
-<img alt="Publisher and package info in PWABuilder" src="/docs/windows/finding-publisher-info/required-data-in-pwabuilder.png" /> 
+<img loading="lazy" alt="Publisher and package info in PWABuilder" src="/docs/windows/finding-publisher-info/required-data-in-pwabuilder.png" /> 
 
 ## Need more help?
 

@@ -3,7 +3,7 @@ layout: post
 title: Visualizing your web manifest
 excerpt: Building your progressive web app and wondering what's the purpose of this json file?
 description: A crucial part of building a PWA is creating its manifest.json file. However, this is not always an easy task... Besides a name and icons, what else should you include? Why do you need a background color if you already have that in your CSS stylesheets? Which are the different display modes, and which one should you use?  
-date: 2021-07-27
+date: 2021-08-17
 trending: false
 featured: true
 image: posts/manifest-previewer/name-windows.png
@@ -20,7 +20,7 @@ tags:
 
 We have all been there. Staring at this mysterious `json` object that seems so important for a progressive web app. Besides a name and icons, what else should you include? Why do you need a background color if you already have that in your CSS stylesheets? Which are the different display modes, and which one should you use?  
 
-During the last 2 months, I've been working on a project that addresses these questions: the <a href="https://www.npmjs.com/package/@pwabuilder/manifest-previewer" target="_blank">PWABuilder Manifest Previewer</a>. This is a <a href="https://blog.pwabuilder.com/posts/building-pwas-with-web-components!/" target="_blank">web component</a> that takes your web manifest and shows you what the different manifest values look like on different operating systems. As an example, here's the manifest visualizer showing the <a href="https://www.w3.org/TR/appmanifest/#name-member" target="_blank">name</a> attribute appears on the Windows start menu:
+During the last 3 months, I've been working on a project that addresses these questions: the <a href="https://www.npmjs.com/package/@pwabuilder/manifest-previewer" target="_blank">PWABuilder Manifest Previewer</a>. This is a <a href="https://blog.pwabuilder.com/posts/building-pwas-with-web-components!/" target="_blank">web component</a> that takes your web manifest and shows you what the different manifest values look like on different operating systems. As an example, here's the manifest visualizer showing the <a href="https://www.w3.org/TR/appmanifest/#name-member" target="_blank">name</a> attribute appears on the Windows start menu:
 <img src="/posts/manifest-previewer/name-windows.png" alt="Name preview - Windows" width="500px" />
 
 And this is by just knowing the name and icon defined on the manifest! You can also experience the same visualization on Android and iOS: 
@@ -38,7 +38,9 @@ The manifest previewer can also help you visualize your application's store list
 This web component also showcases some of the most modern features of PWAs, like making your app a <a href="https://web.dev/web-share-target/">web share target</a> so that users can share media data to your application directly from the platform's share menu:
 <img src="/posts/manifest-previewer/share-target.png" width="700px" />
 
-And that's not all! This web component also includes previews for the `short_name`, `display`, `theme_color`, `shortcuts`, and many other manifest attributes. You can see them all now on <a href="https://www.pwabuilder.com/" target="_blank">the PWABuilder site</a>, since the team is the first proud user of this component, and it is using it to help their users have a better experience when getting their applications ready to be published to the Microsoft store. You can also integrate the manifest visualizer to your own application, since this component is a standalone tool and can be <a href="https://www.npmjs.com/package/@pwabuilder/manifest-previewer" target="_blank">downloaded</a> from `npm`. To learn more about how to use it, check out <a href="https://github.com/pwa-builder/manifest-previewer#pwabuilder---manifest-previewer" target="_blank">the documentation</a> and customize it according to your needs, from using your own colors to using the explanation messages that you desire.
+And that's not all! This web component also includes previews for the `short_name`, `display`, `theme_color`, `shortcuts`, and many other manifest attributes. You can see them all now on <a href="https://www.pwabuilder.com/" target="_blank">the PWABuilder site</a>, since the team is the first proud user of this component, and it is using it to help their users have a better experience when getting their applications ready to be published to the Microsoft store. Currently the team is only enabling the preview on Windows, but the Android and iOS will be added in the near future.
+
+You can also integrate the manifest visualizer to your own application, since this component is a standalone tool and can be <a href="https://www.npmjs.com/package/@pwabuilder/manifest-previewer" target="_blank">downloaded</a> from `npm`. To learn more about how to use it, check out <a href="https://github.com/pwa-builder/manifest-previewer#pwabuilder---manifest-previewer" target="_blank">the documentation</a> and customize it according to your needs, from using your own colors to using the explanation messages that you desire.
 
 Before I wrap up, I will take a brief detour and get a bit sentimental: Thanks to everyone in the PWABuilder team. You’ve made my internship this summer amazing, and I truly admire your passion and dedication for what you do. More than builders, you’re creators, enhancers, and innovators. Keep doing what you’re doing. 
 

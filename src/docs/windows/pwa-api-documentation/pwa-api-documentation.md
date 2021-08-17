@@ -24,6 +24,22 @@ One of the main challenges for web apps on Windows has always been that it is ha
 
 These are all very common user experience challenges that Web Apps have always encountered, but with the new Chromium based Edge, Project Fugu and PWABuilder, developers now have the APIs and tools they need to truly make their Progressive Web Apps feel like a native app on Windows.
 
+**Table Of Contents**
+- [App Distribution](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=with%20progressive%20web%20apps%2C%20you%20have%202%20channels%20that%20users%20can%20use%20to%20get%20your%20pwa%20onto%20their%20windows%20device%2C%20the%20microsoft%20store%20and%20microsoft%20edge%20itself.)
+- [App Experience on Windows](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=once%20your%20pwa%20has%20been%20installed%20by%20the%20user%20(either%20through%20the%20store%20or%20edge)%20windows%20will%20treat%20this%20pwa%20just%20like%20any%20other%20app%20on%20windows.%20your%20pwa%20can%20be%20pinned%20to%20the%20taskbar%20and%20start%20menu%3A)
+- [File Handling](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=Handling%20files,from%20apps.)
+- [Sharing](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=sharing%20content%2C%20and%20ingesting%20shared%20content%2C%20has%20always%20required%20custom%20ui%20and%20logic%20from%20the%20developer%2C%20until%20today!%20your%20pwa%20can%20easily%20share%20content%20using%20the%20native%20share%20ui%20built%20into%20windows%3A)
+- [Shortcuts](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=using%20the%20web%20shortcuts%20api%2C%20pwas%20can%20tie%20into%20the%20shortcuts%20ui%20in%20windows%2C%20enabling%20users%20to%20jump%20to%20specific%20pages%20or%20actions%20in%20your%20pwa!%20this%20can%20be%20useful%20for)
+- [Clipboard](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=Want%20to,in%20Windows!)
+- [Offline](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=progressive%20web%20apps%2C%20unlike%20traditional%20web%20apps%2C%20can%20not%20only%20work%20great%20offline%2C%20but%20with%20the%20apis%20available%20in%20edge%20and%20other%20chromium%20based%20browsers%20your%20app%20can%20provide%20specific%20tailored%20experiences%20for%20offline%20use.)
+- [Push Notifications](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=pwas%20can%20also%20receive%20push%20notifications%2C%20just%20like%20any%20other%20app%20on%20windows!)
+- [URL Protocol Handling](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=this%20enables%20you%20to%20register%20your%20pwa%20as%20the%20default%20handler%20for%20a%20certain%20url%20scheme.%20this%20enables%20your%20app%20to%3A)
+- [Touch and Pen](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=while%20touch%20will%20%E2%80%9Cjust%20work%E2%80%9D%20with%20any%20website%2C%20pwas%20have%20access%20to%20advanced%20apis%20available%20to%20allow%20you%20to%20build%20custom%2C%20optimized%2C%20low%20latency%20inking%20and%20touch%20experiences%20that%20are%20so%20vital%20to%20many%20experiences%20on%20a%20windows%20device%3A)
+- [Keep the screen awake](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=pwas%20can%20also%20keep%20the%20screen%20awake%20while%20the%20application%20is%20being%20used%20but%20not%20currently%20being%20directly%20interacted%20with!%20this%20can%20be%20handy%20for%3A)
+- [Connecting with external devices](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=pwas%20can%20also%20connect%20with%20external%20devices%20such%20as%20the%20camera%2C%20bluetooth%20devices%2C%20usb%20devices%20and%20even%20serial%20devices.)
+- [Customize the title bar](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=want%20to%20customize%20your%20title%20bar%20just%20like%20vscode%2C%20microsoft%20teams%20and%20other%20apps%20on%20windows%3F)
+
+
 ## App Distribution
 
 With Progressive Web Apps, you have 2 channels that users can use to get your PWA onto their Windows device, the Microsoft Store and Microsoft Edge itself.

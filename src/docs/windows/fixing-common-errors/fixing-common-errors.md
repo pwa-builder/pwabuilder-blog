@@ -29,13 +29,13 @@ Be aware most of these issues are due to using the incorrect publisher informati
 
 ## "Invalid package publisher name"
 
-<img loading="lazy" src="/docs/windows/fixing-common-errors/invalid-publisher-id.png" />
+<img loading="lazy" alt="The invalid publisher ID warning" src="/docs/windows/fixing-common-errors/invalid-publisher-id.png" />
 
 This error indicates that you need to rebuild your PWA app package with the correct `publisher`. [How can I find my publisher ID?](/docs/finding-your-windows-publisher-info/)
 
 ## "Invalid package identity name" / "Invalid package family name"
 
-<img loading="lazy" src="/docs/windows/fixing-common-errors/invalid-package-id.png" />
+<img loading="lazy" alt="The invalid package ID warning" src="/docs/windows/fixing-common-errors/invalid-package-id.png" />
 
 These two combined errors, `Invalid package identity name` and `Invalid package family name`, can be fixed by rebuilding your PWA app package on PWABuilder with the correct package ID.
 
@@ -43,13 +43,13 @@ These two combined errors, `Invalid package identity name` and `Invalid package 
 
 ## "This package's manifest uses a display name that you have not reserved"
 
-<img loading="lazy" src="/docs/windows/fixing-common-errors/not-reserved.png" />
+<img loading="lazy" alt="The display name not reserved warning" src="/docs/windows/fixing-common-errors/not-reserved.png" />
 
 This means the app name you used when generating your app package on PWABuilder doesn't match the app name reserved in Partner Center.
 
 The app name in Partner Center...
 
-<img loading="lazy" src="/docs/windows/fixing-common-errors/app-name.png" width="200px" />
+<img loading="lazy" alt="The app name in partner center" src="/docs/windows/fixing-common-errors/app-name.png" width="200px" />
 
 ...must match the app name you used on PWABuilder:
 

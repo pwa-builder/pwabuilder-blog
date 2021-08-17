@@ -92,7 +92,7 @@ For level 3, your web app manifest should contain tile images for all Windows di
 
 Display scales are user-configurable in Windows:
 
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-display-scales.png" />
+<img loading="lazy" alt="A screenshot of the different scale sizes" src="/docs/windows/image-recommendations/windows-image-display-scales.png" />
 
 Additionally, on Windows devices with high DPI and high resolution displays, Windows may enable a certain display scale by default. For example, on many Microsoft Surface laptops, a display scale of 200% or higher is enabled by default.
 
@@ -167,11 +167,11 @@ If PWABuilder generating all the images is acceptable for your app, then you may
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
-- Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: <br><img loading="lazy" src="/docs/windows/image-recommendations/windows-image-app-icon.png" />
+- Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: <br><img loading="lazy" alt="The small size icon" src="/docs/windows/image-recommendations/windows-image-app-icon.png" />
 
-- Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:<br><img loading="lazy" src="/docs/windows/image-recommendations/windows-image-medium-tile.png" />
+- Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:<br><img loading="lazy" alt="The medium size icon" src="/docs/windows/image-recommendations/windows-image-medium-tile.png" />
 
-- Wide surface: Wide tile in start menu, showing a more articulated app icon:<br><img loading="lazy" src="/docs/windows/image-recommendations/windows-image-wide-tile.png" />
+- Wide surface: Wide tile in start menu, showing a more articulated app icon:<br><img loading="lazy" alt="The wide size icon" src="/docs/windows/image-recommendations/windows-image-wide-tile.png" />
 
 Notice how the _content_ of the icon changed. This is possible only through the use of higher levels of icon support. Thus, **we recommend developers choose higher levels to give the best experience for your Windows users.**
 
@@ -181,7 +181,7 @@ Below you'll find a description of each app icon and where they show up in Windo
 
 ### App icon
 
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-app-icon.png" />
+<img loading="lazy" alt="The normal app icon" src="/docs/windows/image-recommendations/windows-image-app-icon.png" />
 
 Shown in start menu, task bar, task manager.
 
@@ -192,7 +192,7 @@ Shown in start menu, task bar, task manager.
 - 176x176 (4x scale)
 
 ### Small tile
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-small-tile.png" />
+<img loading="lazy" alt="The small tile icon" src="/docs/windows/image-recommendations/windows-image-small-tile.png" />
 
 Shown in the start menu when the user set your app's tile to small size.
 
@@ -203,7 +203,7 @@ Shown in the start menu when the user set your app's tile to small size.
 - 284x284 (4x scale)
 
 ### Medium tile
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-medium-tile.png" />
+<img loading="lazy" alt="The medium tile icon" src="/docs/windows/image-recommendations/windows-image-medium-tile.png" />
 
 Shown in the start menu when the user sets your app's tile to medium size.
 
@@ -214,7 +214,7 @@ Shown in the start menu when the user sets your app's tile to medium size.
 - 600x600 (4x scale)
 
 ### Wide tile
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-wide-tile.png" />
+<img loading="lazy" alt="The wide tile icon" src="/docs/windows/image-recommendations/windows-image-wide-tile.png" />
 
 Shown in the start menu when the user sets your app's tile to wide size.
 
@@ -225,7 +225,7 @@ Shown in the start menu when the user sets your app's tile to wide size.
 - 1240x600 (4x scale)
 
 ### Large tile
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-large-tile.png" />
+<img loading="lazy" alt="The large tile icon" src="/docs/windows/image-recommendations/windows-image-large-tile.png" />
 
 Shown in the start menu when the user sets your app's tile to large size.
 
@@ -236,7 +236,7 @@ Shown in the start menu when the user sets your app's tile to large size.
 - 1240x1240 (4x scale)
 
 ### Store logo
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-store-logo.png" />
+<img loading="lazy" alt="The store logo icon" src="/docs/windows/image-recommendations/windows-image-store-logo.png" />
 
 Shown in app installer, Windows Partner Center, the "Report an app" option in the Store, and the "Write a review" option in the Store. 
 
@@ -247,7 +247,7 @@ Shown in app installer, Windows Partner Center, the "Report an app" option in th
 - 200x200 (4x scale)
 
 ### Splash screen
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-splash.png" />
+<img loading="lazy" alt="The splash screen asset" src="/docs/windows/image-recommendations/windows-image-splash.png" />
 
 Shown as the splash screen for your app. Currently supported only in classic package. In the future, we may add support for the modern hosted app package as well.
 
@@ -263,7 +263,7 @@ In addition to the standard scale factor sizes described above, we also recommen
 
 Shown in start jump list, shortcuts, control panel:
 
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-image-target-size.png" width="250px" />
+<img loading="lazy" alt="Icon sizes for jump lists, shorcuts and the control panel" src="/docs/windows/image-recommendations/windows-image-target-size.png" width="250px" />
 
 - 16x16 (recommended)
 - 20x20
@@ -284,11 +284,11 @@ Shown in start jump list, shortcuts, control panel:
 
 Windows lets users to change their OS theme to Windows Light Mode. Consider the default Windows theme (dark mode):
 
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-os-dark-mode.png" />
+<img loading="lazy" alt="The dark mode icon" src="/docs/windows/image-recommendations/windows-os-dark-mode.png" />
 
 Contrasted with Windows Light Mode:
 
-<img loading="lazy" src="/docs/windows/image-recommendations/windows-os-light-mode.png" />
+<img loading="lazy" alt="The light mod icon" src="/docs/windows/image-recommendations/windows-os-light-mode.png" />
 
 In the above image, notice how the Store app icon is _darker_ when the OS is in Light Mode.
 

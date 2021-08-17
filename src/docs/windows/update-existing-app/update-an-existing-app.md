@@ -24,7 +24,7 @@ This guide shows how to publish your PWA as an update to an existing app in the 
 
 Login to [Windows Partner Center](https://partner.microsoft.com/dashboard), then go to `Windows & Xbox` -> `Overview`. Your existing apps will be listed:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/existing-apps.png" width="350px" />
+<img loading="lazy" alt="A screenshot that shows your existing apps list" src="/docs/windows/update-existing-app/existing-apps.png" width="350px" />
 
 Click the name of the app you want to update, and you'll be taken to the app details page.
 
@@ -32,15 +32,15 @@ Click the name of the app you want to update, and you'll be taken to the app det
 
 On the app details page, you'll see your most recent app submission. Click `Update` to add a new submission:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/add-submission.png" />
+<img loading="lazy" alt="A screenshot that shows where the update button is" src="/docs/windows/update-existing-app/add-submission.png" />
 
 On the submission details page, choose `Packages`:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/packages.png" width="250px" />
+<img loading="lazy" alt="A screenshot that shows where the packages button is" src="/docs/windows/update-existing-app/packages.png" width="250px" />
 
 On the packages screen, click `Browse your files`:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/browse-for-package.png" />
+<img loading="lazy" alt="A screenshot that shows where the browse your files button is" src="/docs/windows/update-existing-app/browse-for-package.png" />
 
 When browsing for your files, **choose both package files**, `*.msixbundle` and `*.appxbundle`.
 
@@ -56,7 +56,7 @@ When browsing for your files, **choose both package files**, `*.msixbundle` and 
 
 Once you upload both package files, you should see something like this, with both packages listed:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/both-packages.png" />
+<img loading="lazy" alt="A screenshot that shows what the uploaded packages look like" src="/docs/windows/update-existing-app/both-packages.png" />
 <br>
 
 > 💁🏽‍♀️ *Heads up*: 
@@ -65,7 +65,7 @@ Once you upload both package files, you should see something like this, with bot
 
 Lastly, in the platforms support list, choose `Windows 10 Desktop` and uncheck all other platforms:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/win10-desktop-only.png" />
+<img loading="lazy" alt="A screenshot that shows where the Windows 10 Desktop option is" src="/docs/windows/update-existing-app/win10-desktop-only.png" />
 <br>
 
 > 💁🏿‍♀️ *Heads up*
@@ -78,13 +78,13 @@ Click `Save` to save your packages and return to the  submission details screen.
 
 You should now see the submission status. Fill out any `in progress` or `incomplete` settings:
 
-<img loading="lazy" src="/docs/windows/update-existing-app/remaining-options.png" width="400px" />
+<img loading="lazy" alt="A screenshot that shows what in progress or incomplete settings look like" src="/docs/windows/update-existing-app/remaining-options.png" width="400px" />
 
 Fill out the missing sections, then click `Submit to the Store` when finished.
 
 > 💁🏼‍♀️ *Heads up*
 > 
-> In `Submission options`, you may receive a warning about full trust capability: <br> <img loading="lazy" src="/docs/windows/update-existing-app/full-trust-restricted.png" width="400px" /><br>
+> In `Submission options`, you may receive a warning about full trust capability: <br> <img loading="lazy" alt="A screenshot that shows what the full trust capability warning is about" src="/docs/windows/update-existing-app/full-trust-restricted.png" width="400px" /><br>
 > You can write, "Needed for PWA Hosted App model, created by pwabuilder.com"
 
 ## Need more help?

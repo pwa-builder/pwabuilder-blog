@@ -24,17 +24,17 @@ This guide shows how to publish your PWA as a new app in the Store. If you alrea
 
 Login to [Windows Partner Center](https://partner.microsoft.com/dashboard) with your Microsoft account.
 
-Then, go to your [dashboard](https://partner.microsoft.com/en-us/dashboard/home) to see your enrolled programs. If `Windows & Xbox` is listed, great, you're already enrolled. If not, choose `Add program`: <br> <img loading="lazy" src="/docs/windows/publish-new-windows-app/add-program.png" width="350px" />
+Then, go to your [dashboard](https://partner.microsoft.com/en-us/dashboard/home) to see your enrolled programs. If `Windows & Xbox` is listed, great, you're already enrolled. If not, choose `Add program`: <br> <img loading="lazy" alt="A screenshot that shows where the add program button is" src="/docs/windows/publish-new-windows-app/add-program.png" width="350px" />
 
 Then, under `Windows & Xbox`, choose `Get started`: 
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/enroll-apps.png" width="350px" /> 
+<img loading="lazy" alt="A screenshot that shows where the Get Started button is" src="/docs/windows/publish-new-windows-app/enroll-apps.png" width="350px" /> 
 
 ## Create your app
 
 Now that you're enrolled in the Windows developer program, on the left-side nav bar, under `Windows & Xbox`, choose [`Overview`](https://partner.microsoft.com/en-us/dashboard/windows/overview), and click `Create a new app`:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/create-app.png" width="350px"/>
+<img loading="lazy" alt="A screenshot that shows where the create a new app button is" src="/docs/windows/publish-new-windows-app/create-app.png" width="350px"/>
 
 ## Start a new submission
 
@@ -44,19 +44,19 @@ Once you've done that, follow the steps below.
 
 Click `Start a new Submission`:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/start-submission.png" width="350px" />
+<img loading="lazy" alt="A screenshot that shows where the start a new submission button is" src="/docs/windows/publish-new-windows-app/start-submission.png" width="350px" />
 
 ## Add packages
 
 On the submission details page, you'll see your most recent app submission. Click `Packages` to upload your app packages:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/packages-new.png" />
+<img loading="lazy" alt="A screenshot that shows where the packages button is" src="/docs/windows/publish-new-windows-app/packages-new.png" />
 
 On the packages screen, click `Browse your files`. When browsing for your files, **choose both package files**, `*.msixbundle` *and* `*.appxbundle`.
 
 > 💁🏾‍♂️ *Heads up*
 >
-> Once your packages finish uploading, you may see warnings about restricted capabilities: <br><img src="/docs/windows/publish-new-windows-app/full-trust-package-man.png" /><br><br>
+> Once your packages finish uploading, you may see warnings about restricted capabilities: <br><img loading="lazy" alt="A screenshot that shows what the restricted capabilities warning looks like" src="/docs/windows/publish-new-windows-app/full-trust-package-man.png" /><br><br>
 > These warnings can be safely ignored.
 
 
@@ -66,7 +66,7 @@ On the packages screen, click `Browse your files`. When browsing for your files,
 
 Once you upload both package files, you should see something like this, with both packages listed:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/both-packages.png" />
+<img loading="lazy" alt="A screenshot that shows what the packages list looks like" src="/docs/windows/publish-new-windows-app/both-packages.png" />
 <br>
 
 > 💁🏽‍♀️ *Heads up*: 
@@ -75,7 +75,7 @@ Once you upload both package files, you should see something like this, with bot
 
 Lastly, in the platforms support list, choose `Windows 10 Desktop` and uncheck all other platforms:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/win10-desktop-only.png" width="350px" />
+<img loading="lazy" alt="A screenshot that shows where the Windows 10 Desktop option is" src="/docs/windows/publish-new-windows-app/win10-desktop-only.png" width="350px" />
 <br>
 <br>
 
@@ -89,11 +89,11 @@ Click `Save` to save your packages and return to the  submission details screen.
 
 You should now see the submission status. Fill out any incomplete statuses:
 
-<img loading="lazy" src="/docs/windows/publish-new-windows-app/not-started-status.png" width="350px" />
+<img loading="lazy" alt="A screenshot that shows what incomplete statuses will look like" src="/docs/windows/publish-new-windows-app/not-started-status.png" width="350px" />
 
 > 💁🏼‍♀️ *Heads up*
 >
-> In `Submission options`, you may receive a warning about restricted capabilities: <br> <img loading="lazy" src="/docs/windows/publish-new-windows-app/full-trust-restricted.png" width="350px" /><br><br>
+> In `Submission options`, you may receive a warning about restricted capabilities: <br> <img loading="lazy" alt="A screenshot that shows what the restricted capability warning looks like" src="/docs/windows/publish-new-windows-app/full-trust-restricted.png" width="350px" /><br><br>
 > You can write, "Needed for PWA Hosted App model, created by pwabuilder.com"
 
 Complete all such statuses, then click `Submit to the Store` when finished.

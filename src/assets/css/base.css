@@ -162,6 +162,14 @@ code {
     monospace;
 }
 
+.how-to {
+  border: solid;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 /**
  * Disable animations if the user has turned on the a11y option for reduced motion due to 
  * vestibular disorders etc.

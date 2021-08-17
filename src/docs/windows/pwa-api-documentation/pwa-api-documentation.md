@@ -36,8 +36,13 @@ With the new Chromium based Edge, users can install your PWA right from the brow
 
 This UI provides more info to the user about the PWA, and then the user can choose to install your PWA.
 
-**How To**
-To ensure your PWA is installable, make sure you meet the requirements [listed here](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs), [PWABuilder](https://www.pwabuilder.com) can help you meet these requirements if your PWA does not already.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    To ensure your PWA is installable, make sure you meet the requirements <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs">listed here</a>, <a href="https://www.pwabuilder.com">PWABuilder</a> can help you meet these requirements if your PWA does not already.
+  </p>
+</div>
 
 ### The Microsoft Store
 
@@ -45,8 +50,13 @@ PWAs can also be installed from the Microsoft Store just like any other app. In 
 
 <img src="/docs/windows/pwa-api-documentation/in-store.png" width="350px" /> 
 
-**How To**
-[PWABuilder](https://www.pwabuilder.com) can automatically package and submit Chromium Based Edge PWAs to the store, ensuring that your PWA works the same whether its installed from the Store or Edge itself.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    <a href="https://www.pwabuilder.com">PWABuilder</a> can automatically package and submit Chromium Based Edge PWAs to the store, ensuring that your PWA works the same whether its installed from the Store or Edge itself.
+  </p>
+</div>
 
 ## App Experience on Windows
 Once your PWA has been installed by the user (either through the Store or Edge) Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
@@ -67,8 +77,13 @@ Handling files has always been a challenge for Web Apps as they have never had t
 
 Your PWA can prompt the user to open a file, open mutiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
 
-**How To**
-Check out [this tutorial](https://web.dev/file-system-access/) to learn how to use the File System Access API and enable this functionality in your PWA.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://web.dev/file-system-access/">this tutorial</a> to learn how to use the File System Access API and enable this functionality in your PWA.
+  </p>
+</div>
 
 ## Sharing
 
@@ -76,18 +91,33 @@ Sharing content, and ingesting shared content, has always required custom UI and
 
 <img src="/docs/windows/pwa-api-documentation/share.png" width="350px" /> 
 
-**How To: Share**
-Check out [this tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) to learn how to use the Web Share API and enable this functionality in your PWA
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share">this tutorial</a> to learn how to use the Web Share API and enable this functionality in your PWA
+  </p>
+</div>
 
 Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it.
 
-**How To: Share Target**
-Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#identify-your-app-as-a-share-target) to learn how to use the Share Target API and enable this functionality in your PWA.
+<div class="how-to">
+  <strong>How To: Share Target</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#identify-your-app-as-a-share-target">this tutorial</a> to learn how to use the Share Target API and enable this functionality in your PWA.
+  </p>
+</div>
 
 Finally, your PWA can use the early File Handlers API to register as a File Handler for certain file types. This enables you to open a file directly into a PWA, just as you can open images directly into the Photos app from the File Explorer:
 
-**How To: File Handling**
-Check out [this documentation](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#file-handling) to learn more!
+<div class="how-to">
+  <strong>How To: File Handling</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#file-handling">this documentation</a> to learn more!
+  </p>
+</div>
 
 ## Shortcuts
 
@@ -98,15 +128,25 @@ Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enab
 
 <img src="/docs/windows/pwa-api-documentation/shortcuts.png" width="350px" /> 
 
-**How To**
-Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#use-shortcuts-to-provide-quick-access-to-features) to learn how to add shortcuts to your PWA.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#use-shortcuts-to-provide-quick-access-to-features">this tutorial</a>to learn how to add shortcuts to your PWA.
+  </p>
+</div>
 
 ## The Clipboard
 
 Want to be able to programmatically copy or paste content to and from your PWA? While this was possible before with an older clipboard API built into browsers, the experience was not great. With the new Async Clipboard API it is much easier to programmatically copy and paste everything from text to files. This also works seamlessly with the Cloud Clipboard in Windows!
 
-**How To**
-Check out [this tutorial](https://web.dev/async-clipboard/) to learn how to use the Async Clipboard API and enable this functionality in your PWA.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://web.dev/async-clipboard/">this tutorial</a> to learn how to use the Async Clipboard API and enable this functionality in your PWA.
+  </p>
+</div>
 
 ## Offline
 
@@ -118,29 +158,49 @@ Progressive Web Apps, unlike traditional web apps, can not only work great offli
   o A news app can ensure the user always has the latest news as soon as they open the app as the data has been synced in the background before the app was opened.
   o A music app can ensure a user’s library on a device is always in sync with the cloud.
 
-**How To**
-Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/offline#use-the-caching-to-improve-performance-of-pwas) to learn more about making your PWA work offline, [this tutorial](https://developers.google.com/web/updates/2015/12/background-sync) for more on the Background Sync API and finally, [this tutorial](https://web.dev/periodic-background-sync/) on using the Periodic Sync API.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/offline#use-the-caching-to-improve-performance-of-pwas">this tutorial</a> to learn more about making your PWA work offline, <a href="https://developers.google.com/web/updates/2015/12/background-sync">this tutorial</a> for more on the Background Sync API and finally, <a href="https://web.dev/periodic-background-sync/">this tutorial</a> on using the Periodic Sync API.
+  </p>
+</div>
 
 ## Push Notifications
 PWAs can also receive push notifications, just like any other app on Windows! You will need a Service Worker for this to work (just as with the offline APIs above) and then you can use the Push API to receive push notifications from your server! These notifications will show using the built-in notifications UI in Windows.
 
-**How To**
-Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/serviceworker#push-notifications) to learn how to set up push notifications for your PWA.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/serviceworker#push-notifications">this tutorial</a> to learn how to set up push notifications for your PWA.
+  </p>
+</div>
 
 ## URL Protocol Handling
 This enables you to register your PWA as the default handler for a certain URL scheme. This enables your app to:
 -	Prompt the user to set your PWA as the default handler for a certain URL type. For example, an email app that is a PWA can prompt the user to set it as the default app for `mailto` links, enabling your PWA to be the default mail application for that user.
 
-**How To**
-Check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#uri-protocol-handling) to learn how to use the URL Protocol Handling API
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#uri-protocol-handling">this tutorial</a> to learn how to use the URL Protocol Handling API
+  </p>
+</div>
 
 ## Touch + Pen
 While touch will “just work” with any website, PWAs have access to advanced APIs available to allow you to build custom, optimized, low latency inking and touch experiences that are so vital to many experiences on a Windows device:
 -	Pointer Events: The Pointer Events API enables you to see the type of input a user is using (touch, pen or mouse), handle multi-touch gestures, handle custom gestures, if the user is using the eraser or point side of a pen, if the user is hitting a button on their pen, and will even give you everything from the pen pressure being applied to the width and height of the contact point. This enables you to build touch and inking experience that users expect on a Windows device: low latency, multi touch support, top-notch pen support that includes changing the pen stroke size based on pressure etc, just like the native Whiteboard app on Windows.
 -	Exact Pointer Data: The getCoalescedEvents API enables you to get detailed information about each pointermove event, which fires every time the user moves a pointer across the screen (such as drawing a line with your pen or finger). Instead of receiving a “coalesced” event you will instead get many events fired that contain the precise data of where the pointer is at that exact moment in time. This enables you to build inking experiences that have the smooth lines and curves that users expect, along with less latency.
 
-**How To**
-Check out [this documentation](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#term_pointer_event) to learn more about Pointer Events and [this documentation](https://developers.google.com/web/updates/2017/06/aligning-input-events) on the getCoalescedEvents API.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#term_pointer_event">this documentation</a> to learn more about Pointer Events and <a href="https://developers.google.com/web/updates/2017/06/aligning-input-events">this documentation</a> on the getCoalescedEvents API.
+  </p>
+</div>
 
 ## Keep the screen awake
 PWAs can also keep the screen awake while the application is being used but not currently being directly interacted with! This can be handy for:
@@ -148,15 +208,25 @@ PWAs can also keep the screen awake while the application is being used but not 
 -	Navigation / Maps apps: Make sure the screens stays on while the user is navigating.
 -	e-reader apps: Ensure the screen stays on while the user is reading.
 
-**How To**
-Check out [this documentation](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#term_pointer_event) to learn more about Pointer Events and [this documentation](https://developers.google.com/web/updates/2017/06/aligning-input-events) on the getCoalescedEvents API.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API">this documentation</a> to learn more about the Wake Lock API
+  </p>
+</div>
 
 ## Connecting with external devices (Camera, Bluetooth, USB, Serial etc.)
 
 PWAs can also connect with external devices such as the camera, Bluetooth devices, USB devices and even serial devices. Using APIs such as the MediaDevices API or the Web Bluetooth API can enable your PWA to interact with these devices just like any other app can on Windows. This enables many types of apps to be built as PWAs such as advanced video chat apps, full video editing applications such as ClipChamp, apps to integrate with specific Bluetooth enabled devices and more!
 
-**How To**
-To learn how to connect to and interact with the camera and mic on a device check out [this documentation](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) on the MediaDevices API. For Bluetooth devices, [this documentation](https://web.dev/bluetooth/) should be helpful. For USB, the [Web USB API](https://web.dev/usb/) is what you’re looking for. For interacting with other devices, including printers, Windows Hello and other sensors on the user’s device, Serial devices and more, we recommend [this documentation](https://web.dev/devices-introduction/).
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    To learn how to connect to and interact with the camera and mic on a device check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">this documentation</a> on the MediaDevices API. For Bluetooth devices, <a href="https://web.dev/bluetooth/">this documentation</a> should be helpful. For USB, the <a href="https://web.dev/usb/">Web USB API</a> is what you’re looking for. For interacting with other devices, including printers, Windows Hello and other sensors on the user’s device, Serial devices and more, we recommend <a href="https://web.dev/devices-introduction/">this documentation</a>.
+  </p>
+</div>
 
 ## Customizing the title bar
 
@@ -164,5 +234,10 @@ Want to customize your title bar just like VSCode, Microsoft Teams and other app
 
 <img src="/docs/windows/pwa-api-documentation/title-bar.png" width="350px" /> 
 
-**How To**
-To learn how to use the Window Controls Overlay API check out [this tutorial](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#window-controls-overlay-for-installed-desktop-web-apps) from the Edge team that includes examples and goes through all the details you need.
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    To learn how to use the Window Controls Overlay API check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/experimental-features/#window-controls-overlay-for-installed-desktop-web-apps">this tutorial</a> from the Edge team that includes examples and goes through all the details you need.
+  </p>
+</div>

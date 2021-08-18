@@ -193,6 +193,17 @@ PWAs can also receive push notifications, just like any other app on Windows! Yo
   </p>
 </div>
 
+## Media Controls and playing Media in the background
+PWAs can tie into the same native media controls as native apps, allowing users to play, pause and skip media while your PWA is in the background using the [Media Session API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API). 
+
+<div class="how-to">
+  <strong>How To</strong>
+
+  <p>
+    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API">this tutorial</a> to learn how to use the Media Session API in your media PWA!
+  </p>
+</div>
+
 ## URL Protocol Handling
 This enables you to register your PWA as the default handler for a certain URL scheme. This enables your app to:
 -	Prompt the user to set your PWA as the default handler for a certain URL type. For example, an email app that is a PWA can prompt the user to set it as the default app for `mailto` links, enabling your PWA to be the default mail application for that user.

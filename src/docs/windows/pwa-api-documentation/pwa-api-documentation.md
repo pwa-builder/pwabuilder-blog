@@ -94,6 +94,14 @@ Handling files has always been a challenge for Web Apps as they have never had t
 
 Your PWA can prompt the user to open a file, open mutiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
 
+<div class="demo-block">
+  <strong>Demo</strong>
+
+  <p>
+    Check out a demo <a href="https://wiggly-impossible-crayfish.glitch.me/file-handling.html">here</a> of the File System Access API!
+  </p>
+</div>
+
 <div class="how-to">
   <strong>How To</strong>
 
@@ -107,6 +115,14 @@ Your PWA can prompt the user to open a file, open mutiple files, open a director
 Sharing content, and ingesting shared content, has always required custom UI and logic from the developer, until today! Your PWA can easily share content using the native Share UI built into Windows:
 
 <img src="/docs/windows/pwa-api-documentation/share.png" width="350px" /> 
+
+<div class="demo-block">
+  <strong>Demo</strong>
+
+  <p>
+    Check out a demo <a href="https://wiggly-impossible-crayfish.glitch.me/web-share.html">here</a> of the Web Share API!
+  </p>
+</div>
 
 <div class="how-to">
   <strong>How To</strong>
@@ -157,6 +173,14 @@ Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enab
 
 Want to be able to programmatically copy or paste content to and from your PWA? While this was possible before with an older clipboard API built into browsers, the experience was not great. With the new Async Clipboard API it is much easier to programmatically copy and paste everything from text to files. This also works seamlessly with the Cloud Clipboard in Windows!
 
+<div class="demo-block">
+  <strong>Demo</strong>
+
+  <p>
+    Check out a demo <a href="https://wiggly-impossible-crayfish.glitch.me/clipboard.html">here</a> of the Clipboard API!
+  </p>
+</div>
+
 <div class="how-to">
   <strong>How To</strong>
 
@@ -174,6 +198,14 @@ Progressive Web Apps, unlike traditional web apps, can not only work great offli
 - Periodic Sync: The Periodic Sync API enables your PWA to sync data in the background (without your PWA being open) if the device is currently online. This enables common scenarios such as:
   o A news app can ensure the user always has the latest news as soon as they open the app as the data has been synced in the background before the app was opened.
   o A music app can ensure a user’s library on a device is always in sync with the cloud.
+
+<div class="demo-block">
+  <strong>Demo</strong>
+
+  <p>
+    Check out a PWA <a href="https://webboard.app/">here</a> that works completely offline! Open the link once so that the app caches its assets, then close it and open it again while on airplane mode, you will notice the app still works fine!
+  </p>
+</div>
 
 <div class="how-to">
   <strong>How To</strong>
@@ -221,6 +253,14 @@ This enables you to register your PWA as the default handler for a certain URL s
 While touch will “just work” with any website, PWAs have access to advanced APIs available to allow you to build custom, optimized, low latency inking and touch experiences that are so vital to many experiences on a Windows device:
 -	Pointer Events: The Pointer Events API enables you to see the type of input a user is using (touch, pen or mouse), handle multi-touch gestures, handle custom gestures, if the user is using the eraser or point side of a pen, if the user is hitting a button on their pen, and will even give you everything from the pen pressure being applied to the width and height of the contact point. This enables you to build touch and inking experience that users expect on a Windows device: low latency, multi touch support, top-notch pen support that includes changing the pen stroke size based on pressure etc, just like the native Whiteboard app on Windows.
 -	Exact Pointer Data: The getCoalescedEvents API enables you to get detailed information about each pointermove event, which fires every time the user moves a pointer across the screen (such as drawing a line with your pen or finger). Instead of receiving a “coalesced” event you will instead get many events fired that contain the precise data of where the pointer is at that exact moment in time. This enables you to build inking experiences that have the smooth lines and curves that users expect, along with less latency.
+
+<div class="demo-block">
+  <strong>Demo</strong>
+
+  <p>
+    Check out a PWA <a href="https://webboard.app/">here</a> that uses these APIs to provide a low-latency inking experience! This is best used with a pen, but you can also use your finger or mouse to draw!
+  </p>
+</div>
 
 <div class="how-to">
   <strong>How To</strong>

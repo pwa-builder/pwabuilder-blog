@@ -170,6 +170,16 @@ code {
   margin-bottom: 2em;
 }
 
+.demo-block {
+  border: solid;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: #5d5db9d9;
+  color: white;
+}
+
 /**
  * Disable animations if the user has turned on the a11y option for reduced motion due to 
  * vestibular disorders etc.

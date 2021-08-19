@@ -53,7 +53,7 @@ The app name in Partner Center...
 
 ...must match the app name you used on PWABuilder:
 
- loading="lazy" src="/docs/windows/fixing-common-errors/app-name-pwabuilder.png" width="200px" />
+<img loading="lazy" src="/docs/windows/fixing-common-errors/app-name-pwabuilder.png" width="200px" />
 
 ## Need more help?
 

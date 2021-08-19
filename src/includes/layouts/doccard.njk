@@ -46,7 +46,7 @@
       {{ doc.data.date | dateDisplay }}
     </span>
     <a href="{{ doc.url | url }}">
-      <img class="rounded-t-sm w-full object-fill object-center limited-max" src="/{{ doc.data.image }}" alt="{{ doc.data.title }}"/>
+      <img loading="lazy" class="rounded-t-sm w-full object-fill object-center limited-max" src="/{{ doc.data.image }}" alt="{{ doc.data.title }}"/>
     </a>
     <div class="p-3 flex flex-col">
       <h2 class="mt-1 mb-4">

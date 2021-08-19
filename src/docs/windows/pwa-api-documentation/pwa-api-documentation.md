@@ -165,7 +165,7 @@ Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enab
   <strong>How To</strong>
 
   <p>
-    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#use-shortcuts-to-provide-quick-access-to-features">this tutorial</a>to learn how to add shortcuts to your PWA.
+    Check out <a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/webappmanifests#use-shortcuts-to-provide-quick-access-to-features">this tutorial</a> to learn how to add shortcuts to your PWA.
   </p>
 </div>
 

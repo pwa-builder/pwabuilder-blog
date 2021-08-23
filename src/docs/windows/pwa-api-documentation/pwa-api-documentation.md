@@ -154,9 +154,9 @@ Finally, your PWA can use the early File Handlers API to register as a File Hand
 
 ## Shortcuts
 
-Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enabling users to jump to specific pages or actions in your PWA! This can be useful for
+Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enabling users to jump to specific pages or actions in your PWA! This can be useful for scenarios like:
 
-- Mail Applications for example, as you can let users jump straight to writing a new email from a right click on your App Icon in the start menu and taskbar!
+- Mail Applications, as you can let users jump straight to writing a new email from a right click on your app icon in the start menu and taskbar!
 - Social Media Apps such as Twitter, which enables users to jump straight into creating a tweet, the notifications screen, reading their DMs and more, all from a right click of the Twitter icon.
 
 <img src="/docs/windows/pwa-api-documentation/shortcuts.png" width="350px" alt="A screenshot of what the shorcuts UI looks like on Windows" /> 
@@ -191,7 +191,7 @@ Want to be able to programmatically copy or paste content to and from your PWA? 
 
 ## Offline
 
-Progressive Web Apps, unlike traditional Web Apps, can not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use. Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs (Use [PWABuilder](https://www.pwabuilder.com) to easily grab one, or check out our recommendations [here](/posts/building-pwas-with-web-components!/)). Let’s go through a few of these APIs:
+Unlike traditional Web Apps, Progressive Web Apps not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use! Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs. (Use [PWABuilder](https://www.pwabuilder.com) to easily grab one, or check out our recommendations [here](/posts/building-pwas-with-web-components!/). Let’s go through a few of these APIs:
 
 - Service Worker Cache API: The Cache API enables you to cache assets such as HTML, CSS, JavaScript, images, fonts and more to storage, ensuring that your app not only loads while the user is offline, but also loads much faster than coming over the network. This improved loading performance is becoming more important with the rise of always connected PC’s that may not always be on the fastest or most stable internet connection.
 - Background Sync: The Background Sync API enables PWAs to retry network requests made while offline once the users device is back online. This enables common useful scenarios for your users such as the ability to post or upload content while the user is offline. The post or upload will be completed once the device is back online.
@@ -233,7 +233,7 @@ PWAs can tie into the same native media controls as native apps, allowing users 
   <strong>How To</strong>
 
   <p>
-    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API" target="_blank" rel="noopener">this tutorial</a> to learn how to use the Media Session API in your media PWA!
+    Check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API" target="_blank" rel="noopener">this tutorial</a> to learn how to use the Media Session API in your media PWA.
   </p>
 </div>
 

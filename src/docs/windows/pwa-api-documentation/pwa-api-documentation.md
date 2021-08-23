@@ -231,6 +231,10 @@ PWAs can also receive push notifications, just like any other app on Windows! Yo
 ## Media Controls and playing Media in the background
 PWAs can tie into the same native media controls as native apps, allowing users to play, pause and skip media while your PWA is in the background using the [Media Session API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API). 
 
+<img src="/docs/windows/pwa-api-documentation/media-controls.png" width="350px" alt="A screenshot of a the media controls in Windows 10" /> 
+
+<img src="/docs/windows/pwa-api-documentation/lock-screen-media.png" width="350px" alt="A screenshot of a the media controls on the Windows 10 lock screen" /> 
+
 <div class="how-to">
   <strong>How To</strong>
 

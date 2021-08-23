@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Make your PWA feel like a native app on Windows
-excerpt: One of the main challenges for web apps on Windows has always been that it is hard for your web app to “feel” like an app to a user.
+excerpt: One of the main challenges for Web Apps on Windows has always been that it is hard for your web app to “feel” like an app to a user.
 description: Learn about new advanced capabilities available in Edge and Windows that can raise the quality of your user experience and make your PWA feel native on Windows!
 date: 2021-08-05
 updatedDate: 2021-08-05
@@ -20,9 +20,9 @@ tags:
   - APIs
 ---
 
-One of the main challenges for web apps on Windows has always been that it is hard for your web app to “feel” like an app to a user. Because web apps couldn’t tie into things such as the native share sheet, Bluetooth or File Explorer and had to use custom UI and application code for these common UX actions, Web Apps did not provide the experience that users expect from applications. For example, how many times have you not shared something after hitting the share button on a website because it asked you to log in before you could share, you couldn’t just easily grab a link, or it didn’t have the service that you were wanting to share too? Or breaking things down even more, how many times have you not used a web app just because it wasn’t on your task bar or start menu?
+One of the main challenges for Web Apps on Windows has always been that it is hard for your web app to `feel` like an app to a user. Because Web Apps couldn’t tie into things such as the native share sheet, Bluetooth or File Explorer and had to use custom UI and application code for these common UX actions, Web Apps did not provide the experience that users expect from applications.
 
-These are all very common user experience challenges that Web Apps have always encountered, but with the new Chromium based Edge, Project Fugu and PWABuilder, developers now have the APIs and tools they need to truly make their Progressive Web Apps feel like a native app on Windows.
+With the new [Chromium based Edge](https://www.microsoft.com/en-us/edge?brand=M021&OCID=AID2200286_SEM_af46099f047b120318d768bea8332a24%3aG%3as&ef_id=af46099f047b120318d768bea8332a24%3aG%3as&msclkid=af46099f047b120318d768bea8332a24&r=1), [Project Fugu](https://fugu-tracker.web.app/) and [PWABuilder](https://www.pwabuilder.com), developers now have the APIs and tools they need to truly make their Progressive Web Apps feel like a native app on Windows.
 
 **Table Of Contents**
 - [App Distribution](/docs/make-your-pwa-feel-like-a-native-app-on-windows/#:~:text=with%20progressive%20web%20apps%2C%20you%20have%202%20channels%20that%20users%20can%20use%20to%20get%20your%20pwa%20onto%20their%20windows%20device%2C%20the%20microsoft%20store%20and%20microsoft%20edge%20itself.)
@@ -43,11 +43,11 @@ These are all very common user experience challenges that Web Apps have always e
 
 ## App Distribution
 
-With Progressive Web Apps, you have 2 channels that users can use to get your PWA onto their Windows device, the Microsoft Store and Microsoft Edge itself.
+With PWAs, you have 2 channels that users can use to get your PWA onto their Windows device, the Microsoft Store and Microsoft Edge itself.
 
 ### In-Browser Install
 
-With the new Chromium based Edge, users can install your PWA right from the browser. When a user navigates to the URL to your PWA in Edge they will be prompted with an “install” icon in the URL bar as the screenshot below shows. Once this install button is clicked, the following UI is shown to the user:
+With the new Chromium based Edge, users can install your PWA right from the browser. When a user navigates to the URL to your PWA in Edge they will be prompted with an install icon in the URL bar as the screenshot below shows. Once this install button is clicked, the following UI is shown to the user:
 
 <img src="/docs/windows/pwa-api-documentation/in-browser-install.png" width="350px" alt="Screenshot of the install app UI in Edge" /> 
 
@@ -76,11 +76,11 @@ PWAs can also be installed from the Microsoft Store just like any other app. In 
 </div>
 
 ## App Experience on Windows
-Once your PWA has been installed by the user (either through the Store or Edge) Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
+Once your PWA has been installed by the user (either through the Store or Edge), Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
 
 <img src="/docs/windows/pwa-api-documentation/taskbar.png" width="350px" alt="A screenshot of a PWA in the taskbar" /> 
 
-Your PWA will also open in its own Window:
+Your PWA will also open in its own window:
 
 <img src="/docs/windows/pwa-api-documentation/in-window.png" width="350px" alt="A screenshot of the PWA running in its own window" /> 
 
@@ -92,7 +92,7 @@ And finally, it will also show up in your App Settings:
 
 Handling files has always been a challenge for Web Apps as they have never had the same file handling capability as native apps. For example, you could not simply open a file from the File System, download a file or securely write to a file on the users device. With the [File System API](https://web.dev/file-system-access/), your PWA can now use files with the normal experience users expect from apps.
 
-Your PWA can prompt the user to open a file, open mutiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
+Your PWA can prompt the user to open a file, open multiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
 
 <div class="demo-block">
   <strong>Demo</strong>
@@ -191,7 +191,7 @@ Want to be able to programmatically copy or paste content to and from your PWA? 
 
 ## Offline
 
-Progressive Web Apps, unlike traditional web apps, can not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use. Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs (Use [PWABuilder](https://www.pwabuilder.com) to easily grab one, or check out our recommendations [here](/posts/building-pwas-with-web-components!/)). Let’s go through a few of these APIs:
+Progressive Web Apps, unlike traditional Web Apps, can not only work great offline, but with the APIs available in Edge and other Chromium based browsers your app can provide specific tailored experiences for offline use. Service Workers are the key technology that enables this and therefore you will need one before you can use these APIs (Use [PWABuilder](https://www.pwabuilder.com) to easily grab one, or check out our recommendations [here](/posts/building-pwas-with-web-components!/)). Let’s go through a few of these APIs:
 
 - Service Worker Cache API: The Cache API enables you to cache assets such as HTML, CSS, JavaScript, images, fonts and more to storage, ensuring that your app not only loads while the user is offline, but also loads much faster than coming over the network. This improved loading performance is becoming more important with the rise of always connected PC’s that may not always be on the fastest or most stable internet connection.
 - Background Sync: The Background Sync API enables PWAs to retry network requests made while offline once the users device is back online. This enables common useful scenarios for your users such as the ability to post or upload content while the user is offline. The post or upload will be completed once the device is back online.

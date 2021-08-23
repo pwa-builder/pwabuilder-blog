@@ -94,6 +94,8 @@ Handling files has always been a challenge for Web Apps as they have never had t
 
 Your PWA can prompt the user to open a file, open multiple files, open a directory and save files! Your PWA can also prompt the user for write access to an existing file, allowing your pwa to transparently write to a file without any extra downloads needed.
 
+This API opens up the possiblity for types of apps that, before this API ,would have been almost impossible to build as a PWA. For example, it is now possible to build fully featured text editors, code editors, more advanced image editors etc. Almost every app interfaces with files in some way, and this API makes those interactions feel much more familiar to the user.
+
 <div class="demo-block">
   <strong>Demo</strong>
 

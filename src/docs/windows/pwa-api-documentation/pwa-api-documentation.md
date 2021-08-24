@@ -114,7 +114,11 @@ This API opens up the possiblity for types of apps that, before this API ,would 
 
 ## Sharing
 
-Sharing content, and ingesting shared content, has always required custom UI and logic from the developer, until today! Your PWA can easily share content using the native Share UI built into Windows:
+Sharing content, and ingesting shared content, has always required custom UI and logic from the developer:
+
+<img src="/docs/windows/pwa-api-documentation/custom-share.png" width="350px" alt="A screenshot of a custom html share dialog" /> 
+
+But this changes with the Web Share API! Your PWA can easily share content using the native Share UI built into Windows:
 
 <img src="/docs/windows/pwa-api-documentation/share.png" width="350px" alt="A screenshot of the share dialog on Windows" /> 
 
@@ -134,7 +138,7 @@ Sharing content, and ingesting shared content, has always required custom UI and
   </p>
 </div>
 
-Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it.
+Your PWA can also register as a Share Target, enabling your PWA to have content shared directly to it. This means that, for example, your image editing PWA could have images shared directly to it from other apps or the file explorer. This also has a nice side-effect of providing users with yet another way that they can end up in your PWA.
 
 <div class="how-to">
   <strong>How To: Share Target</strong>

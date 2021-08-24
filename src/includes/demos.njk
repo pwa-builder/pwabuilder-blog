@@ -7,4 +7,8 @@
   <h3 class="text-center">More demos from the community</h3>
   <div class="text-center">The community is so active, let's share the good work there soon.</div>
   {{ cardLayouts.trending(demos)}}
+
+  {%- for demo in demos -%}
+    <li>{{ demo.data.title }}</li>
+  {%- endfor -%}
 </section>

@@ -118,9 +118,13 @@ Sharing content, and ingesting shared content, has always required custom UI and
 
 <img src="/docs/windows/pwa-api-documentation/custom-share.png" width="350px" alt="A screenshot of a custom html share dialog" /> 
 
+This unfortunately has many issues, such as loading in large amounts of code for each individual platform you can share too which can cause your app to load slowly. There is also accessibility challenges, developer maintnence challenges and more.
+
 But this changes with the Web Share API! Your PWA can easily share content using the native Share UI built into Windows:
 
 <img src="/docs/windows/pwa-api-documentation/share.png" width="350px" alt="A screenshot of the share dialog on Windows" /> 
+
+This only requires a tiny amount of JavaScript, and all the details are handled automatically by the Windows Share UI.
 
 <div class="demo-block">
   <strong>Demo</strong>

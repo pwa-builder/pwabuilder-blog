@@ -49,7 +49,7 @@ With PWAs, you have 2 channels that users can use to get your PWA onto their Win
 
 With the new Chromium based Edge, users can install your PWA right from the browser. When a user navigates to the URL to your PWA in Edge they will be prompted with an install icon in the URL bar as the screenshot below shows. Once this install button is clicked, the following UI is shown to the user:
 
-<img src="/docs/windows/pwa-api-documentation/in-browser-install.png" width="350px" alt="Screenshot of the install app UI in Edge" /> 
+<img src="/docs/windows/pwa-api-documentation/in-browser-install.png" width="600px" alt="Screenshot of the install app UI in Edge" /> 
 
 This UI provides more info to the user about the PWA, and then the user can choose to install your PWA.
 
@@ -65,7 +65,7 @@ This UI provides more info to the user about the PWA, and then the user can choo
 
 PWAs can also be installed from the Microsoft Store just like any other app. In fact, the [new Microsoft Store](https://blogs.windows.com/windowsexperience/2021/06/24/building-a-new-open-microsoft-store-on-windows-11/) and updated policies make it easier than ever to get your PWA into the store, even if you use your own payment systems! For more developer information on how this works, check out [our docs](https://blog.pwabuilder.com/posts/bringing-chromium-edge-pwas-to-the-microsoft-store/).
 
-<img src="/docs/windows/pwa-api-documentation/in-store.png" width="350px" alt="What PWA installation from the Microsoft Store looks like" /> 
+<img src="/docs/windows/pwa-api-documentation/in-store.png" width="600px" alt="What PWA installation from the Microsoft Store looks like" /> 
 
 <div class="how-to">
   <strong>How To</strong>
@@ -78,15 +78,15 @@ PWAs can also be installed from the Microsoft Store just like any other app. In 
 ## App Experience on Windows
 Once your PWA has been installed by the user (either through the Store or Edge), Windows will treat this PWA just like any other app on Windows. Your PWA can be pinned to the Taskbar and Start Menu:
 
-<img src="/docs/windows/pwa-api-documentation/taskbar.png" width="350px" alt="A screenshot of a PWA in the taskbar" /> 
+<img src="/docs/windows/pwa-api-documentation/taskbar.png" width="600px" alt="A screenshot of a PWA in the taskbar" /> 
 
 Your PWA will also open in its own window:
 
-<img src="/docs/windows/pwa-api-documentation/in-window.png" width="350px" alt="A screenshot of the PWA running in its own window" /> 
+<img src="/docs/windows/pwa-api-documentation/in-window.png" width="600px" alt="A screenshot of the PWA running in its own window" /> 
 
 And finally, it will also show up in your App Settings:
 
-<img src="/docs/windows/pwa-api-documentation/app-settings.png" width="350px" alt="A screenshot of the PWA in the settings app" /> 
+<img src="/docs/windows/pwa-api-documentation/app-settings.png" width="600px" alt="A screenshot of the PWA in the settings app" /> 
 
 ## File Handling and Integrating with the File Explorer
 
@@ -116,13 +116,13 @@ This API opens up the possiblity for types of apps that, before this API ,would 
 
 Sharing content, and ingesting shared content, has always required custom UI and logic from the developer:
 
-<img src="/docs/windows/pwa-api-documentation/custom-share.png" width="350px" alt="A screenshot of a custom html share dialog" /> 
+<img src="/docs/windows/pwa-api-documentation/custom-share.png" width="600px" alt="A screenshot of a custom html share dialog" /> 
 
 This unfortunately has many issues, such as loading in large amounts of code for each individual platform you can share too which can cause your app to load slowly. There is also accessibility challenges, developer maintnence challenges and more.
 
 But this changes with the Web Share API! Your PWA can easily share content using the native Share UI built into Windows:
 
-<img src="/docs/windows/pwa-api-documentation/share.png" width="350px" alt="A screenshot of the share dialog on Windows" /> 
+<img src="/docs/windows/pwa-api-documentation/share.png" width="600px" alt="A screenshot of the share dialog on Windows" /> 
 
 This only requires a tiny amount of JavaScript, and all the details are handled automatically by the Windows Share UI.
 
@@ -169,7 +169,7 @@ Using the Web Shortcuts API, PWAs can tie into the shortcuts UI in Windows, enab
 - Mail Applications, as you can let users jump straight to writing a new email from a right click on your app icon in the start menu and taskbar!
 - Social Media Apps such as Twitter, which enables users to jump straight into creating a tweet, the notifications screen, reading their DMs and more, all from a right click of the Twitter icon.
 
-<img src="/docs/windows/pwa-api-documentation/shortcuts.png" width="350px" alt="A screenshot of what the shorcuts UI looks like on Windows" /> 
+<img src="/docs/windows/pwa-api-documentation/shortcuts.png" width="600px" alt="A screenshot of what the shorcuts UI looks like on Windows" /> 
 
 <div class="how-to">
   <strong>How To</strong>
@@ -239,9 +239,9 @@ PWAs can also receive push notifications, just like any other app on Windows! Yo
 ## Media Controls and playing Media in the background
 PWAs can tie into the same native media controls as native apps, allowing users to play, pause and skip media while your PWA is in the background using the [Media Session API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API). 
 
-<img src="/docs/windows/pwa-api-documentation/media-controls.png" width="350px" alt="A screenshot of a the media controls in Windows 10" /> 
+<img src="/docs/windows/pwa-api-documentation/media-controls.png" width="600px" alt="A screenshot of a the media controls in Windows 10" /> 
 
-<img src="/docs/windows/pwa-api-documentation/lock-screen-media.png" width="350px" alt="A screenshot of a the media controls on the Windows 10 lock screen" /> 
+<img src="/docs/windows/pwa-api-documentation/lock-screen-media.png" width="600px" alt="A screenshot of a the media controls on the Windows 10 lock screen" /> 
 
 <div class="how-to">
   <strong>How To</strong>
@@ -315,7 +315,7 @@ PWAs can also connect with external devices such as the camera, Bluetooth device
 
 Want to customize your title bar just like VSCode, Microsoft Teams and other apps on Windows? The Window Controls Overlay API allows you to put custom HTML content in the title bar! This removes the system title bar enabling you to achieve a fully custom UI for your app.
 
-<img src="/docs/windows/pwa-api-documentation/title-bar.png" width="350px" alt="A screenshot of a custom title bar" /> 
+<img src="/docs/windows/pwa-api-documentation/title-bar.png" width="600px" alt="A screenshot of a custom title bar" /> 
 
 <div class="how-to">
   <strong>How To</strong>

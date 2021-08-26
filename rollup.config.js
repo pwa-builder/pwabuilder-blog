@@ -22,7 +22,7 @@ export default {
     svg(),
     postcss({
       extract: path.resolve("dist/assets/main.bundle.css"),
-      minimize: !dev,
+      minimize: true,
     }),
     !dev && terser(),
   ],

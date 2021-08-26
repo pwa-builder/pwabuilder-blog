@@ -26,7 +26,9 @@ tags:
 
 [Try it Live](https://wiggly-impossible-crayfish.glitch.me/file-handling.html)
 
-<img src="/demos/file-system-api/file-system.gif" alt="File System Access API" loading="lazy">
+## More Information
+
+[Learn how to use this API](https://web.dev/file-system-access/)
 
 Handling files has always been a challenge for Web Apps as they have never had the same file handling capability as native apps. For example, you could not simply open a file from the File System, download a file or securely write to a file on the users device. With the File System API, your PWA can now use files with the normal experience users expect from apps.
 

@@ -5,7 +5,7 @@ excerpt: Testing a demo
 description: Testing a demo again
 date: 2021-06-24
 updatedDate: 2021-06-24
-trending: false
+trending: true
 featured: false
 image: docs/windows/windows-store-documentation/StoreLogo.png
 isDemo: true

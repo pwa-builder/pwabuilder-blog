@@ -1,14 +1,22 @@
 {% import "layouts/doccard.njk" as cardLayouts %}
 
 <section class="my-8">
-  <h3 class="text-center">Our selected demos</h3>
-  <div class="text-center">We will soon share here our favorite demos to inspire you!</div>
-  {{ cardLayouts.featured(demos)}}
-  <h3 class="text-center">More demos from the community</h3>
-  <div class="text-center">The community is so active, let's share the good work there soon.</div>
+  <h3 class="text-center">What can PWAs do on Windows?</h3>
+  <div class="text-center">
+    Looking to build a new app but not sure that the web has the APIs to build the functionality that is crucial to your application?
+    Check out our API demos below to see all of the advanced functionality that PWAs can offer thanks to Microsoft Edge and <a href="https://www.chromium.org/teams/web-capabilities-fugu">Project Fugu</a>
+  </div>
   {{ cardLayouts.trending(demos)}}
 
-  {%- for demo in demos -%}
-    <li>{{ demo.data.title }}</li>
-  {%- endfor -%}
+  <h3 class="text-center">Feature Demo Apps</h3>
+  <div class="text-center">
+    Looking for inspiration for your next app? Or just want to experience how an excellent PWA works on Windows?
+    Check out our demo apps below, these are PWAs that provide a great user experience on Windows and serve to showcase the power and user experience of PWAs.
+  </div>
+  {{ cardLayouts.featured(demos)}}
+
+  <!-- temp - remove after deciding how to receive demos from the community"-->
+  <!--<h3 class="text-center">Demos from the community!</h3>
+  <div class="text-center">Have a great web or PWA related demo? Let us know </div>
+  {{ cardLayouts.trending(demos)}}-->
 </section>

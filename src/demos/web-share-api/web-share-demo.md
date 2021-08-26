@@ -1,8 +1,8 @@
 ---
 layout: doc
 title: Web Share API
-excerpt: The File System Access API provides programmatic access to the file system, enabling...
-description: The File System Access API provides programmatic access to the file system, enabling you to build PWAs that interact with the users files just like any native application on Windows. This enables a whole new class of powerful applications to be built as PWAs, including advanced photo editors, code editors and more!
+excerpt: Your PWA can easily share content using the native Share UI built into Windows.
+description: Sharing content, and ingesting shared content, has always required custom UI and logic from the developer.However, this changes with the Web Share API! Your PWA can easily share content using the native Share UI built into Windows.
 date: 2021-08-26
 updatedDate: 2021-08-26
 trending: true

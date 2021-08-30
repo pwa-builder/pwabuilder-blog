@@ -19,41 +19,42 @@
 {% endmacro %}
 
 {% macro trending(docs) %}
-  <div class="grid gap-3 my-8">
-    {% for doc in docs %}
-      {% if not doc.data.draft and doc.data.trending %}
-        <div class="mb-4">
-          <span class="text-xs" datetime="{{ doc.data.date }}">{{ doc.data.date | dateDisplay }}
-          </span>
-          <h2 class="mt-1 mb-4">
-            <a class="block text-2xl" href="{{ doc.url | url }}">{{ doc.data.title }}</a>
-          </h2>
-          <p class="mb-4 opacity-75">{{ doc.data.description }}</p>
-          <a class="" href="{{ doc.url | url }}">Continue reading {{ doc.data.title }}</a>
-        </div>
-      {% endif %}
-    {% endfor %}
-
-  </div>
+    <div class="grid gap-3 my-8">
+      {% for doc in docs %}
+        {% if not doc.data.draft and doc.data.trending %}
+          <a class="doc-link" href="{{ doc.url | url }}">
+            <div class="mb-4">
+              <span class="text-xs" datetime="{{ doc.data.date }}">{{ doc.data.date | dateDisplay }}
+              </span>
+              <h2 class="mt-1 mb-4">
+                <p class="block text-2xl">{{ doc.data.title }}</p>
+              </h2>
+              <p class="mb-4 opacity-75">{{ doc.data.description }}</p>
+              <p class="">Continue reading {{ doc.data.title }}</p>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
 {% endmacro %}
 
 {% macro card(doc) %}
-  <div class="w-full h-full featured-post relative shadow rounded">
-    <span
-        class="text-primary-font top-0 left-0 p-2"
-        datetime="{{ doc.data.date }}"
-      >
-      {{ doc.data.date | dateDisplay }}
-    </span>
-    <a href="{{ doc.url | url }}">
-      <img loading="lazy" class="rounded-t-sm w-full object-fill object-center limited-max" src="/{{ doc.data.image }}" alt="{{ doc.data.title }}"/>
-    </a>
-    <div class="p-3 flex flex-col">
-      <h2 class="mt-1 mb-4">
-        <a class="block" href="{{ doc.url | url }}">{{ doc.data.title }}</a>
-      </h2>
-      <p class="opacity-75 mb-8">{{ doc.data.excerpt }}</p>
-      <a class="text-link p-1 text-xs" href="{{ doc.url | url }}">Keep reading...</a>
+  <a class="doc-link" href="{{ doc.url | url }}">
+    <div class="w-full h-full featured-post relative shadow rounded">
+      <span
+          class="text-primary-font top-0 left-0 p-2"
+          datetime="{{ doc.data.date }}"
+        >
+        {{ doc.data.date | dateDisplay }}
+      </span>
+      <img loading="lazy" class="rounded-t-sm w-full object-fill object-center limited-max" src="/{{ doc.data.image }}" alt=""/>
+      <div class="p-3 flex flex-col">
+        <h2 class="mt-1 mb-4">
+          {{ doc.data.title }}
+        </h2>
+        <p class="opacity-75 mb-8">{{ doc.data.excerpt }}</p>
+        <p class="text-link p-1 text-xs">Keep reading...</p>
+      </div>
     </div>
-  </div>
+  </a>
 {% endmacro %}

@@ -17,7 +17,7 @@ tags:
   - Windows
 ---
 
-<iframe title="GIF of the pwa-inking component working" src="https://giphy.com/embed/gfrRt9TzYCv24qaoCl" width="480" height="308" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gfrRt9TzYCv24qaoCl">via GIPHY</a></p>
+<iframe tabindex="-1" title="GIF of the pwa-inking component working" src="https://giphy.com/embed/gfrRt9TzYCv24qaoCl" width="480" height="308" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gfrRt9TzYCv24qaoCl">via GIPHY</a></p>
 There are many ways to enable inking on the web, but they all involve their challenges to set up. Do you need to support 2D drawing or 3D rendering? How will you minimize rendering latency? How should the drawing respond to browser events like window resizing, tab switching, or zooming? What kinds of input do you want to handle? What do you want to do with a finished drawing?
 
 The [PWABuilder](https://pwabuilder.com/) team built a solution that enables a basic inking experience for the modern web and addresses the above considerations. We are excited to announce the 1.0 version of [the pwa-inking component](https://github.com/pwa-builder/pwa-inking) is now available!
@@ -149,7 +149,7 @@ If a browser does not support _navigator.clipboard_ or _ClipboardItem_, then a f
 
 We are still planning our roadmap and we would love to hear from you! Let the PWABuilder team know what you think of this version and what you think should come next.
 
-Find us on [Twitter (@pwabuilder)](https://twitter.com/pwabuilder) and engage with us on [our GitHub repo](https://github.com/pwa-builder/).
+Find us on [our Twitter (@pwabuilder)](https://twitter.com/pwabuilder) and engage with us on [our GitHub repo](https://github.com/pwa-builder/).
 
 Thanks for reading!
 

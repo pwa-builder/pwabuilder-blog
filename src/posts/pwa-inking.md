@@ -76,7 +76,7 @@ A screenshot of the pwa-inking component with the default toolbar.
 
 The default and recommended experience is to add an inking-component with a nested inking-toolbar to get the most functionality for the least amount of code:
 
-Try it: [live](https://pwa-inking.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-inking?path=index.html%3A1%3A0)
+[Try the component with the default toolbar live!](https://pwa-inking.glitch.me/) | [See the code for the component with the default toolbar](https://glitch.com/edit/#!/pwa-inking?path=index.html%3A1%3A0)
 
 ### Canvas without toolbar
 
@@ -86,7 +86,7 @@ A screenshot of the pwa-inking component without a toolbar.
 
 Some advanced users might want to implement their own toolbar or control the canvas purely through JavaScript, so the inking-canvas can also be used alone and controlled via its [APIs](https://github.com/pwa-builder/pwa-inking/#inking-canvas):
 
-Try it: [live](https://pwa-inking-canvas-only.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-inking-canvas-only?path=index.html%3A20%3A41)
+[Try the component without a toolbar live!](https://pwa-inking-canvas-only.glitch.me/) | [See the code for the component without a toolbar](https://glitch.com/edit/#!/pwa-inking-canvas-only?path=index.html%3A20%3A41)
 
 ## Customize it
 
@@ -98,7 +98,7 @@ A screenshot of pwa-inking with a custom toolbar positioned in the bottom right 
 
 Only want some of the tools? You can specify the toolbar contents and even change its position and orientation on the canvas:
 
-Try it: [live](https://pwa-inking-customized-toolbar.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-inking-customized-toolbar?path=index.html%3A25%3A55)
+[See the component live with a custom positioned toolbar](https://pwa-inking-customized-toolbar.glitch.me/) | [See the code for the component with a custom positioned toolbar](https://glitch.com/edit/#!/pwa-inking-customized-toolbar?path=index.html%3A25%3A55)
 
 ### Modify the CSS
 
@@ -108,7 +108,7 @@ A screenshot of pwa-inking with customized styles on the toolbar and the canvas.
 
 The canvas and the toolbar tool styles are completely customizable through [CSS shadow parts](https://developer.mozilla.org/en-US/docs/Web/CSS/::part):
 
-Try it: [live](https://pwa-inking-styling-samples.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-inking-styling-samples?path=index.html%3A29%3A20)
+[See the component fully customized live](https://pwa-inking-styling-samples.glitch.me/) | [See the code for fully customizing the component](https://glitch.com/edit/#!/pwa-inking-styling-samples?path=index.html%3A29%3A20)
 
 ## Limitations
 

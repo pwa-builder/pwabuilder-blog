@@ -20,12 +20,12 @@ tags:
 <iframe title="GIF of the pwa-inking component working" src="https://giphy.com/embed/gfrRt9TzYCv24qaoCl" width="480" height="308" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gfrRt9TzYCv24qaoCl">via GIPHY</a></p>
 There are many ways to enable inking on the web, but they all involve their challenges to set up. Do you need to support 2D drawing or 3D rendering? How will you minimize rendering latency? How should the drawing respond to browser events like window resizing, tab switching, or zooming? What kinds of input do you want to handle? What do you want to do with a finished drawing?
 
-The [PWABuilder](https://pwabuilder.com/) team built a solution that enables a basic inking experience for the modern web and addresses the above considerations. We are excited to announce the 1.0 version of [pwa-inking](https://github.com/pwa-builder/pwa-inking) is now available!
+The [PWABuilder](https://pwabuilder.com/) team built a solution that enables a basic inking experience for the modern web and addresses the above considerations. We are excited to announce the 1.0 version of [the pwa-inking component](https://github.com/pwa-builder/pwa-inking) is now available!
 
 ### pwa-inking is a web component that
 
 - Uses a desynchronized 2D HTML canvas.
-- Optimizes canvas redraws through the [requestAnimationFrame()](https://docs.w3cub.com/dom/window/requestanimationframe/) and [requestIdleCallback()](https://w3c.github.io/requestidlecallback/) functions.
+- Optimizes canvas redraws through [the requestAnimationFrame() api](https://docs.w3cub.com/dom/window/requestanimationframe/) and [the requestIdleCallback() api](https://w3c.github.io/requestidlecallback/) functions.
 - Resizes and refocuses with the browser.
 - Supports pointer (mouse, touch, and pen) events.
 - Offers 4 inking experiences: pen, pencil, highlighter, and eraser.
@@ -84,7 +84,7 @@ The default and recommended experience is to add an inking-component with a nest
 
 A screenshot of the pwa-inking component without a toolbar.
 
-Some advanced users might want to implement their own toolbar or control the canvas purely through JavaScript, so the inking-canvas can also be used alone and controlled via its [APIs](https://github.com/pwa-builder/pwa-inking/#inking-canvas):
+Some advanced users might want to implement their own toolbar or control the canvas purely through JavaScript, so the inking-canvas can also be used alone and controlled via [the components exposed API](https://github.com/pwa-builder/pwa-inking/#inking-canvas):
 
 [Try the component without a toolbar live!](https://pwa-inking-canvas-only.glitch.me/) | [See the code for the component without a toolbar](https://glitch.com/edit/#!/pwa-inking-canvas-only?path=index.html%3A20%3A41)
 
@@ -106,7 +106,7 @@ Only want some of the tools? You can specify the toolbar contents and even chang
 
 A screenshot of pwa-inking with customized styles on the toolbar and the canvas.
 
-The canvas and the toolbar tool styles are completely customizable through [CSS shadow parts](https://developer.mozilla.org/en-US/docs/Web/CSS/::part):
+The canvas and the toolbar tool styles are completely customizable through [the CSS shadow parts feature in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/::part):
 
 [See the component fully customized live](https://pwa-inking-styling-samples.glitch.me/) | [See the code for fully customizing the component](https://glitch.com/edit/#!/pwa-inking-styling-samples?path=index.html%3A29%3A20)
 
@@ -127,21 +127,21 @@ The pointer event properties utilized in this release to influence stroke size a
 
 ### Low latency canvas
 
-The 2D canvas contexts of this web component rely on the availability of the [desynchronized attribute](https://developers.google.com/web/updates/2019/05/desynchronized) to support low latency.
+The 2D canvas contexts of this web component rely on the availability of [the desynchronized attribute](https://developers.google.com/web/updates/2019/05/desynchronized) to support low latency.
 
 If a browser does not recognize this attribute, then the canvas contexts are established without it.
 
-ΓÜá A [Chromium bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1085015#c38) related to image extraction of the low latency canvas is preventing this web component copy & save features from working on impacted platforms. The fix has been applied the Chromium source code, but many Chromium-based browsers (including the stable versions of Edge and Chrome) have not received it yet. We have a [GitHub issue](https://github.com/pwa-builder/pwa-inking/issues/31) tracking this.
+A [Chromium bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1085015#c38) related to image extraction of the low latency canvas is preventing this web component copy & save features from working on impacted platforms. The fix has been applied the Chromium source code, but many Chromium-based browsers (including the stable versions of Edge and Chrome) have not received it yet. We have a [GitHub issue](https://github.com/pwa-builder/pwa-inking/issues/31) tracking this.
 
 ### requestIdleCallback()
 
-The ability to process inking component events in a way that yields to other activity on the main thread is made possible through the [requestIdleCallback() function](https://w3c.github.io/requestidlecallback/), but it is not widely supported across browsers yet.
+The ability to process inking component events in a way that yields to other activity on the main thread is made possible through [the requestIdleCallback() function](https://w3c.github.io/requestidlecallback/), but it is not widely supported across browsers yet.
 
 If a browser does not support this API, the impacted inking component calls are run instead as [IIFE (immediately invoked function expressions)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE).
 
 ### Clipboard API
 
-The canvas state is copied as a png image to the browser clipboard through the [Clipboard APIs](https://w3c.github.io/clipboard-apis/).
+The canvas state is copied as a png image to the browser clipboard through [the Clipboard API](https://w3c.github.io/clipboard-apis/).
 
 If a browser does not support _navigator.clipboard_ or _ClipboardItem_, then a failure toast (and console error message if you clone and run the source code locally) will appear when a user clicks the copy button.
 
@@ -149,7 +149,7 @@ If a browser does not support _navigator.clipboard_ or _ClipboardItem_, then a f
 
 We are still planning our roadmap and we would love to hear from you! Let the PWABuilder team know what you think of this version and what you think should come next.
 
-Find us on [Twitter (@pwabuilder)](https://twitter.com/pwabuilder) and engage with us on [GitHub](https://github.com/pwa-builder/).
+Find us on [Twitter (@pwabuilder)](https://twitter.com/pwabuilder) and engage with us on [our GitHub repo](https://github.com/pwa-builder/).
 
 Thanks for reading!
 

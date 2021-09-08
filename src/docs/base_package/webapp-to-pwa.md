@@ -30,11 +30,17 @@ Your Steps:
 
 3. Tap the Manifest score bar to see the details of your score. As you can see, your web app will currently score a 0 for each section. This is ok though, as PWABuilder has generated a basic one for us that we can quickly edit and use. Tap the "Manifest Options" button to start editing your generated web manifest.
 
-4. Edit your manifest fields using the manifest editor that is now open. We recommend atleast checking that the name and short_name fields are what you expect them to be. 
+4. Edit your manifest fields using the manifest editor that is now open. We recommend atleast checking that the name and short_name fields are what you expect them to be.
 
 5. Scroll down to the Upload App Icons section and tap the Upload button, then just choose your 512x512 icon and tap generate. This will generate all the different sizes of your Icon that PWAs need.
 
-6. Tap the Done button and then Tap the Service Worker score bar, just as you did with the Manifest score bar before.
+6. Tap the Done button and then Tap the Service Worker score bar, just as you did with the Manifest score bar before. This will take you to a list of pre-built service workers that the PWABuilder team has put together.
+
+7. You can now choose the service worker that sounds best suited for your application by tapping the "Add to Base Package" button. After this tap the "Done" button.
+
+8. You should now be back at the review page. We are now ready to go forward, so tap the "next" button.
+
+9. You are almost ready! You can now tap the "Generate" button which will generate your Manifest, Service Worker and Icons. Tap the "Download" button when it pops up. You are now ready to move to the next steps, adding these files and your icons to your web app to make it a PWA!
 
 # Next steps for building your Progressive Web App (PWA)
 You've successfully generated a web manifest and service worker for your web app. Once you add these to your app, you'll be a PWA that can be published to app stores. 😎 

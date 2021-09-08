@@ -1,10 +1,10 @@
 ---
 layout: doc
-title: Converting your web app to a Progressive Web App
-excerpt: You've successfully generated a web manifest and service worker for your web app
-description: You've successfully generated a web manifest and service worker for your web app. Once you add these to your app, you'll be a PWA!
-date: 2021-06-24
-updatedDate: 2021-06-24
+title: Converting your web app to a Progressive Web App with PWABuilder
+excerpt: PWABuilder can help you generate the basic technical requirements....
+description: PWABuilder can help you generate the basic technical requirements to convert your web app to a PWA, a web manifest and a service worker.
+date: 2021-09-08
+updatedDate: 2021-09-08
 trending: false
 featured: true
 recommended: true
@@ -26,21 +26,39 @@ which means you can skip the steps below and get right to building your PWA.
 Your Steps:
 1. Enter the URL to your web app in the URL field of PWABuilder:
 
+<img loading="lazy" alt="A screenshot that shows the homepage of PWABuilder" src="/docs/base_package/enter-url.png" width="550px" /> 
+
 2. Notice that you currently score a 0 for both the web manifest and service worker. This is because you have not added them to your web app yet.
+
+<img loading="lazy" alt="A screenshot that shows the report-card page of PWABuilder" src="/docs/base_package/report-card.png" width="550px" /> 
 
 3. Tap the Manifest score bar to see the details of your score. As you can see, your web app will currently score a 0 for each section. This is ok though, as PWABuilder has generated a basic one for us that we can quickly edit and use. Tap the "Manifest Options" button to start editing your generated web manifest.
 
+<img loading="lazy" alt="A screenshot of the manifest score overview on PWABuilder" src="/docs/base_package/mani-options.png" width="550px" /> 
+
 4. Edit your manifest fields using the manifest editor that is now open. We recommend atleast checking that the name and short_name fields are what you expect them to be.
+
+<img loading="lazy" alt="A screenshot of the manifest editor on PWABuilder" src="/docs/base_package/mani-editor.png" width="550px" /> 
 
 5. Scroll down to the Upload App Icons section and tap the Upload button, then just choose your 512x512 icon and tap generate. This will generate all the different sizes of your Icon that PWAs need.
 
+<img loading="lazy" alt="A screenshot of the icon generator on PWABuilder" src="/docs/base_package/upload-icons.png" width="550px" /> 
+
 6. Tap the Done button and then Tap the Service Worker score bar, just as you did with the Manifest score bar before. This will take you to a list of pre-built service workers that the PWABuilder team has put together.
+
+<img loading="lazy" alt="A screenshot of the service worker score overview on PWABuilder" src="/docs/base_package/sw-review.png" width="550px" /> 
 
 7. You can now choose the service worker that sounds best suited for your application by tapping the "Add to Base Package" button. After this tap the "Done" button.
 
+<img loading="lazy" alt="A screenshot of the service worker picker on PWABuilder" src="/docs/base_package/sw-picker.png" width="550px" /> 
+
 8. You should now be back at the review page. We are now ready to go forward, so tap the "next" button.
 
+<img loading="lazy" alt="A screenshot that shows the report-card page of PWABuilder" src="/docs/base_package/report-card.png" width="550px" /> 
+
 9. You are almost ready! You can now tap the "Generate" button which will generate your Manifest, Service Worker and Icons. Tap the "Download" button when it pops up. You are now ready to move to the next steps, adding these files and your icons to your web app to make it a PWA!
+
+<img loading="lazy" alt="A screenshot that shows the Generate button on the base package page of PWABuilder" src="/docs/base_package/generate.png" width="550px" /> 
 
 # Next steps for building your Progressive Web App (PWA)
 You've successfully generated a web manifest and service worker for your web app. Once you add these to your app, you'll be a PWA that can be published to app stores. 😎 

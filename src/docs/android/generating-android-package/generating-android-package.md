@@ -20,7 +20,7 @@ tags:
   - PlayStore
 ---
 
-To learn more about how PWABuilder generates a Trusted Web Activity from your PWA, check out [our post](/posts/microsoft-and-google-team-up.md) on this collaborative effort.
+To learn more about how PWABuilder generates a Trusted Web Activity from your PWA, check out [our post](/posts/microsoft-and-google-team-up) on this collaborative effort.
 
 # Generating your Android application with PWABuilder
 
@@ -48,7 +48,7 @@ When you are ready, tap the Generate button to generate your Android app, and th
 
 ![A screenshot of the Download button on PWABuilder. You can tap this button to download your generated app](/docs/android/generating-android-package/download.png)
 
-After generating your Android app, see our [Android Next Steps documentation](/docs/android/next-steps-documentation/next-steps-documentation.md) for more information on how to test your application and then publish to the Google Play Store!
+After generating your Android app, see our [Android Next Steps documentation](/docs/android/next-steps-documentation/) for more information on how to test your application and then publish to the Google Play Store!
 
 ## Android Features & Customization
 

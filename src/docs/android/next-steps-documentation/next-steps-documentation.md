@@ -96,7 +96,7 @@ Keep both of these files in a safe place. **You'll need them to deploy future ve
 
 ## Updating an existing app in the Play Store
 
-Have an existing app in the Play Store and want to update it to a new version? No problem! See [updating an existing app](/Update-existing-app.md).
+Have an existing app in the Play Store and want to update it to a new version? No problem! See [updating an existing app](/docs/android/updating-your-existing-app).
 
 ## Note about Quality Criteria on Android
 
@@ -104,7 +104,7 @@ As of Chrome 86, PWAs downloaded from the Google Play Store will now crash if yo
 - Does not have a valid TLS certificate
 - Does not link to your digital assetlinks file correctly
 
-Because of this you should ensure that your PWA runs on an HTTPS domain and has your assetlinks file properly linked. For the assetlinks file, please refer to [Step 4 above](#4-update-your-asset-links-file-for-production). 
+Because of this you should ensure that your PWA runs on an HTTPS domain and has your assetlinks file properly linked.
 
 For more info about Chrome's quality criteria policy, check out [this article](https://blog.chromium.org/2020/06/changes-to-quality-criteria-for-pwas.html) from our friends over on the Chrome team.
 
@@ -120,6 +120,6 @@ Google is considering engineering and policy updates to permit PWAs for children
 
 ## Need more help?
 
-If the browser address bar is showing up in your app, see our [asset links helper](/Asset-links.md).
+If the browser address bar is showing up in your app, see our [asset links helper](https://github.com/pwa-builder/CloudAPK/blob/master/Asset-links.md).
 
 If you're otherwise stuck, we're here to help. You can [open an issue](https://github.com/pwa-builder/pwabuilder/issues) and we'll help walk you through it.

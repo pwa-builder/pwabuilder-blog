@@ -48,6 +48,7 @@ When you are ready, tap the Generate button to generate your Android app, and th
 
 ![A screenshot of the Download button on PWABuilder. You can tap this button to download your generated app](/docs/android/generating-android-package/download.png)
 
+After generating your Android app, see our [Android Next Steps documentation](/docs/android/next-steps-documentation/next-steps-documentation.md) for more information on how to test your application and then publish to the Google Play Store!
 
 ## Android Features & Customization
 

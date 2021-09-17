@@ -10,7 +10,6 @@ featured: true
 recommended: true
 isDocumentation: true
 backUrl: '/docs'
-image: docs/android/next-steps-documentation/StoreLogo.png
 author:
   name: PWA Builder documentation
 tags:

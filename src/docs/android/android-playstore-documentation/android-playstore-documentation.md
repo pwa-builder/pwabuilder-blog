@@ -27,3 +27,4 @@ The PWABuilder Android platform utilizes the [open source Bubblerwrap tool](http
 1. [Generating your Android app with PWABuilder](/docs/android/generating-android-package)
 2. [Testing and publishing your your app to the Google Play Store](/docs/android/next-steps-documentation)
 3. [Updating your existing app](/docs/android/updating-your-existing-app)
+4. [Signing your Unsigned package](/docs/android/unsigned-package-documentation)

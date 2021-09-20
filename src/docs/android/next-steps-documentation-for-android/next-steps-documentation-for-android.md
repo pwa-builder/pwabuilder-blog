@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Testing and publishing your Android PWA to the Google Play Store
+title: Next Steps Documentation for Android
 excerpt: Everything you need to know about testing and publishing your Android PWA to the Google Play Store
 description: Everything you need to know about testing and publishing your Android PWA to the Google Play Store
 date: 2021-09-17

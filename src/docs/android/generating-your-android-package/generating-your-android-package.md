@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Generating your Android application with PWABuilder
+title: Generating your Android package
 excerpt: Everything you need to know about testing and generating your Androd app with PWABuilder
 description: Everything you need to know about testing and generating your Androd app with PWABuilderPlay Store
 date: 2021-09-17
@@ -24,27 +24,27 @@ To learn more about how PWABuilder generates a Trusted Web Activity from your PW
 
 First, go to pwabuilder.com and put in the URL to your PWA, such as [https://sadchonks.com](https://sadchonks.com):
 
-![A screenshot of PWABuilder that shows where to enter your URL](/docs/android/generating-android-package/enter-url.png)
+![A screenshot of PWABuilder that shows where to enter your URL](/docs/android/generating-your-android-package/enter-url.png)
 
 and then tap start to analyze your PWA.
 
-![A screenshot of the analyzing page in PWABuilder analyzing a PWA.](/docs/android/generating-android-package/analyzing.png)
+![A screenshot of the analyzing page in PWABuilder analyzing a PWA.](/docs/android/generating-your-android-package/analyzing.png)
 
 You are now at the report card page! If your app is already a PWA your scores will all be green, if not, thats ok! You can [use PWABuilder to help convert your web app to a PWA](/docs/converting-your-web-app-to-a-progressive-web-app-with-pwabuilder/). You can now tap the next button to continue to the packaging page!
 
-![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/generating-android-package/report_card.png)
+![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/generating-your-android-package/report_card.png)
 
 You can now tap the Store Package button on the Android platform to generate your Android app.
 
-![A screenshot of the Android platform card on PWABuilder that shows the Store Package button](/docs/android/generating-android-package/android-card.png)
+![A screenshot of the Android platform card on PWABuilder that shows the Store Package button](/docs/android/generating-your-android-package/android-card.png)
 
 Next you will see a list of the different options for the Android platform that are covered in more detail below.
 
-![A screenshot of the Android platform options UI in PWABuilder. This UI enables you to edit many details of your Android application](/docs/android/generating-android-package/options.png)
+![A screenshot of the Android platform options UI in PWABuilder. This UI enables you to edit many details of your Android application](/docs/android/generating-your-android-package/options.png)
 
 When you are ready, tap the Generate button to generate your Android app, and then the Download button when it pops up to download the generated App and associated files.
 
-![A screenshot of the Download button on PWABuilder. You can tap this button to download your generated app](/docs/android/generating-android-package/download.png)
+![A screenshot of the Download button on PWABuilder. You can tap this button to download your generated app](/docs/android/generating-your-android-package/download.png)
 
 After generating your Android app, see our [Android Next Steps documentation](/docs/android/next-steps-documentation/) for more information on how to test your application and then publish to the Google Play Store!
 

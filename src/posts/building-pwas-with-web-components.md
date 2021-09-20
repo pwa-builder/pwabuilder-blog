@@ -52,7 +52,7 @@ Based on the above we have found that browser native, Web Components based solut
 
 First, let's touch on what [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) are. Web Components are a collection of Web APIs that allow you to build components. You can think of this as the same as components you build with something like React or Angular, but there are some key differences with Web Components. They are currently supported in all browsers besides Internet Explorer.
 
-![alt](https://miro.medium.com/max/4386/1*OacB87rEsMNfIO213Evt3g.png)
+![browser support table for web components. All modern browsers are supported, including Safari](https://miro.medium.com/max/4386/1*OacB87rEsMNfIO213Evt3g.png)
 
 ### What is lit-element?
 
@@ -64,7 +64,7 @@ First, let's touch on what [Web Components](https://developer.mozilla.org/en-US/
 
 First, components built with either React or Angular are not native components understood by browsers. Because of this, you need to ship a large runtime (the core of both React and Angular) of some sort that can run these components in the browser. Note that this is a basic explanation of how these frameworks work, there are of course many details in the actual implementations, but these details are not truly relevant to our discussion today. This runtime cost is a huge part of the loading performance issues that apps built with these frameworks commonly have.
 
-With Web Components based frameworks you avoid this large runtime cost as the browser natively understands Web Components, but without sacrificing developer experience. This enables frameworks to still ship features such as performant async rendering but without the code associated with just running the components. For example, let's use [BundlePhobia Γ¥ÿ cost of adding a npm package](https://bundlephobia.com/) to evaluate the cost of React, Angular and lit-element:
+With Web Components based frameworks you avoid this large runtime cost as the browser natively understands Web Components, but without sacrificing developer experience. This enables frameworks to still ship features such as performant async rendering but without the code associated with just running the components. For example, let's use [BundlePhobia cost of adding a npm package](https://bundlephobia.com/) to evaluate the cost of React, Angular and lit-element:
 
 **_React:_**
 
@@ -72,7 +72,7 @@ With Web Components based frameworks you avoid this large runtime cost as the br
 - minified + GZip: 39.4 kB
 - Load time on a 3G connection (one of the most common network connections): 0.79s
 
-![alt](https://miro.medium.com/max/1248/1*OL6sRwxqirZ38UaE8LWRWQ.png)
+![React is 121.1kb minified and 39.4kb minified and compressed with GZIP](https://miro.medium.com/max/1248/1*OL6sRwxqirZ38UaE8LWRWQ.png)
 
 **_Angular:_**
 
@@ -80,7 +80,7 @@ With Web Components based frameworks you avoid this large runtime cost as the br
 - Minified + GZip: 88.7 kB
 - Load time on a 3G connection (one of the most common network connections): 1.77s
 
-![alt](https://miro.medium.com/max/1248/1*wq4qBl1RDOsYz8CAANqXjQ.png)
+![Angular is 289.9kb minified and 88.7kb minified and compressed with GZIP](https://miro.medium.com/max/1248/1*wq4qBl1RDOsYz8CAANqXjQ.png)
 
 and then lit-element, a Web Components based solution:
 
@@ -88,17 +88,11 @@ and then lit-element, a Web Components based solution:
 - Minified + GZip: 7.4 kB
 - Load time on a 3G connection (one of the most common network connections): 148ms
 
-![alt](https://miro.medium.com/max/1248/1*KF4SeH5lcXPnZ77h6y_Ibw.png)
+![lit-element is 23.2kb minified and 7.4kb minified and compressed with GZIP](https://miro.medium.com/max/1248/1*KF4SeH5lcXPnZ77h6y_Ibw.png)
 
-Lets now compare a Web Component built with lit-element to the same component built with React:
+Lit-element is awesome here as the developer experience is extremely similar to React but with a much smaller bundle size!
 
-**_Lit-element:_**
-
-**_React:_**
-
-Based on this, you can see that the developer experience is extremely similar but with a much smaller bundle for the Web Component!
-
-### \- Maintainability / Stability
+### Maintainability / Stability
 
 Web Components, by their nature of being Web Standards, are inherently going to be more stable than any custom code. For example, the Geolocation API is a web standard and because of this, once it was implemented in a browser it has consistently worked since and we can count on it continuing to work far into the future because of the webs guarantee on not breaking existing websites. There are of course drawbacks with this approach, such as it taking longer for Web Standards to be implemented compared to the React team implementing a new feature in React. However, this is a tradeoff that we feel is fair in return for a good guarantee on long term stability.
 
@@ -106,9 +100,9 @@ Web Components, by their nature of being Web Standards, are inherently going to 
 
 Continuing with our Web Standards first approach, modern CSS now has built in APIs / features in browsers that give us all the features we normally use a CSS pre-processor such as [SASS](https://sass-lang.com/) for:
 
-\- [Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties): CSS now has CSS variables! CSS variables work great with Web Components and work extremely similar to variables in SASS.
+[Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties): CSS now has CSS variables! CSS variables work great with Web Components and work extremely similar to variables in SASS.
 
-\- [Style Encapsulation](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM): Shadow DOM is part of the Web Components spec and helps fix the classic CSS cascade issue. Shadow DOM enables you to encapsulate your styles "inside" of your component, ensuring that CSS elsewhere in your app does not accidentally override CSS in your component. However, using both CSS Variables and the Shadow Parts API we can enable specific pieces of our components to be style-able from outside of the component. This is helpful when you want a component to have certain styles customizable but still have default styles too.
+[Style Encapsulation](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM): Shadow DOM is part of the Web Components spec and helps fix the classic CSS cascade issue. Shadow DOM enables you to encapsulate your styles "inside" of your component, ensuring that CSS elsewhere in your app does not accidentally override CSS in your component. However, using both CSS Variables and the Shadow Parts API we can enable specific pieces of our components to be style-able from outside of the component. This is helpful when you want a component to have certain styles customizable but still have default styles too.
 
 ## Build Tools
 

@@ -19,16 +19,17 @@
 
         <ul class="flex justify-around my-3 subheaderUl">
             {% for item in navigation.items %}
-            <li class="mx-3 px-2 py-1">
-              <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+            <li aria-label="{{ item.text }}" class="mx-3 px-2 py-1">
+              <a aria-hidden="true" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
-          <!--<li>
-            will uncomment this when searching and filtering is implemented
-            <a class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
-              <ion-icon name="search-outline"></ion-icon>
-            </a>
-          </li>-->
+
+            <!-- hiding search for now until implemented -->
+            <!--<li aria-label="">
+              <a aria-hidden="true" class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
+                <ion-icon name="search-outline"></ion-icon>
+              </a>
+            </li>-->
         </ul>
       </nav>
     </div>

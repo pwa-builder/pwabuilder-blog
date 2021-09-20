@@ -23,11 +23,12 @@
               <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
-          <li>
+          <!--<li>
+            will uncomment this when searching and filtering is implemented
             <a class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
               <ion-icon name="search-outline"></ion-icon>
             </a>
-          </li>
+          </li>-->
         </ul>
       </nav>
     </div>
@@ -110,6 +111,15 @@
     list-style: none;
   }
 
+  @media (max-width: 800px) {
+    .subheaderUl {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-left: 0;
+      width: 100%;
+    }
+  }
 code {
   background-color: rgba(27, 31, 35, 0.05) !important;
 }

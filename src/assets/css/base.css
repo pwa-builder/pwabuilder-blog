@@ -149,6 +149,10 @@ pre {
   border-radius: 25px;
 }
 
+pre[class*=language-] {
+  overflow: scroll !important;
+}
+
 hr {
   @apply mt-4 mb-2 border-b border-gray-600;
 }
@@ -160,6 +164,17 @@ small {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.my-8 {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  nav[aria-label="sub-navigation"] {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 /**

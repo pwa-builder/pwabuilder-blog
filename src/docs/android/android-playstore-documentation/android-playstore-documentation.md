@@ -1,10 +1,10 @@
 ---
 layout: doc
-title: Android PlayStore Documentation
-excerpt: Everything you need to know to build an Android PlayStore App from your PWA
-description: Everything you need to know to build an Android PlayStore App from your PWA
+title: PWABuilder Android platform Documentation
+excerpt: Everything you need to know to build an Android app from your PWA
+description: Everything you need to know to build an Android app from your PWA
 date: 2021-06-23
-updatedDate: 2021-06-23
+updatedDate: 2021-09-17
 trending: false
 featured: true
 recommended: true

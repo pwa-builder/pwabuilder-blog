@@ -5,9 +5,8 @@ excerpt: Everything you need to know about testing and generating your Androd ap
 description: Everything you need to know about testing and generating your Androd app with PWABuilderPlay Store
 date: 2021-09-17
 updatedDate: 2021-09-17
-trending: true
-featured: true
-recommended: true
+trending: false
+featured: false
 isDocumentation: true
 backUrl: '/docs'
 image: docs/android/next-steps-documentation/StoreLogo.png
@@ -17,7 +16,6 @@ tags:
   - docs
   - Documentation
   - Android
-  - PlayStore
 ---
 
 To learn more about how PWABuilder generates a Trusted Web Activity from your PWA, check out [our post](/posts/microsoft-and-google-team-up) on this collaborative effort.

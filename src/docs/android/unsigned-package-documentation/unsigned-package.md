@@ -5,9 +5,8 @@ excerpt: You chose to generate an *unsigned* package, so there are just a few ad
 description: You chose to generate an *unsigned* package, so there are just a few additional steps
 date: 2021-09-17
 updatedDate: 2021-09-17
-trending: true
-featured: true
-recommended: true
+trending: false
+featured: false
 isDocumentation: true
 backUrl: '/docs'
 author:

@@ -5,9 +5,8 @@ excerpt: How to update your existing app
 description: How to update your existing app
 date: 2021-09-17
 updatedDate: 2021-09-17
-trending: true
-featured: true
-recommended: true
+trending: false
+featured: false
 isDocumentation: true
 backUrl: '/docs'
 author:

@@ -5,9 +5,8 @@ excerpt: Everything you need to know about testing and publishing your Android P
 description: Everything you need to know about testing and publishing your Android PWA to the Google Play Store
 date: 2021-09-17
 updatedDate: 2021-09-17
-trending: true
-featured: true
-recommended: true
+trending: false
+featured: false
 isDocumentation: true
 backUrl: '/docs'
 author:

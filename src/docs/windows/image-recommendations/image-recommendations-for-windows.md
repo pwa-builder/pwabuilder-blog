@@ -280,7 +280,7 @@ Shown in start jump list, shortcuts, control panel:
 - 96x96
 - 256x256 (recommended)
 
-## Windows Light Mode icons
+<h2 id="windows-light-mode-icons">Windows Light Mode icons</h2>
 
 Windows lets users to change their OS theme to Windows Light Mode. Consider the default Windows theme (dark mode):
 

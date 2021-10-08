@@ -58,6 +58,12 @@ Once you submit your app, it will be reviewed. Once approved -- typically within
 
 To help make your PWA shine on Windows, check out our [Windows app images explainer](/docs/image-recommendations-for-windows-pwa-packages/) for details about what image sizes you should include in your web app manifest for the best experience on Windows.
 
+## Promote your app with a "Get this app in the Microsoft Store" badge
+
+Once you've published your app in the Store, help your users find it. Go to the [app badges site](https://developer.microsoft.com/en-us/microsoft-store/badges/) and generate a "Get this app on the Microsoft Store" badge and add the badge to your site. 
+
+The badge allows users on Windows to install your app with a single click.
+
 ## Need more help?
 
 If you're having trouble with your app store submission, be sure to read [fixing package errors](/docs/image-recommendations-for-windows-pwa-packages/).

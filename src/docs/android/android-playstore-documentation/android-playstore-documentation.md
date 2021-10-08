@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: PWABuilder Android platform Documentation
+title: PWABuilder Android Platform Documentation
 excerpt: Everything you need to know to build an Android app from your PWA
 description: Everything you need to know to build an Android app from your PWA
 date: 2021-06-23
@@ -17,7 +17,6 @@ tags:
   - docs
   - Documentation
   - Android
-  - PlayStore
 ---
 
 # PWABuilder Android platform documentation

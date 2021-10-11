@@ -1,14 +1,14 @@
 ---
 layout: doc
 title: Generating your Android package
-excerpt: Everything you need to know about testing and generating your Androd app with PWABuilder
-description: Everything you need to know about testing and generating your Androd app with PWABuilderPlay Store
+excerpt: Everything you need to know about testing and generating your Android app with PWABuilder
+description: Everything you need to know about testing and generating your Android app with PWABuilderPlay Store
 date: 2021-09-17
 updatedDate: 2021-09-17
 trending: false
 featured: false
 isDocumentation: true
-backUrl: '/docs'
+backUrl: '/docs/android-platform-documentation/'
 image: docs/android/next-steps-documentation/StoreLogo.png
 author:
   name: PWA Builder documentation

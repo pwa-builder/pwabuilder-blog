@@ -8,7 +8,7 @@ updatedDate: 2021-09-17
 trending: false
 featured: false
 isDocumentation: true
-backUrl: '/docs'
+backUrl: '/docs/android-platform-documentation/'
 author:
   name: PWA Builder documentation
 tags:

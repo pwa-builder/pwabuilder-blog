@@ -26,4 +26,4 @@ The PWABuilder Android platform utilizes the [open source Bubblerwrap tool](http
 1. [Generating your Android app with PWABuilder](/docs/generating-your-android-package)
 2. [Testing and publishing your your app to the Google Play Store](/docs/testing-and-publishing-your-android-pwa-to-the-google-play-store)
 3. [Updating your existing app](/docs/updating-your-existing-app)
-4. [Removing the Browser Address Bar: Asset Links](/docs/removing-the-browser-bar)
+4. [Removing the Browser Address Bar: Asset Links](/docs/removing-the-browser-address-bar)

@@ -8,7 +8,7 @@ updatedDate: 2021-10-11
 trending: false
 featured: false
 isDocumentation: true
-backUrl: '/docs'
+backUrl: '/docs/android-platform-documentation/'
 image: docs/android/removing-the-browser-bar/google-play-signing.png
 author:
   name: PWA Builder documentation

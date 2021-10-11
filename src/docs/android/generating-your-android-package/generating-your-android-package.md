@@ -1,14 +1,14 @@
 ---
 layout: doc
 title: Generating your Android package
-excerpt: Everything you need to know about testing and generating your Androd app with PWABuilder
-description: Everything you need to know about testing and generating your Androd app with PWABuilderPlay Store
+excerpt: Everything you need to know about testing and generating your Android app with PWABuilder
+description: Everything you need to know about testing and generating your Android app with PWABuilderPlay Store
 date: 2021-09-17
 updatedDate: 2021-09-17
 trending: false
 featured: false
 isDocumentation: true
-backUrl: '/docs'
+backUrl: '/docs/android-platform-documentation/'
 image: docs/android/next-steps-documentation/StoreLogo.png
 author:
   name: PWA Builder documentation
@@ -32,7 +32,7 @@ and then tap start to analyze your PWA.
 
 You are now at the report card page! If your app is already a PWA your scores will all be green, if not, thats ok! You can [use PWABuilder to help convert your web app to a PWA](/docs/converting-your-web-app-to-a-progressive-web-app-with-pwabuilder/). You can now tap the next button to continue to the packaging page!
 
-![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/generating-your-android-package/report_card.png)
+![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/android/generating-your-android-package/report_card.png)
 
 You can now tap the Store Package button on the Android platform to generate your Android app.
 

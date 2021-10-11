@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Next Steps Documentation for Android
+title: Testing and publishing your Android PWA to the Google Play Store
 excerpt: Everything you need to know about testing and publishing your Android PWA to the Google Play Store
 description: Everything you need to know about testing and publishing your Android PWA to the Google Play Store
 date: 2021-09-17
@@ -8,7 +8,7 @@ updatedDate: 2021-09-17
 trending: false
 featured: false
 isDocumentation: true
-backUrl: '/docs'
+backUrl: '/docs/android-platform-documentation/'
 author:
   name: PWA Builder documentation
 tags:

@@ -25,7 +25,7 @@ If have an existing app in the Play Store and you want to publish a new version 
 1. [Generate your new package](/docs/android/generating-android-package)
 4. Specify your new `App version` and `App version code`:
 <br><img alt="A screenshot of the version code and version input on the PWABuilder Android options UI" src="/docs/android/updating-your-existing-app/version-code.png" />
-5. Scroll down to `Signing key` and choose `Use mine`: <br><img alt="A screenshot of the Signing Key input on the PWABuilder Android options UI" src="//docs/android/updating-your-existing-app/signing-options.png" />
+5. Scroll down to `Signing key` and choose `Use mine`: <br><img alt="A screenshot of the Signing Key input on the PWABuilder Android options UI" src="/docs/android/updating-your-existing-app/signing-options.png" />
 6. Choose your existing signing key file, and fill in your existing signing key information (`key alias`, `key password`, `store password`)
 7. Build your package.
 

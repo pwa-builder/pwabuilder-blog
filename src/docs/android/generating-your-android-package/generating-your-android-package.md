@@ -32,7 +32,7 @@ and then tap start to analyze your PWA.
 
 You are now at the report card page! If your app is already a PWA your scores will all be green, if not, thats ok! You can [use PWABuilder to help convert your web app to a PWA](/docs/converting-your-web-app-to-a-progressive-web-app-with-pwabuilder/). You can now tap the next button to continue to the packaging page!
 
-![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/generating-your-android-package/report_card.png)
+![A screenshot of the report card page in PWABuilder. This PWA has great scores across the Manifest, Service Worker and Security](/docs/android/generating-your-android-package/report_card.png)
 
 You can now tap the Store Package button on the Android platform to generate your Android app.
 

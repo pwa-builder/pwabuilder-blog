@@ -38,7 +38,7 @@ If you haven't already, you need to add Google Play's production fingerprint to 
 
 Login to the [Google Play Console](https://developer.android.com/distribute/console), select your app, then choose `Setup` -> `App integrity`, then copy your `SHA-256 fingerprint`:
 
-![A Screenshot of the Google Play console dashboard](/docs/android/removing-the-browser-address-bar/google-play-console-dashboard.png)
+![A Screenshot of the Google Play console dashboard](/docs/android/removing-the-browser-address-bar/google-play-signing.png)
 
 Paste that fingerprint into your `assetlinks.json` file:
 

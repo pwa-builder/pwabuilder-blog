@@ -11,8 +11,13 @@
         tabindex="-1"
       >
         {% if isPost or isDocumentation %}
+          {% if isPost %}
             <a class="inline-flex items-center subheaderA" href="{{ backUrl }}">
-            <ion-icon class="mr-1" name="chevron-back-outline"></ion-icon>Back</a>
+            <ion-icon class="mr-1" name="chevron-back-outline" aria-label="Link back to Blog Home"></ion-icon>Back</a>
+          {% else %}
+            <a class="inline-flex items-center subheaderA" href="{{ backUrl }}">
+              <ion-icon class="mr-1" name="chevron-back-outline" aria-label="Link back to Documentation Home"></ion-icon>Back</a>
+            {% endif %}
         {% else %}
           <p>PWA Builder Resource Hub</p>
         {% endif %}

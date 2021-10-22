@@ -22,7 +22,7 @@ There are many ways to enable inking on the web, but they all involve their chal
 
 The [PWABuilder](https://pwabuilder.com/) team built a solution that enables a basic inking experience for the modern web and addresses the above considerations. We are excited to announce the 1.0 version of [the pwa-inking component](https://github.com/pwa-builder/pwa-inking) is now available!
 
-### pwa-inking is a web component that
+## pwa-inking is a web component that
 
 - Uses a desynchronized 2D HTML canvas.
 - Optimizes canvas redraws through [the requestAnimationFrame() api](https://docs.w3cub.com/dom/window/requestanimationframe/) and [the requestIdleCallback() api](https://w3c.github.io/requestidlecallback/) functions.
@@ -33,14 +33,14 @@ The [PWABuilder](https://pwabuilder.com/) team built a solution that enables a b
 
 In other words, pwa-inking can let users draw a picture as quickly as they can doodle it with a finger and then save it to their phone camera roll! And developer can make it happen by adding only a few lines of code to their existing web apps
 
-### Why would I use this?
+## Why would I use this?
 
 - **modern** using the latest web APIs to keep your web apps fast while handling and rendering user input: touch, pen, and mouse friendly!
 - **ready to go** wherever you want to use it in your web apps, right on your homepage or nested in another web component.
 - **customizable** through CSS shadow parts and you can set any configuration of the included tools you want to use.
 - **free to use and open-source** because why not!
 
-### Getting Started
+## Getting Started
 
 ### Install it
 

@@ -16,8 +16,6 @@ tags:
   - docs
   - Documentation
 ---
-
-# Converting your web app to a Progressive Web App
 PWABuilder can help you generate the basic technical requirements to convert your web app to a PWA, a web manifest and a service worker.
 
 **Note** : Don't have an app yet? Check out our [PWA Starter Kit](https://github.com/pwa-builder/pwa-starter/) to start building one. The starter kit already includes a web manifest and service worker,

@@ -7,8 +7,8 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug 
   <div class="flex flex-col justify-center items-start">
     <div class="w-full flex justify-between items-center">
       <div>
-        <h3>
-          {{title}}</h3>
+        <h1>
+          {{title}}</h1>
         {% if date %}
           {% if updatedDate and (date | string) !== (updatedDate | string) %}
             <p class="text-sm italic">Last updated on <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span></p>

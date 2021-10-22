@@ -26,9 +26,9 @@
             <div class="mb-4">
               <span class="text-xs" datetime="{{ doc.data.date }}">{{ doc.data.date | dateDisplay }}
               </span>
-              <h2 class="mt-1 mb-4">
+              <h3 class="mt-1 mb-4">
                 <p class="block text-2xl">{{ doc.data.title }}</p>
-              </h2>
+              </h3>
               <p class="mb-4 opacity-75">{{ doc.data.description }}</p>
               <p class="">Continue reading {{ doc.data.title }}</p>
             </div>
@@ -49,9 +49,9 @@
       </span>
       <img loading="lazy" class="rounded-t-sm w-full object-fill object-center limited-max" src="/{{ doc.data.image }}" alt=""/>
       <div class="p-3 flex flex-col">
-        <h2 class="mt-1 mb-4">
+        <h3 class="mt-1 mb-4">
           {{ doc.data.title }}
-        </h2>
+        </h3>
         <p class="opacity-75 mb-8">{{ doc.data.excerpt }}</p>
         <p class="text-link p-1 text-xs">Keep reading...</p>
       </div>

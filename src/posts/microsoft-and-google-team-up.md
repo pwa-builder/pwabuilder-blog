@@ -38,7 +38,7 @@ Earlier this year we started working together with Google to make PWABuilder uti
 All of this was a result of the collaboration between Google and Microsoft, with
 your PWAs reaping the benefit. More details below.
 
-### Web Shortcuts Support
+## Web Shortcuts Support
 
 Shortcuts are a [new web standard](https://w3c.github.io/manifest/#shortcuts-member) that enables installed PWAs to have app shortcuts, a contextual list of common actions that users can quickly jump to:
 
@@ -72,7 +72,7 @@ This will generate an APK package that can be uploaded to the Google Play Store.
 
 You can read up more about your PWA’s web shortcuts on Android over at the [shortcuts with trusted web activities explainer](https://web.dev/app-shortcuts/#trusted-web-activity-support).
 
-### **Android Features & Customization**
+## **Android Features & Customization**
 
 When we rolled out our initial collaborative work with Google’s Bubblewrap this spring, PWABuilder didn’t have a way to customize the Android package it generated. While this was fine for some basic scenarios, like publishing to the Google Play Store for the first time, it fell short in other ways.
 
@@ -120,7 +120,7 @@ To access this functionality, put a URL into pwabuilder.com, then: <br> **Build 
 ![alt](https://cdn-images-1.medium.com/max/800/1*Ui2YKhWlbvIYgrlESMAPDg.png)
 <span class="figcaption_hack">Choosing Options here will open the Android package options discussed above</span>
 
-### Final thoughts
+## Final thoughts
 
 Both web shortcuts and Android package customization are possible thanks to the collaboration between Google and Microsoft. We are working together to make the
 web a more capable app platform.

@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Android Platform Documentation
+title: PWABuilder Android Platform Documentation
 excerpt: Everything you need to know to build an Android app from your PWA
 description: Everything you need to know to build an Android app from your PWA
 date: 2021-06-23
@@ -18,9 +18,6 @@ tags:
   - Documentation
   - Android
 ---
-
-# PWABuilder Android platform documentation
-
 The PWABuilder Android platform utilizes the [open source Bubblerwrap tool](https://github.com/GoogleChromeLabs/bubblewrap) to generate a [Trusted Web Activity](https://developers.google.com/web/android/trusted-web-activity/) (TWA) that can be installed on the Google Play Store. This TWA behaves like any other Android application and is a great way to ship your PWA to the Google Play Store.
 
 1. [Generating your Android app with PWABuilder](/docs/generating-your-android-package)

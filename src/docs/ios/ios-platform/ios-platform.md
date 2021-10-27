@@ -1,42 +1,100 @@
+---
 layout: doc
-title: PWABuilder iOS Platform Documentation
-excerpt: Everything you need to know to build an iOS app from your PWA
-description: Everything you need to know to build an iOS app from your PWA
+title: iOS Platform
+excerpt: Publish your PWA to the iOS App Store
+description: Publish your PWA to the iOS App Store
 date: 2021-10-26
-updatedDate: 2021-10-26
+updatedDate: 2021-10-28
 trending: false
 featured: true
 recommended: true
 isDocumentation: true
 backUrl: '/docs'
-image: docs/ios/ios-appstore-documentation/StoreLogo.png
+image: docs/ios/ios-store-logo.svg 
 author:
-  name: PWA Builder documentation
+  name: Judah Gabriel Himango
 tags:
   - docs
   - Documentation
   - iOS
 ---
+
 The PWABuilder iOS platform is an experimental project that utilizes a Webkit-based web view (WKWebView) to load your PWA on iOS and enable some PWA functionality. 
 
 When you use PWABuilder to package your PWA for iOS, your download will include an Xcode project customized for your PWA. Once downloaded, see [Next Steps for iOS](../next-steps).
 
 ## What can it do?
 
-- Service worker support
-- URL capture
-- Permitted navigation scopes
-- Status bar customization based on your manifest's `background_color`
-- Splash screen based on your manifest's `theme_color`, `icons`, and `background_color`.
-- iOS app awareness from JS
-- Mac Store support
+<details>
+  <summary>Service worker support</summary>  
+
+We utilize [App-Bound Domains](<a href="https://webkit.org/blog/10882/app-bound-domains/">) to enable service workers to function when your PWA is run on supported platforms (iOS 14 and above). 
+
+</details>
+
+<details>
+  <summary>URL capture</summary>  
+  
+By default, PWABuilder's iOS platform generates a URL capture-ready app. If a user installs your app, you can have your app's URLs open in your PWA, rather than in the browser. 
+
+To enable this, deploy an [Apple App-Site Association file](https://developer.apple.com/documentation/xcode/supporting-associated-domains) to your web server. Your app already contains the necessary configuration to utilize link capture. See [our iOS Platform FAQ](/docs/ios-faq) for more info.
+  
+</details>
+
+<details>
+  <summary>Permitted navigation scopes</summary>  
+  
+When you generate your iOS app in PWABuilder, you can specify a list of permitted URLs that are considered in-scope for the app:
+
+<img loading="lazy" src="/posts/announcing-ios/ios-permitted-urls.png" style="margin-left: 0; max-height: 250px;" alt="Screenshot of the iOS publish section on PWABuilder" />
+
+This can be useful when your PWA needs to work with 3rd party URLs, such as `Login with Google` or other authentication providers.
+  
+</details>
+
+<details>
+  <summary>Status bar customization</summary>  
+  
+The iOS status bar -- containing your iPhone's reception bars, battery level, and more -- can be customized when shown in your app. By default, we set the status bar color to your manifest's `theme_color`, or white if you don't have a `theme_color` supplied.
+
+As a future enhancement, we may allow you to hide the status bar -- useful in `display: fullscreen` PWAs like games -- as well as change the status bar foreground color.
+  
+</details>
+
+<details>
+  <summary>Splash screen from manifest props</summary>  
+  
+While your app initializes and the web view loads your PWA, users will see a splash screen. The splash screen will be a solid background color, with your app's icon centered and a progress bar beneath it:
+
+<img loading="lazy" src="/posts/announcing-ios/ios-splash.png" style="max-height: 300px" />
+
+The splash screen background color is taken from your manifest's `background_color`. The icon is from your manifest's `icons`, and the progress bar color is styled using your manifest's `theme_color`.
+
+When your app finishes initializing and your PWA is done loading into the web view, the splash screen disappears and your PWA takes the fore.
+  
+</details>
+
+<details>
+  <summary>iOS app awareness from JS code</summary>  
+  
+In your PWA, you can detect if you're running in the iOS app by looking for an `app-platform` cookie, its value set to `iOS App Store`.
+  
+</details>
+
+<details>
+  <summary>Mac Store support</summary>  
+  
+When publishing your iOS app, you can opt-in to publishing to the Mac App Store as well. Your app will be available to M1 devices running macOS 11 or later.
+  
+</details>
 
 ## PWABuilder iOS documentation
 
-1. [Next steps for building your iOS app](/../docs/generating-your-android-package)
-2. [Testing and publishing your your app to the Google Play Store](/docs/testing-and-publishing-your-android-pwa-to-the-google-play-store)
-3. [Updating your existing app](/docs/updating-your-existing-app)
-4. [Removing the Browser Address Bar: Asset Links](/docs/removing-the-browser-address-bar)
+Once you've downloaded your iOS app package from PWABuilder, you should [build and test your app](/docs/ios-next-steps).
+
+After building and testing your app, [submit your app to the App Store](/docs/ios-app-submission).
+
+Finally, we recommend reading our [PWABuilder iOS FAQ](/docs/ios-faq).
 
 ## A special thanks
 

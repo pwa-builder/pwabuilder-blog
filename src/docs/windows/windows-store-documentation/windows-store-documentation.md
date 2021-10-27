@@ -1,10 +1,11 @@
 ---
 layout: doc
-title: Windows Store Documentation
-excerpt: Everything you need to know to build a Windows Store App from your PWA
-description: Everything you need to know to build a Windows Store App from your PWA
+title: Windows Platform
+url: /windows-store-documentation
+excerpt: Publish your PWA to the Microsoft Store
+description: Publish your PWA to the Microsoft Store
 date: 2021-06-24
-updatedDate: 2021-06-24
+updatedDate: 2021-10-26
 trending: false
 featured: true
 recommended: true

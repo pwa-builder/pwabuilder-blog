@@ -1,10 +1,10 @@
 ---
 layout: doc
-title: PWABuilder Android Platform Documentation
-excerpt: Everything you need to know to build an Android app from your PWA
-description: Everything you need to know to build an Android app from your PWA
+title: Android Platform
+excerpt: Publish your PWA to Google Play
+description: Publish your PWA to Google Play
 date: 2021-06-23
-updatedDate: 2021-09-17
+updatedDate: 2021-10-27
 trending: false
 featured: true
 recommended: true

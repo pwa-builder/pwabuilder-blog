@@ -22,7 +22,7 @@ tags:
   - App Store
 ---
 
-Today, the [PWABuilder](https://www.pwabuilder.com) team is happy to announce the release of **PWABuilder's iOS platform preview**. It gives you an easy way to publish your Progressive Web Apps (PWAs) to the iOS App Store.
+Today, the [PWABuilder](https://www.pwabuilder.com) team is happy to announce the release of **PWABuilder's iOS platform preview**. It's an open source project that gives you an easy way to publish your Progressive Web Apps (PWAs) to the iOS App Store.
 
 Try it now:
 
@@ -35,7 +35,9 @@ Try it now:
 
 ## What is it?
 
-When you generate an iOS app for your PWA, we create a native Swift app with a [WebKit web view](https://developer.apple.com/documentation/webkit/wkwebview) to load your PWA while enabling some PWA features, such as service workers, theme colors, background color, app icons, in-scope URLs, and more.
+A web view-based project that enables PWA functionality. 
+
+When you generated an iOS app for your PWA, we create a native Swift app with a [WebKit web view](https://developer.apple.com/documentation/webkit/wkwebview) to load your PWA while enabling some PWA features, such as service workers, theme color, background color, app icons, in-scope URLs, and more.
 
 It pulls values from your PWA's manifest as these defaults, allowing you to override them in the PWABuilder iOS options dialog seen above. If your PWA manifest doesn't have the all the right-sized images for the iOS app, the platform will generate these images for you, scaling down from a large, square, `any` purpose PNG icon from your manifest.
 
@@ -49,10 +51,11 @@ Additionally, using our iOS platform, your PWA becomes a first-class citizen on 
 
 ## What do I need?
 
-You can generate an iOS app from your PWA from your browser.
+To generate an iOS app, you just need a PWA. Or more specifically, a web app with a [manifest](https://www.w3.org/TR/appmanifest/).
 
-- To build the project, you'll [need a Mac with Xcode installed](https://github.com/pwa-builder/pwabuilder-ios/issues/9). 
-- To publish your PWA to the App Store, you'll need an Apple Developer account.
+To build the project, you'll [need a Mac with Xcode installed](https://github.com/pwa-builder/pwabuilder-ios/issues/9). 
+
+To publish your PWA to the App Store, you'll [need an Apple Developer account](/docs/ios-faq).
 
 See [our FAQ](/docs/ios-faq) for details.
 
@@ -82,23 +85,25 @@ To enable this, deploy an [Apple App-Site Association file](https://developer.ap
 
 When you generate your iOS app in PWABuilder, you can specify a list of permitted URLs that are considered in-scope for the app:
 
-<img loading="lazy" src="/permitted-urls.png" />
+<img loading="lazy" src="/ios-permitted-urls.png" />
 
 This can be useful when your PWA needs to work with 3rd party URLs, such as `Login with Google` or other authentication providers.
 
 #### Status bar customization
 
-The iOS status bar -- containing your iPhone's reception bars, battery level, and more -- can be customized when shown in your app. By default, we set the status bar color to your manifest's `background_color`, or white if you don't have a `background_color` supplied.
+The iOS status bar -- containing your iPhone's reception bars, battery level, and more -- can be customized when shown in your app. By default, we set the status bar color to your manifest's `theme_color`, or white if you don't have a `theme_color` supplied.
 
 As a future enhancement, we may allow you to hide the status bar -- useful in `display: fullscreen` PWAs like games -- as well as change the status bar foreground color.
 
 #### Splash screen
 
-While your app loads and while the inner web view loads your PWA, users will see a splash screen. The splash screen will be a solid background color, with your app's icon centered and a progress bar beneath it:
+While your app initializes and the web view loads your PWA, users will see a splash screen. The splash screen will be a solid background color, with your app's icon centered and a progress bar beneath it:
 
 <img loading="lazy" src="/ios-splash.png" />
 
-When your app finishes initializing and your PWA completes loading into the web view, the splash screen disappears and your PWA takes the fore.
+The splash screen background color is taken from your manifest's `background_color`. The icon is from your manifest's `icons`, and the progress bar color is styled using your manifest's `theme_color`.
+
+When your app finishes initializing and your PWA is done loading into the web view, the splash screen disappears and your PWA takes the fore.
 
 #### iOS app awareness from JS
 
@@ -106,7 +111,7 @@ In your PWA, you can detect if you're running in the iOS app by looking for an `
 
 #### Mac Store support
 
-When publishing your iOS app, you can opt-in to publishing to the Mac App Store as well. Your app will be available to macOS 11 on M1 chips.
+When publishing your iOS app, you can opt-in to publishing to the Mac App Store as well. Your app will be available to M1 devices running macOS 11 or later.
 
 ## What **can't** it do
 
@@ -138,11 +143,11 @@ No.
 
 [Microsoft Store supports PWAs](posts/bringing-chromium-edge-pwas-to-the-microsoft-store/) as first-class apps. Google Play [does as well](/posts/microsoft-and-google-team-up-to-make-pwas-better-in-the-play-store). 
 
-But Apple's PWA support is still very much lagging behind Android and Windows. At this time, [PWAs remain a second-class citizen on iOS](https://firt.dev/ios-14.5/), and App Store support for PWAs is non-existent, requiring a web view-based solution like PWABuilder's.
+But Apple's PWA support is still very much lagging behind Android and Windows. While WebKit is [making progress on PWAs](https://webkit.org/blog/11989/new-webkit-features-in-safari-15/), at the time of this writing, [PWAs remain a second-class citizen on iOS](https://firt.dev/ios-14.5/), and App Store support for PWAs is non-existent, requiring a web view-based solution like PWABuilder's.
 
 Additionally, because iOS doesn't allow 3rd party web browser engines, your PWA is limited to WebKit's PWA capabilities, which are currently lagging behind other browser engines.
 
-With the recent announcements of powerful apps moving to the web, such as [VS Code](https://vscode.dev) and [Photoshop](https://web.dev/ps-on-the-web/), we hope to see Apple improve PWA support in Safari, WebKit, and the App Store.
+With the recent announcements of powerful apps moving to the web, such as [VS Code](https://vscode.dev) and [Photoshop](https://web.dev/ps-on-the-web/), we hope to see Apple continue to improve PWA support in Safari, WebKit, and the App Store.
 
 ## Will Apple approve my PWA?
 
@@ -165,13 +170,13 @@ Check out our PWABuilder iOS documentation:
 - [Publishing your PWA to the iOS App Store](/docs/ios-app-submission)
 - [iOS PWAs frequently asked questions (FAQs)](/docs/ios-faq)
 
-If you need help or have questions, we'd be glad you can file an issue over at our main PWABuilder repository.
+If you need help or have questions, you can [open an issue on our GitHub repo](https://github.com/pwa-builder/pwabuilder/issues).
 
 ## A special thank you
 
-A great big thank you to PWA enthusiast and open sourcer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, several members of the PWABuilder open source community, including Gleb himself, sent us open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies.
+A great big thank you to PWA enthusiast and open sourcer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, sent us open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies.
 
-Gleb encouraged us, provided us help, and [his code](https://github.com/khmyznikov/pwa-install/) served as the base foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
+Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/pwa-install/) serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
 
 ## Summary
 

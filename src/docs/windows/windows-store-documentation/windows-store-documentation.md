@@ -25,7 +25,7 @@ Here are the steps required to create & publish a Microsoft Store MSIX package f
 2. Create your Microsoft Store package on [PWA Builder](https://www.pwabuilder.com) 
 3. Follow [the Next steps for getting your PWA into the Microsoft Store](/docs/next-steps-for-getting-your-pwa-into-the-microsoft-store/)
 
-Related documentation:
+### Related documentation
 
 - [Publish a new app to the Microsoft Store](/docs/publish-a-new-app-to-the-microsoft-store/)
 - [Finding your Windows Publisher info](/docs/finding-your-windows-publisher-info/)

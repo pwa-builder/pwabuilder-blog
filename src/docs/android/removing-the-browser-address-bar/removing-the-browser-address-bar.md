@@ -18,8 +18,6 @@ tags:
   - Android
 ---
 
-# Removing the Browser Address Bar
-
 If you're seeing a browser address bar in your PWA Android app, it means you need to update your digital asset links, the `assetlinks.json` file.
 
 This document shows how fix this issue so the browser address bar won't show up.

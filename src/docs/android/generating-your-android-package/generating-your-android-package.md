@@ -20,7 +20,7 @@ tags:
 
 To learn more about how PWABuilder generates a Trusted Web Activity from your PWA, check out [our post](/posts/microsoft-and-google-team-up) on this collaborative effort.
 
-# Generating your Android application with PWABuilder
+## Generating your Android application with PWABuilder
 
 First, go to pwabuilder.com and put in the URL to your PWA, such as [https://sadchonks.com](https://sadchonks.com):
 

@@ -9,6 +9,7 @@ trending: false
 featured: true
 recommended: true
 isDocumentation: true
+image: docs/base_package/pwa-logo.png
 backUrl: '/docs'
 author:
   name: PWA Builder documentation

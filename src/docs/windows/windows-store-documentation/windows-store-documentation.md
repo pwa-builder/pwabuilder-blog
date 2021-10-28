@@ -1,10 +1,11 @@
 ---
 layout: doc
-title: Windows Store Documentation
-excerpt: Everything you need to know to build a Windows Store App from your PWA
-description: Everything you need to know to build a Windows Store App from your PWA
+title: Windows Platform
+url: /windows-store-documentation
+excerpt: Publish your PWA to the Microsoft Store
+description: Publish your PWA to the Microsoft Store
 date: 2021-06-24
-updatedDate: 2021-06-24
+updatedDate: 2021-10-26
 trending: false
 featured: true
 recommended: true
@@ -19,13 +20,17 @@ tags:
   - Windows
 ---
 
-Here are the steps required to create & publish a Microsoft Store MSIX package from your existing PWA:
+<img src="/docs/windows/windows-store-documentation/StoreLogo.png" />
 
-1. If not done yet, create & reserve an app in the [Windows Partner Center](https://partner.microsoft.com/dashboard) as explained in this documentation [Publish your Progressive Web App to the Microsoft Store](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/microsoft-store)
-2. Create your Microsoft Store package on [PWA Builder](https://www.pwabuilder.com) 
+Both the Microsoft Store and Windows itself natively supports PWAs as first-class apps.
+
+Follow these steps to get your PWA listed in the Microsoft Store:
+
+1. Reserve an app name in the [Windows Partner Center](https://partner.microsoft.com/dashboard) as explained in this documentation [Publish your Progressive Web App to the Microsoft Store](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store)
+2. Create your Microsoft Store app package on [PWA Builder](https://www.pwabuilder.com) 
 3. Follow [the Next steps for getting your PWA into the Microsoft Store](/docs/next-steps-for-getting-your-pwa-into-the-microsoft-store/)
 
-Related documentation:
+### Related documentation
 
 - [Publish a new app to the Microsoft Store](/docs/publish-a-new-app-to-the-microsoft-store/)
 - [Finding your Windows Publisher info](/docs/finding-your-windows-publisher-info/)

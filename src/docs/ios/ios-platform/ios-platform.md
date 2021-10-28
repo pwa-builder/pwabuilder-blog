@@ -10,7 +10,7 @@ featured: true
 recommended: true
 isDocumentation: true
 backUrl: '/docs'
-image: docs/ios/ios-store-logo.svg 
+image: docs/ios/ios-platform/ios-store-logo.png
 author:
   name: Judah Gabriel Himango
 tags:

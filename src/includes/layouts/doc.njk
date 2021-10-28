@@ -11,11 +11,11 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/docs/'}}{{ title | slug 
           {{title}}</h1>
         {% if date %}
           {% if updatedDate and (date | string) !== (updatedDate | string) %}
-            <p class="text-sm italic">Last updated on <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span></p>
+            <p class="text-sm italic">Last updated on <small datetime="{{ date }}">{{ updatedDate | dateDisplay }}</small></p>
           {% else %}
-            <p class="text-sm italic">
+            <small class="text-sm italic">
               <span datetime="{{ date }}">{{ date | dateDisplay }}</span>
-            </p>
+            </small>
           {% endif %}
         {% endif %}
         {% if author %}

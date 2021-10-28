@@ -49,7 +49,7 @@ It packages this all together as an Xcode project workspace that you can [build 
 
 We've trained a generation of users to look for apps in the App Store. By publishing your PWA to the iOS App Store, you broaden your audience. 
 
-Additionally, using our iOS platform, your PWA becomes a first-class citizen on iOS devices. Your app shows up on the user's homescreen without clunky Safari installation flows.
+Additionally, using our iOS platform, your PWA becomes a first-class citizen on iOS devices. Your app shows up on the user's homescreen without clunky Safari "Add to Home Screen" flows.
 
 ## What do I need?
 
@@ -176,11 +176,11 @@ We also be glad to accept PRs enabling such functionality into [our iOS project 
 
 No. 
 
-[Microsoft Store supports PWAs](posts/bringing-chromium-edge-pwas-to-the-microsoft-store/) as first-class apps. Google Play [does as well](/posts/microsoft-and-google-team-up-to-make-pwas-better-in-the-play-store). 
+[Microsoft Store supports PWAs](/posts/bringing-chromium-edge-pwas-to-the-microsoft-store/) as first-class apps. Google Play [does as well](/posts/microsoft-and-google-team-up-to-make-pwas-better-in-the-play-store). 
 
 While WebKit is [making progress on PWA support](https://webkit.org/blog/11989/new-webkit-features-in-safari-15/), at the time of this writing, [PWAs remain a second-class citizen on iOS](https://firt.dev/ios-14.5/). Apple's App Store support for PWAs is non-existent, requiring a web view-based solution like PWABuilder's.
 
-Additionally, because iOS doesn't allow 3rd party browser engines, your PWA is limited to WebKit's PWA capabilities, which are currently lagging behind other browser engines.
+Additionally, because [iOS doesn't allow 3rd party browser engines](https://infrequently.org/2021/08/webkit-ios-deep-dive/), your PWA is limited to WebKit's PWA capabilities, which are currently lagging behind other browser engines.
 
 Given the web's increasing capabilities and the industry's shift to the web, most recently including powerful apps like [VS Code](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev) and [Photoshop](https://web.dev/ps-on-the-web/) moving to the web, we hope to see Apple improve PWA support in WebKit, iOS, and the App Store.
 
@@ -211,7 +211,7 @@ If you need help or have questions, you can [open an issue on our GitHub repo](h
 
 A great big thank you to PWA enthusiast and open sourcer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, sent us open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies.
 
-Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/pwa-install/) serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
+Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/ios-pwa-wrap) serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
 
 ## Summary
 

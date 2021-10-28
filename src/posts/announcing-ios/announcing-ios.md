@@ -137,7 +137,7 @@ We currently don't support push notifications. We have partial support in the pl
 
 If Push Notification support is important to you, [upvote this issue](https://github.com/pwa-builder/pwabuilder-ios/issues/6).
 
-Also, consider [publishing to the Microsoft Store](https://blog.pwabuilder.com/docs/windows-store-documentation/), where your PWA can use Push Notifications and other PWA capabilities using web standards-based code, and without the need of native wrappers.
+Also, consider [publishing to the Microsoft Store](https://blog.pwabuilder.com/docs/windows-platform/), where your PWA can use Push Notifications and other PWA capabilities using web standards-based code, and without the need of native wrappers.
   
 </details>
 

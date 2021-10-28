@@ -185,7 +185,7 @@ Once you've signed into your Apple Developer account in Xcode, dismiss the Prefe
 
 #### Uploading your package: Assign your project to your account
 
-In Xcode, choose choose `Project Navigator (📁)` -> `[your app name]` -> `Build Settings`:
+In Xcode, choose `Project Navigator (📁)` -> `[your app name]` -> `Build Settings`:
 
 ![image](https://user-images.githubusercontent.com/312936/138536316-baaad18c-5706-40bd-8a21-14e46225c6d4.png)
 
@@ -245,4 +245,4 @@ When you've finished preparing for submission (pricing, screenshots, localizatio
 
 ![image](https://user-images.githubusercontent.com/312936/138752930-1a23107a-5e71-4c74-9d0e-a290502d78ca.png)
 
-App reviews typically take 24-48 hours. Once approved, your PWA will be listed in the iOS App Store.
+App reviews typically take 24-48 hours. Once approved, your PWA will be listed in the iOS App Store. 🎉

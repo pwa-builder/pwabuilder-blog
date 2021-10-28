@@ -200,7 +200,7 @@ Since that time, a few members of the PWABuilder open source community successfu
 
 Check out our PWABuilder iOS documentation:
 
-- [Intro to iOS PWAs](/docs/ios-platform)
+- [PWABuilder iOS platform overview](/docs/ios-platform)
 - [How to build and test your iOS PWA](/docs/ios-next-steps)
 - [Publishing your PWA to the iOS App Store](/docs/ios-app-submission)
 - [iOS PWAs frequently asked questions (FAQs)](/docs/ios-faq)

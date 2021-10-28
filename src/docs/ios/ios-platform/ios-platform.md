@@ -21,7 +21,7 @@ tags:
 
 The PWABuilder iOS platform is an experimental project that utilizes a Webkit-based web view (WKWebView) to load your PWA on iOS and enable some PWA functionality. 
 
-When you use PWABuilder to package your PWA for iOS, your download will include an Xcode project customized for your PWA. Once downloaded, see [Next Steps for iOS](../next-steps).
+When you use PWABuilder to package your PWA for iOS, your download will include an Xcode project customized for your PWA. Once downloaded, see [Next Steps for iOS](/docs/ios-next-steps).
 
 ## What can it do?
 

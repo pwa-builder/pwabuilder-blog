@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Publish your PWAs to the iOS App Store with PWABuilder
+title: Publish your PWA to the iOS App Store
 excerpt: Announcing PWABuilder's new iOS platform. Publish your PWA to the App Store and gain new iPhone and iPad users.
 description: Announcing PWABuilder's new iOS platform. Publish your PWA to the App Store and gain new iPhone and iPad users.
 date: 2021-10-28
@@ -33,7 +33,7 @@ Try it now:
 3. In the new iOS publish section, choose `Store Package`: <br><a href="http://www.pwabuilder.com/publish?site=https://webboard.app" target="_blank"><img style="margin-left: 0; margin-top: 10px; margin-bottom: 10px; max-height: 150px;" loading="lazy" src="/posts/announcing-ios/ios-publish-section.png" alt="Screenshot of the new iOS publishing section on PWABuilder" /></a>
 4. You'll be prompted for metadata about your app, such as app name, URL, icons, and more. By default, we populate these based on your PWA's web app manifest. <br><img loading="lazy" src="/posts/announcing-ios/ios-options.png" style="max-height: 300px; margin-left: 0; margin-bottom: 10px;" />
 5. Click `Generate` to download your iOS app package.
-6. Your download will contain [instructions](/docs/ios-next-steps) for submitting the package to the iOS App Store.
+6. Your download will contain [instructions](/docs/build-your-ios-app) for submitting the package to the iOS App Store.
 
 ## What is it?
 
@@ -43,11 +43,11 @@ Our platform creates a native Swift app with a [WebKit web view](https://develop
 
 It pulls values from your PWA's manifest as these defaults, allowing you to override them in the PWABuilder iOS options dialog seen above. If your PWA manifest doesn't have the all the right-sized images for the iOS app, the platform will generate these images for you, scaling down from a large, square, `any` purpose PNG icon from your manifest.
 
-It packages this all together as an Xcode project workspace that you can [build in Xcode](/docs/ios-next-steps) and [publish to the App Store](/docs/ios-app-submission).
+It packages this all together as an Xcode project workspace that you can [build in Xcode](/docs/build-your-ios-app) and [publish to the iOS App Store](/docs/publish-your-pwa-to-the-ios-app-store).
 
 ## Why should I use this?
 
-We've trained a generation of users to look for apps in the App Store. By publishing your PWA to the iOS App Store, you broaden your audience. 
+We've trained a generation of users to look for apps in app stores. By publishing your PWA to the iOS App Store, you broaden your audience. 
 
 Additionally, using our iOS platform, your PWA becomes a first-class citizen on iOS devices. Your app shows up on the user's homescreen without clunky Safari "Add to Home Screen" flows.
 
@@ -57,7 +57,7 @@ To generate an iOS app, you just need a PWA. Or more specifically, a web app wit
 
 To build the project, you'll [need a Mac with Xcode installed](https://github.com/pwa-builder/pwabuilder-ios/issues/9). 
 
-To publish your PWA to the App Store, you'll [need an Apple Developer account](/docs/ios-faq).
+To publish your PWA to the iOS App Store, you'll [need an Apple Developer account](/docs/ios-faq).
 
 See [our FAQ](/docs/ios-faq) for details.
 
@@ -136,6 +136,8 @@ When publishing your iOS app, you can opt-in to publishing to the Mac App Store 
 We currently don't support push notifications. We have partial support in the platform for enabling push notifications via Firebase, but the code is currently commented out, and PWABuilder has no UI for letting you input your push notification details.
 
 If Push Notification support is important to you, [upvote this issue](https://github.com/pwa-builder/pwabuilder-ios/issues/6).
+
+Also, consider [publishing to the Microsoft Store](https://blog.pwabuilder.com/docs/windows-store-documentation/), where your PWA can use Push Notifications and other PWA capabilities using web standards-based code, and without the need of native wrappers.
   
 </details>
 
@@ -166,7 +168,7 @@ Our template doesn't include support for iOS-specific functionality like Apple P
 
 But that doesn't mean you can't add them. 
 
-To add support for iOS-specific functionality, you'd enable the capability when [creating your Bundle ID](/docs/ios-app-submission), then update your Xcode project to take advantage of the new capability. See [our FAQ](/docs/ios-faq) for more info. 
+To add support for iOS-specific functionality, you'd enable the capability when [creating your Bundle ID](/docs/publish-your-pwa-to-the-ios-app-store#create-your-bundle-id), then update your Xcode project to take advantage of the new capability. See [our FAQ](/docs/ios-faq) for more info. 
 
 We also be glad to accept PRs enabling such functionality into [our iOS project template code](https://github.com/pwa-builder/pwabuilder-ios/tree/main/Microsoft.PWABuilder.IOS.Web/Resources/ios-project-src).
   
@@ -178,7 +180,7 @@ No.
 
 [Microsoft Store supports PWAs](/posts/bringing-chromium-edge-pwas-to-the-microsoft-store/) as first-class apps. Google Play [does as well](/posts/microsoft-and-google-team-up-to-make-pwas-better-in-the-play-store). 
 
-While WebKit is [making progress on PWA support](https://webkit.org/blog/11989/new-webkit-features-in-safari-15/), at the time of this writing, [PWAs remain a second-class citizen on iOS](https://firt.dev/ios-14.5/). Apple's App Store support for PWAs is non-existent, requiring a web view-based solution like PWABuilder's.
+While WebKit is [making progress on PWA support](https://webkit.org/blog/11989/new-webkit-features-in-safari-15/), at the time of this writing, [PWAs remain a second-class citizen on iOS](https://firt.dev/ios-14.5/). The iOS App Store's support for PWAs is non-existent, requiring a web view-based solution like PWABuilder's.
 
 Additionally, because [iOS doesn't allow 3rd party browser engines](https://infrequently.org/2021/08/webkit-ios-deep-dive/), your PWA is limited to WebKit's PWA capabilities, which are currently lagging behind other browser engines.
 
@@ -188,9 +190,9 @@ Given the web's increasing capabilities and the industry's shift to the web, mos
 
 PWABuilder doesn't guarantee that your app will be accepted into Apple's App Store.
 
-In 2019, Apple released [new guidelines for HTML5 apps in the App Store](https://developer.apple.com/news/?id=09062019b). The new guidelines appear to forbid certain kinds of web apps (e.g. gambling, lotteries, etc.) from the App Store.
+In 2019, Apple released [new guidelines for HTML5 apps in the App Store](https://developer.apple.com/news/?id=09062019b). The new guidelines appear to forbid certain kinds of web apps (e.g. gambling, lotteries, etc.) from the iOS App Store.
 
-The PWABuilder team attempted to clarify with Apple their general stance on PWAs in the App Store. Despite several meetings, we were unable to get an official answer from Apple.
+The PWABuilder team attempted to clarify with Apple their general stance on PWAs in the iOS App Store. Despite several meetings, we were unable to get an official answer from Apple.
 
 Since that time, a few members of the PWABuilder open source community successfully published PWAs in the iOS App Store. Thus, we are releasing our new iOS platform with the knowledge that Apple may not approve some PWAs, especially if they are little more than traditional websites in an app frame.
 
@@ -201,7 +203,7 @@ Since that time, a few members of the PWABuilder open source community successfu
 Check out our PWABuilder iOS documentation:
 
 - [PWABuilder iOS platform overview](/docs/ios-platform)
-- [How to build and test your iOS PWA](/docs/ios-next-steps)
+- [How to build and test your iOS PWA](/docs/build-your-ios-app)
 - [Publishing your PWA to the iOS App Store](/docs/ios-app-submission)
 - [iOS PWAs frequently asked questions (FAQs)](/docs/ios-faq)
 
@@ -209,9 +211,9 @@ If you need help or have questions, you can [open an issue on our GitHub repo](h
 
 ## A special thank you
 
-A great big thank you to PWA enthusiast and open sourcer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, sent us open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies.
+A great big thank you to PWA enthusiast, open sourcer, and [HostMe](https://www.hostmeapp.com/) developer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, contributed open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies. 
 
-Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/ios-pwa-wrap) serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
+Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/ios-pwa-wrap), an outgrowth of his work at [HostMe](https://www.hostmeapp.com/), serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
 
 ## Summary
 

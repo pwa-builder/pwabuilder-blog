@@ -19,9 +19,11 @@ tags:
   - iOS
 ---
 
+<img src="/docs/ios/ios-platform/ios-store-logo.png" style="max-height: 250px;" />
+
 The PWABuilder iOS platform is an experimental project that utilizes a Webkit-based web view (WKWebView) to load your PWA on iOS and enable some PWA functionality. 
 
-When you use PWABuilder to package your PWA for iOS, your download will include an Xcode project customized for your PWA. Once downloaded, see [Next Steps for iOS](/docs/ios-next-steps).
+When you use PWABuilder to package your PWA for iOS, your download will include an Xcode project customized for your PWA. Once downloaded, see [Build Your iOS App](/docs/build-your-ios-app) for your next steps.
 
 ## What can it do?
 
@@ -90,17 +92,17 @@ When publishing your iOS app, you can opt-in to publishing to the Mac App Store 
 
 ## PWABuilder iOS documentation
 
-Once you've downloaded your iOS app package from PWABuilder, you should [build and test your app](/docs/ios-next-steps).
+Once you've downloaded your iOS app package from PWABuilder, you should [build and test your app](/docs/build-your-ios-app).
 
-After building and testing your app, [submit your app to the App Store](/docs/ios-app-submission).
+After building and testing your app, [publish your PWA to the iOS App Store](/docs/publish-your-pwa-to-the-ios-app-store).
 
 Finally, we recommend reading our [PWABuilder iOS FAQ](/docs/ios-faq).
 
 ## A special thanks
 
-A great big thank you to PWA enthusiast and open sourcer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, sent us open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies.
+A great big thank you to PWA enthusiast, open sourcer, and [HostMe](https://www.hostmeapp.com/) developer [Gleb Khmyznikov](https://github.com/khmyznikov). In the true open source spirit, Gleb, along with several members of the PWABuilder open source community, contributed open source iOS projects they had successfully published to the iOS App Store. Gleb suggested we could fork his project for a fresh PWABuilder iOS platform based on latest iOS technologies. 
 
-Gleb encouraged us, provided us help, and [his code](https://github.com/khmyznikov/ios-pwa-wrap/) served as the base foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
+Gleb encouraged us, provided us help and documentation, and [his code](https://github.com/khmyznikov/ios-pwa-wrap), an outgrowth of his work at [HostMe](https://www.hostmeapp.com/), serves as the foundation for PWABuilder's iOS platform. Gleb, you rock! Thank you for your code, your encouragement, your technical help, your answers to our questions over the last few months. ♥
 
 ## Disclaimer
 

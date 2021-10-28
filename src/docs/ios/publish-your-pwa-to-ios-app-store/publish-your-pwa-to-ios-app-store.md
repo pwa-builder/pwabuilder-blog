@@ -1,10 +1,10 @@
 ---
 layout: doc
-title: iOS App Submission
-excerpt: A step-by-step visual guide to publishing your PWA to the App Store
-description: A step-by-step visual guide to publishing your PWA to the App Store
-date: 2021-10-27
-updatedDate: 2021-10-27
+title: Publish Your PWA to the iOS App Store
+excerpt: A step-by-step visual guide to publishing your PWA to the iOS App Store
+description: A step-by-step visual guide to publishing your PWA to the iOS App Store
+date: 2021-10-28
+updatedDate: 2021-10-28
 trending: false
 featured: false
 recommended: false
@@ -19,7 +19,7 @@ tags:
   - iOS
 ---
 
-Once you've packaged your PWA for iOS using [PWABuilder](https://www.pwabuilder.com) and [followed the steps to build your iOS app package](/docs/ios-next-steps), you can submit your app to the iOS App Store.
+Once you've packaged your PWA for iOS using [PWABuilder](https://www.pwabuilder.com) and [followed the steps to build your iOS app package](/docs/build-your-ios-app), you're ready to publish your app to the iOS App Store.
 
 The process looks like this:
 
@@ -30,16 +30,17 @@ The process looks like this:
 5. Create a provisioning profile
 6. Create an app reservation
 7. Upload your app package
+8. Submit for review
 
 Each step is described below.
 
-## 1. Sign into your Apple Developer account
+## <span id="sign-into-your-developer-account">1. Sign into your Apple Developer account</span>
 
 To submit your app the iOS App Store, [sign-in to your Apple Developer Account](https://developer.apple.com/account/).
 
 If you don't have an Apple Developer account, [enroll here](https://developer.apple.com/programs/enroll). Enrollment costs $99 USD/year, though [non-profits can have this fee waived](https://developer.apple.com/support/membership-fee-waiver/).
 
-## 2. Create your Bundle ID
+## <span id="create-your-bundle-id">2. Create your Bundle ID</span>
 
 Once you're signed in, you'll need to create a Bundle ID for your app. 
 

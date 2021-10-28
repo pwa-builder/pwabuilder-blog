@@ -18,7 +18,10 @@ tags:
   - Documentation
   - Android
 ---
-The PWABuilder Android platform utilizes the [open source Bubblerwrap tool](https://github.com/GoogleChromeLabs/bubblewrap) to generate a [Trusted Web Activity](https://developers.google.com/web/android/trusted-web-activity/) (TWA) that can be installed on the Google Play Store. This TWA behaves like any other Android application and is a great way to ship your PWA to the Google Play Store.
+
+<img src="/docs/android/android-playstore-documentation/StoreLogo.png" style="max-height: 200px; />
+
+PWABuilder's Android platform utilizes the [open source Bubblerwrap tool](https://github.com/GoogleChromeLabs/bubblewrap) to generate a [Trusted Web Activity](https://developers.google.com/web/android/trusted-web-activity/) (TWA) that can be installed on the Google Play Store. This TWA behaves like any other Android application and is a great way to ship your PWA to the Google Play Store.
 
 1. [Generating your Android app with PWABuilder](/docs/generating-your-android-package)
 2. [Testing and publishing your your app to the Google Play Store](/docs/testing-and-publishing-your-android-pwa-to-the-google-play-store)

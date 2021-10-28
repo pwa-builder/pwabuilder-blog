@@ -49,12 +49,15 @@ const handleShareButton = () => {
     const shareButtons = document.querySelectorAll(".share")
     shareButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
-        navigator.clipboard.writeText(location.href).then(() => {
-          btn.textContent = "copied"
-          setTimeout(() => {
-            btn.textContent = "share"
-          }, 2000)
-        })
+        navigator.share({
+          url: location.href
+        });
+        // navigator.clipboard.writeText(location.href).then(() => {
+        //   btn.textContent = "copied"
+        //   setTimeout(() => {
+        //     btn.textContent = "share"
+        //   }, 2000)
+        // })
       })
     })
   } else {

@@ -76,7 +76,7 @@ We also need to add the following [property](https://lit-element.polymer-project
 
 ![Some JavaScript that sets a property for the wake lock controller](https://miro.medium.com/max/1400/1*xGruBOHgmUHTvlQj2Gn7lQ.png)
 
-to our home page. You can read more about properties in lit-element [here](https://lit-element.polymer-project.org/guide/properties#declare-with-decorators). We now just need to call the \`setupWakeLock\` method in the [firstUpdated lifecycle method](https://lit-element.polymer-project.org/guide/lifecycle#firstupdated) and we are good to go. The wake lock will be released by the browser when the user closes the app. And just like that, our fourth requirement for our app is done!
+to our home page. You can read more about properties in lit-element <a href="https://lit-element.polymer-project.org/guide/properties#declare-with-decorators" aria-label="link to more about properties in lit-element">here</a>. We now just need to call the \`setupWakeLock\` method in the [firstUpdated lifecycle method](https://lit-element.polymer-project.org/guide/lifecycle#firstupdated) and we are good to go. The wake lock will be released by the browser when the user closes the app. And just like that, our fourth requirement for our app is done!
 
 ## Deploying your PWA and publishing to the App Stores!
 

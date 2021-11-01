@@ -139,4 +139,4 @@ These apps all run on both Windows and Android with the same codebase between th
 
 ### SimpleEdit running on the Surface Duo
 
-Both the Microsoft Edge and PWABuilder teams are extremely excited to share this Preview of new Edge PWAs in the Microsoft Store with developers today. We are eager to see developers leverage the full capabilities of the new Edge in their PWAs and ship awesome experiences to the Microsoft Store! As you try the preview, please feel free to let us know [here](https://github.com/pwa-builder/PWABuilder) if you run into any issues or have any questions. Thanks again!
+Both the Microsoft Edge and PWABuilder teams are extremely excited to share this Preview of new Edge PWAs in the Microsoft Store with developers today. We are eager to see developers leverage the full capabilities of the new Edge in their PWAs and ship awesome experiences to the Microsoft Store! As you try the preview, please feel free to let us know <a href="https://github.com/pwa-builder/PWABuilder" aria-label="link to submit feedback and issues">here</a> if you run into any issues or have any questions. Thanks again!

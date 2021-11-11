@@ -3,7 +3,7 @@
 <head>
 <script type=“text/javascript”>
   window.onload = {
-    let subheaders = document.getElementsByClassname('nav-link');
+    let subheaders = document.getElementsByClassname('subheaderA');
     for (var i = 0; i < subheaders.length; i++) {
       subheaders[i].addEventListener('keydown', function(e){
         if(e.keyCode === 13 || e.keyCode === 32) {
@@ -41,7 +41,7 @@
         <ul class="flex justify-around my-3 subheaderUl">
             {% for item in navigation.items %}
             <li class="mx-3 px-2 py-1">
-              <a class="nav-link" aria-label="{{ item.text }}" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+              <a aria-label="{{ item.text }}" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
 

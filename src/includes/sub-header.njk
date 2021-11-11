@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type=“text/javascript”>
+  window.onload = {
+    let subheaders = document.getElementsByClassname('nav-link');
+    for (var i = 0; i < subheaders.length; i++) {
+      subheaders[i].addEventListener('keydown', function(e){
+        if(e.keyCode === 13 || e.keyCode === 32) {
+          subheaders[i].setAttribute("aria-label", "Link selected");
+        }
+      });
+    } 
+  }  
+</script>
+</head>
 <section
   class="sub-header light:bg-secondary flex flex-col relative bg-cover bg-center bg-no-repeat min-h-64 mb-8"
   role="sub-header"
@@ -24,8 +40,8 @@
 
         <ul class="flex justify-around my-3 subheaderUl">
             {% for item in navigation.items %}
-            <li aria-label="{{ item.text }}" class="mx-3 px-2 py-1">
-              <a aria-hidden="true" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+            <li class="mx-3 px-2 py-1">
+              <a class="nav-link" aria-label="{{ item.text }}" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
 
@@ -82,7 +98,7 @@
       {% endif %}
   </div>
 </section>
-
+</html>
 <style>
   .sub-header {
     background-image: url("/sub-header-background.png");

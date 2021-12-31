@@ -35,6 +35,13 @@ We utilize [App-Bound Domains](<a href="https://webkit.org/blog/10882/app-bound-
 </details>
 
 <details>
+  <summary>Shortcuts</summary>  
+  
+If you've defined shortcuts in your web manifest, they'll automatically work in your iOS app. See [this issue](https://github.com/pwa-builder/pwabuilder-ios/issues/7) for more details.
+  
+</details>
+  
+<details>
   <summary>URL capture</summary>  
   
 By default, PWABuilder's iOS platform generates a URL capture-ready app. If a user installs your app, you can have your app's URLs open in your PWA, rather than in the browser. 

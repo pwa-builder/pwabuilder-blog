@@ -7,7 +7,7 @@ date: 2021-10-28
 updatedDate: 2021-10-28
 trending: true
 featured: true
-image: posts/announcing-ios/ios-announcement.png
+image: posts/announcing-vscode/vscode-release-graphic.png
 isPost: true
 backUrl: '/'
 author:
@@ -21,6 +21,8 @@ tags:
   - Android
   - iOS
 ---
+
+<img src="/posts/announcing-vscode/vscode-release-graphic.png" />
 
 Today, the PWABuilder project is excited to release a brand new VSCode Extension, the PWA Studio! 
 The PWA Studio VSCode extension brings everything you need to build high quality PWAs, right to your VSCode. You can:

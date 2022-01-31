@@ -22,7 +22,7 @@ tags:
   - iOS
 ---
 
-<img src="/posts/announcing-vscode/vscode-release-graphic.png" />
+<img alt="vscode release graphic" src="/posts/announcing-vscode/vscode-release-graphic.png" />
 
 Today, the PWABuilder project is excited to release a brand new VSCode Extension, the PWA Studio! 
 The PWA Studio VSCode extension brings everything you need to build high quality PWAs, right to your VSCode. You can:
@@ -36,7 +36,7 @@ The PWA Studio VSCode extension brings everything you need to build high quality
 -	Use our snippets to quickly and easily implement native features that can improve the User Experience of your PWA
 These features turn VSCode into the best development environment for Progressive Web Apps, ensuring you have tools for every step of your PWA development journey.
 
-# Get Started
+## Get Started
 First, you need to install the extension. Visit the [VSCode Marketplace]( https://marketplace.visualstudio.com/items?itemName=PWABuilder.pwa-studio) to install.
 The quickest way to get started with the extension is by opening the PWABuilder panel. This can be done by clicking the PWABuilder icon on the left side of VSCode:
 ![The PWABuilder icon on the left side of the VSCode Window](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/icon-view.png)
@@ -53,14 +53,14 @@ Finally, the extension also provides buttons at the bottom of VSCode to provide 
 
 ![The quick actions](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/quick-actions.png)
 
-# Build a new PWA with the PWA Studio
+## Build a new PWA with the PWA Studio
 Lets go through an example of what the extension is capable of! Today we are going to start building a brand new PWA in about 2 minutes with the extension and the [PWABuilder pwa-starter](https://aka.ms/pwa-starter). You will get:
 -	A ready to go codebase that follows best practices from the start: No more spending time choosing which framework to use, which build system to use, which styling system to use etc. Just start building with the PWABuilder team’s recommended setup. Enjoy Web Components? We proudly use [Lit](https://lit.dev) for incredible performance, fast load times and a React-like developer experience.
 -	A Service Worker setup using [Workbox](https://developers.google.com/web/tools/workbox/) that ties in with the Rollup powered build system. This ensures that your PWA always works offline.
 -	A full featured Web Manifest, including Icons, with everything that you need to ensure your PWA can be installed from the browser AND is ready to publish to the app stores.
 -	Everything needed to publish to [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/)
 
-## Steps   
+### Steps   
 1) Open a new VSCode Window
 2) Tap the PWABuilder Icon on the left side of VSCode
 ![The PWABuilder icon on the left side of the VSCode Window](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/icon-view.png)

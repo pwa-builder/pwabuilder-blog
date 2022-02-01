@@ -3,8 +3,8 @@ layout: post
 title: Announcing PWA Studio, the VS Code extension for building Progressive Web Apps!
 excerpt: The PWA Studio VSCode extension brings everything you need to build high quality PWAs, right to your VSCode!
 description: The PWA Studio VSCode extension brings everything you need to build high quality PWAs, right to your VSCode!
-date: 2021-10-28
-updatedDate: 2021-10-28
+date: 2022-02-01
+updatedDate: 2021-02-01
 trending: true
 featured: true
 image: posts/announcing-vscode/vscode-release-graphic.png

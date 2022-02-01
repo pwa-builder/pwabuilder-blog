@@ -37,7 +37,7 @@ The PWA Studio VSCode extension brings everything you need to build high quality
 These features turn VSCode into the best development environment for Progressive Web Apps, ensuring you have tools for every step of your PWA development journey.
 
 ## Get Started
-First, you need to install the extension. Visit the [VSCode Marketplace]( https://marketplace.visualstudio.com/items?itemName=PWABuilder.pwa-studio) to install.
+First, you need to install the extension. Visit the [VSCode Marketplace](https://aka.ms/install-pwa-studio) to install.
 The quickest way to get started with the extension is by opening the PWABuilder panel. This can be done by clicking the PWABuilder icon on the left side of VSCode:
 ![The PWABuilder icon on the left side of the VSCode Window](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/icon-view.png)
 

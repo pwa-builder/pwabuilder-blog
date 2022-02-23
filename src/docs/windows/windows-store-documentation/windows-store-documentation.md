@@ -20,7 +20,7 @@ tags:
   - Windows
 ---
 
-<img src="/docs/windows/windows-store-documentation/StoreLogo.png" />
+<img src="/docs/windows/windows-store-documentation/StoreLogo.png" alt="Windows Logo" role="presentation"/>
 
 Both the Microsoft Store and Windows itself natively supports PWAs as first-class apps.
 

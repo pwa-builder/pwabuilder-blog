@@ -25,7 +25,7 @@
         <ul class="flex justify-around my-3 subheaderUl">
             {% for item in navigation.items %}
             <li aria-label="{{ item.text }}" class="mx-3 px-2 py-1">
-              <a aria-hidden="true" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+              <a aria-hidden="true" tabindex="-1" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
 

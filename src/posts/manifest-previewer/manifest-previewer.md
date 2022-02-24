@@ -27,16 +27,16 @@ And this is by just knowing the name and icon defined on the manifest! You can a
 <img src="/posts/manifest-previewer/name-collage.png" alt="Name preview - Android iOS" width="700px" />
 
 Similarly, the component can also help you picture what your <a href="https://web.dev/splash-screen/" target="_blank">splash screen</a> will look like, since this loading display is constructed by referring to the name, icons, and background indicated on the manifest. But wait, why do you need to specify a background color again if you have your CSS stylesheets for that? This is because when the splash screen is displayed to the user, your application (and hence styles) is still loading. With help of the web manifest, this loading state is smoother and customized to your PWA.
-<img src="/posts/manifest-previewer/splashscreen.png" width="500px" />
+<img src="/posts/manifest-previewer/splashscreen.png" width="500px" alt="Manifest Preview Splash Screen"/>
 
 Besides understanding the impact of changing values in the web manifest, you can also get an idea of what the experience is for users installing your application. Attributes like the name, site url, icons and screenshots are used to describe your application in installation dialogs:
 <img src="/posts/manifest-previewer/install-collage.png" alt="Installation dialogs" width="900px" />
 
 The manifest previewer can also help you visualize your application's store listing, given that with your web manifest you can assign categories to your PWA, include screenshots that show a peak of the user experience, and give details about your app via the `description` attribute. Here's the visualization in the <a href="https://blogs.windows.com/windowsexperience/2021/06/24/building-a-new-open-microsoft-store-on-windows-11/" target="_blank">new Microsoft Store</a>:
-<img src="/posts/manifest-previewer/categories.png" width="500px" />
+<img src="/posts/manifest-previewer/categories.png" width="500px" alt="Manifest Categories Preview"/>
 
 This web component also showcases some of the most modern features of PWAs, like making your app a <a href="https://web.dev/web-share-target/">web share target</a> so that users can share media data to your application directly from the platform's share menu:
-<img src="/posts/manifest-previewer/share-target.png" width="700px" />
+<img src="/posts/manifest-previewer/share-target.png" width="700px" alt="Share Target Preview"/>
 
 And that's not all! This web component also includes previews for the `short_name`, `display`, `theme_color`, `shortcuts`, and many other manifest attributes. You can see them all now on <a href="https://www.pwabuilder.com/" target="_blank">the PWABuilder site</a>, since the team is the first proud user of this component, and it is using it to help their users have a better experience when getting their applications ready to be published to the Microsoft store. Currently the team is only enabling the preview on Windows, but the Android and iOS will be added in the near future.
 

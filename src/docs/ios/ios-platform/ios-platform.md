@@ -19,7 +19,7 @@ tags:
   - iOS
 ---
 
-<img src="/docs/ios/ios-platform/ios-store-logo.png" style="max-height: 250px;" />
+<img src="/docs/ios/ios-platform/ios-store-logo.png" style="max-height: 250px;" alt="Ios Store Logo"/>
 
 The PWABuilder iOS platform is an experimental project that utilizes a Webkit-based web view (WKWebView) to load your PWA on iOS and enable some PWA functionality. 
 

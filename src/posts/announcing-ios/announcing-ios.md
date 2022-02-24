@@ -22,7 +22,7 @@ tags:
   - App Store
 ---
 
-<img src="/posts/announcing-ios/ios-announcement.png" />
+<img src="/posts/announcing-ios/ios-announcement.png" alt="IOS Announcement Banner" role="presentation"/>
 
 Today, the [PWABuilder](https://www.pwabuilder.com) team is happy to announce the release of our new iOS platform preview. Publish your Progressive Web Apps (PWAs) to the iOS App Store using our new open source tooling.
 
@@ -31,7 +31,7 @@ Try it now:
 1. Go to [PWABuilder.com](https://www.pwabuilder.com) and enter the URL of a PWA. (e.g. https://sadchonks.com)
 2. Click `Next` to advance to the publish page.
 3. In the new iOS publish section, choose `Store Package`: <br><a href="http://www.pwabuilder.com/publish?site=https://webboard.app" target="_blank"><img style="margin-left: 0; margin-top: 10px; margin-bottom: 10px; max-height: 150px;" loading="lazy" src="/posts/announcing-ios/ios-publish-section.png" alt="Screenshot of the new iOS publishing section on PWABuilder" /></a>
-4. You'll be prompted for metadata about your app, such as app name, URL, icons, and more. By default, we populate these based on your PWA's web app manifest. <br><img loading="lazy" src="/posts/announcing-ios/ios-options.png" style="max-height: 300px; margin-left: 0; margin-bottom: 10px;" />
+4. You'll be prompted for metadata about your app, such as app name, URL, icons, and more. By default, we populate these based on your PWA's web app manifest. <br><img loading="lazy" src="/posts/announcing-ios/ios-options.png" alt="Screenshot of IOS metadata options" style="max-height: 300px; margin-left: 0; margin-bottom: 10px;" />
 5. Click `Generate` to download your iOS app package.
 6. Your download will contain [instructions](/docs/build-your-ios-app) for submitting the package to the iOS App Store.
 
@@ -106,7 +106,7 @@ As a future enhancement, we may allow you to hide the status bar -- useful in `d
   
 While your app initializes and the web view loads your PWA, users will see a splash screen. The splash screen will be a solid background color, with your app's icon centered and a progress bar beneath it:
 
-<img loading="lazy" src="/posts/announcing-ios/ios-splash.png" style="max-height: 300px" />
+<img loading="lazy" src="/posts/announcing-ios/ios-splash.png" style="max-height: 300px" alt="IOS Splash Screen" role="presentation"/>
 
 The splash screen background color is taken from your manifest's `background_color`. The icon is from your manifest's `icons`, and the progress bar color is styled using your manifest's `theme_color`.
 

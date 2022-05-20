@@ -3,13 +3,7 @@
   
 >
   <div class="container mx-auto px-8">
-    <div class="w-full flex justify-around items-center pt-2">
-      <nav
-        aria-label="sub-navigation"
-        class="w-full min-h-12 flex flex-col lg:flex-row items-center justify-between"
-        role="navigation"
-        tabindex="-1"
-      >
+    <div class="w-full flex justify-left items-center pt-2">
         {% if isPost or isDocumentation %}
           {% if isPost %}
             <a class="inline-flex items-center subheaderA" href="{{ backUrl }}" aria-label="Link back to Blog Home">
@@ -17,26 +11,8 @@
           {% else %}
             <a class="inline-flex items-center subheaderA" href="{{ backUrl }}" aria-label="Link back to Documentation Home">
               <ion-icon class="mr-1" name="chevron-back-outline" aria-hidden="true"></ion-icon>Back</a>
-            {% endif %}
-        {% else %}
-          <p>PWA Builder Resource Hub</p>
+          {% endif %}
         {% endif %}
-
-        <ul class="flex justify-around my-3 subheaderUl">
-            {% for item in navigation.items %}
-            <li aria-label="{{ item.text }}" class="mx-3 px-2 py-1">
-              <a aria-hidden="true" tabindex="-1" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-            </li>
-            {% endfor %}
-
-            <!-- hiding search for now until implemented -->
-            <!--<li aria-label="">
-              <a aria-hidden="true" class="mx-3 px-2 py-1 bg-primary shadow rounded-full w-8 h-8 flex justify-center items-center" href="#">
-                <ion-icon name="search-outline"></ion-icon>
-              </a>
-            </li>-->
-        </ul>
-      </nav>
     </div>
     {{ page.data }}
     

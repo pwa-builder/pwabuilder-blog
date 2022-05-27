@@ -32,7 +32,7 @@ Bubblewrap is Google’s command line utility and library to generate and sign G
 
 Earlier this year we started working together with Google to make PWABuilder utilize Bubblewrap under the hood. Today, **we’re announcing two great new features for PWA developers borne out of our collaboration:**
 
-1. **Web shortcuts support:** PWAs packaged for Google Play via PWABuilder will now support the new [web shortcuts standard](https://w3c.github.io/manifest/#shortcuts-member.
+1. **Web shortcuts support:** PWAs packaged for Google Play via PWABuilder will now support the new [web shortcuts standard](https://w3c.github.io/manifest/#shortcuts-member<span aria-hidden="true">.</span>
 2. **Advanced Android features & customization:** PWABuilder now supports the full range of trusted web activity options that makes your PWA shine on Android devices. From PWABuilder, you can customize the appearance of the Android status bar and nav bar in your PWA, customize your Android splash screen, change your launcher name, use an existing signing key, utilize deeper push notification support, configure your package’s ID and versioning, fallback behavior and more.
 
 All of this was a result of the collaboration between Google and Microsoft, with
@@ -51,7 +51,7 @@ Web shortcuts integrate into the operating system — such as Windows’ task ba
 
 The support happens automatically; no extra work required. [Shortcuts you define in your web app manifest](https://w3c.github.io/manifest/#shortcuts-member) will work in your Google Play Store APK package as one might expect them to. As users discover and install your PWA in the Google Play Store, they’ll be able to easily re-engage with your app through web shortcuts.
 
-To try it out, go to pwabuilder.com and put in the URL to a PWA with shortcuts, such as [https://sadchonks.com](https://sadchonks.com):
+To try it out, go to pwabuilder.com and put in the URL to a PWA with shortcuts, such as [https://sadchonks.com](https://sadchonks.com)<span aria-hidden="true">:</span>
 
 ![alt](https://cdn-images-1.medium.com/max/800/1*ZqsttjST0-y717XcAlj01w.png)
 
@@ -70,7 +70,7 @@ This will generate an APK package that can be uploaded to the Google Play Store.
 ![alt](https://cdn-images-1.medium.com/max/800/1*lS8bi-z_ZcA1oyvmFvIfuA.png)
 <span class="figcaption_hack">Web shortcuts working on Android in a PWA published to the Google Play Store</span>
 
-You can read up more about your PWA’s web shortcuts on Android over at the [shortcuts with trusted web activities explainer](https://web.dev/app-shortcuts/#trusted-web-activity-support).
+You can read up more about your PWA’s web shortcuts on Android over at the [shortcuts with trusted web activities explainer](https://web.dev/app-shortcuts/#trusted-web-activity-support)<span aria-hidden="true">.</span>
 
 ## **Android Features & Customization**
 
@@ -99,9 +99,9 @@ With this new functionality, you can customize your PWA for Android:
 - **Icon URL**: URLs for the icon to use for your app. We recommend a 512x512 icon.
 - **Maskable icon URL**: Optional. The icon to use on Android devices that show rounded corner icons. Typically, this icon should have some padding around the
   icon’s content, enabling the icon to be safely rounded without losing fidelity. We populate this with a [purpose: maskable](https://w3c.github.io/manifest/#purpose-member icon from your app manifest. If one can’t be found, we use the icon. For more information about
-  maskable icons on Android, see [https://web.dev/maskable-icon](https://web.dev/maskable-icon/).
-- **Monochrome icon URL**: Optional. The monochrome icon to use for your app. Android can use this to fill your icon with a certain color based on user preferences, theme or color mode, or high contrast configurations. We populate this with a [purpose: monochrome](https://w3c.github.io/manifest/#purpose-member) icon from your app manifest.
-- **Fallback behavior:** When the full TWA experience isn’t available, how should your app proceed, whether with a web view or [Chrome’s Custom Tabs feature](https://developer.chrome.com/multidevice/android/customtabs). We default to the latter.
+  maskable icons on Android, see [https://web.dev/maskable-icon](https://web.dev/maskable-icon/)<span aria-hidden="true">.</span>
+- **Monochrome icon URL**: Optional. The monochrome icon to use for your app. Android can use this to fill your icon with a certain color based on user preferences, theme or color mode, or high contrast configurations. We populate this with a [purpose: monochrome](https://w3c.github.io/manifest/#purpose-member) icon from your app manifest<span aria-hidden="true">.</span>
+- **Fallback behavior:** When the full TWA experience isn’t available, how should your app proceed, whether with a web view or [Chrome’s Custom Tabs feature](https://developer.chrome.com/multidevice/android/customtabs)<span aria-hidden="true">.</span> We default to the latter.
 - **Display mode:** <br> **— Standalone** means your PWA takes up all the area except Android status bar and Navigation bar. <br> **— Fullscreen** hide both
   bars. This is intended for immersive experiences likes games and media playback.
 - **Notifications**: If enabled, your PWA will use [Android Notification Delegation](https://github.com/GoogleChromeLabs/svgomg-twa/issues/60) for push
@@ -115,7 +115,7 @@ With this new functionality, you can customize your PWA for Android:
 
 Whew! As you can see, you can customize nearly every aspect of your PWA Android app package.
 
-To access this functionality, put a URL into pwabuilder.com, then: <br> **Build My PWA -> Android -> Options**
+To access this functionality, put a URL into pwabuilder.com<span aria-hidden="true">,</span> then: <br> **Build My PWA -> Android -> Options**
 
 ![alt](https://cdn-images-1.medium.com/max/800/1*Ui2YKhWlbvIYgrlESMAPDg.png)
 <span class="figcaption_hack">Choosing Options here will open the Android package options discussed above</span>
@@ -125,6 +125,6 @@ To access this functionality, put a URL into pwabuilder.com, then: <br> **Build 
 Both web shortcuts and Android package customization are possible thanks to the collaboration between Google and Microsoft. We are working together to make the
 web a more capable app platform.
 
-In addition to the above, we’re also collaborating with Google on [Project Fugu](https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940) to incubate new web platform features, with PWAs front and center, toward the goal of standardization so everyone benefits. We’ve highlighted some Project Fugu capabilities in our [web platform demo showcase](https://components.pwabuilder.com/).
+In addition to the above, we’re also collaborating with Google on [Project Fugu](https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940) to incubate new web platform features, with PWAs front and center, toward the goal of standardization so everyone benefits. We’ve highlighted some Project Fugu capabilities in our [web platform demo showcase](https://components.pwabuilder.com/)<span aria-hidden="true">.</span>
 
-We hope you enjoy these capabilities in PWABuilder! Please give it a try over at [pwabuilder.com](https://pwabuilder.com).
+We hope you enjoy these capabilities in PWABuilder! Please give it a try over at [pwabuilder.com](https://pwabuilder.com)<span aria-hidden="true">.</span>

@@ -37,7 +37,7 @@ The PWA Studio VSCode extension brings everything you need to build high quality
 These features turn VSCode into the best development environment for Progressive Web Apps, ensuring you have tools for every step of your PWA development journey.
 
 ## Get Started
-First, you need to install the extension. Visit the [VSCode Marketplace](https://aka.ms/install-pwa-studio) to install.
+First, you need to install the extension. Visit the [VSCode Marketplace](https://aka.ms/install-pwa-studio) to install<span aria-hidden="true">.</span>
 The quickest way to get started with the extension is by opening the PWABuilder panel. This can be done by clicking the PWABuilder icon on the left side of VSCode:
 ![The PWABuilder icon on the left side of the VSCode Window](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/icon-view.png)
 
@@ -54,7 +54,7 @@ Finally, the extension also provides buttons at the bottom of VSCode to provide 
 ![The quick actions](https://raw.githubusercontent.com/pwa-builder/pwabuilder-vscode/main/resources/quick-actions.png)
 
 ## Build a new PWA with the PWA Studio
-Lets go through an example of what the extension is capable of! Today we are going to start building a brand new PWA in about 2 minutes with the extension and the [PWABuilder pwa-starter](https://aka.ms/pwa-starter). You will get:
+Lets go through an example of what the extension is capable of! Today we are going to start building a brand new PWA in about 2 minutes with the extension and the [PWABuilder pwa-starter](https://aka.ms/pwa-starter)<span aria-hidden="true">.</span> You will get:
 -	A ready to go codebase that follows best practices from the start: No more spending time choosing which framework to use, which build system to use, which styling system to use etc. Just start building with the PWABuilder team’s recommended setup. Enjoy Web Components? We proudly use [Lit](https://lit.dev) for incredible performance, fast load times and a React-like developer experience.
 -	A Service Worker setup using [Workbox](https://developers.google.com/web/tools/workbox/) that ties in with the Rollup powered build system. This ensures that your PWA always works offline.
 -	A full featured Web Manifest, including Icons, with everything that you need to ensure your PWA can be installed from the browser AND is ready to publish to the app stores.

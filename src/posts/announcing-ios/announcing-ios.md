@@ -33,7 +33,7 @@ Try it now:
 3. In the new iOS publish section, choose `Store Package`: <br><a href="http://www.pwabuilder.com/publish?site=https://webboard.app" target="_blank"><img style="margin-left: 0; margin-top: 10px; margin-bottom: 10px; max-height: 150px;" loading="lazy" src="/posts/announcing-ios/ios-publish-section.png" alt="Screenshot of the new iOS publishing section on PWABuilder" /></a>
 4. You'll be prompted for metadata about your app, such as app name, URL, icons, and more. By default, we populate these based on your PWA's web app manifest. <br><img loading="lazy" src="/posts/announcing-ios/ios-options.png" alt="Screenshot of IOS metadata options" style="max-height: 300px; margin-left: 0; margin-bottom: 10px;" />
 5. Click `Generate` to download your iOS app package.
-6. Your download will contain [instructions](/docs/build-your-ios-app) for submitting the package to the iOS App Store.
+6. Your download will contain [instructions](https://docs.pwabuilder.com/#/builder/app-store?id=building-your-app) for submitting the package to the iOS App Store.
 
 ## What is it?
 
@@ -43,7 +43,7 @@ Our platform creates a native Swift app with a [WebKit web view](https://develop
 
 It pulls values from your PWA's manifest as these defaults, allowing you to override them in the PWABuilder iOS options dialog seen above. If your PWA manifest doesn't have the all the right-sized images for the iOS app, the platform will generate these images for you, scaling down from a large, square, `any` purpose PNG icon from your manifest.
 
-It packages this all together as an Xcode project workspace that you can [build in Xcode](/docs/build-your-ios-app) and [publish to the iOS App Store](/docs/publish-your-pwa-to-the-ios-app-store)<span aria-hidden="true">.</span>
+It packages this all together as an Xcode project workspace that you can [build in Xcode](https://docs.pwabuilder.com/#/builder/app-store?id=building-your-app) and [publish to the iOS App Store](https://docs.pwabuilder.com/#/builder/app-store?id=publishing).
 
 ## Why should I use this?
 
@@ -57,9 +57,9 @@ To generate an iOS app, you just need a PWA. Or more specifically, a web app wit
 
 To build the project, you'll [need a Mac with Xcode installed](https://github.com/pwa-builder/pwabuilder-ios/issues/9)<span aria-hidden="true">.</span>
 
-To publish your PWA to the iOS App Store, you'll [need an Apple Developer account](/docs/ios-faq)<span aria-hidden="true">.</span>
+To publish your PWA to the iOS App Store, you'll [need an Apple Developer account](https://docs.pwabuilder.com/#/builder/faq?id=ios).
 
-See [our FAQ](/docs/ios-faq) for details.
+See [our FAQ](https://docs.pwabuilder.com/#/builder/faq?id=ios) for details.
 
 ## What can it do?
 
@@ -77,8 +77,9 @@ We utilize [App-Bound Domains](<a href="https://webkit.org/blog/10882/app-bound-
   
 By default, PWABuilder's iOS platform generates a URL capture-ready app. If a user installs your app, you can have your app's URLs open in your PWA, rather than in the browser. 
 
-To enable this, deploy an [Apple App-Site Association file](https://developer.apple.com/documentation/xcode/supporting-associated-domains) to your web server. Your app already contains the necessary configuration to utilize link capture. See [our iOS Platform FAQ](/docs/ios-faq) for more info<span aria-hidden="true">.</span>
-  
+
+To enable this, deploy an [Apple App-Site Association file](https://developer.apple.com/documentation/xcode/supporting-associated-domains) to your web server. Your app already contains the necessary configuration to utilize link capture. See [our iOS Platform FAQ](https://docs.pwabuilder.com/#/builder/faq?id=ios) for more info.
+
 </details>
 
 <details>
@@ -137,7 +138,7 @@ We currently don't support push notifications. We have partial support in the pl
 
 If Push Notification support is important to you, [upvote this issue](https://github.com/pwa-builder/pwabuilder-ios/issues/6)<span aria-hidden="true">.</span>
 
-Also, consider [publishing to the Microsoft Store](https://blog.pwabuilder.com/docs/windows-store-documentation/)<span aria-hidden="true">,</span> where your PWA can use Push Notifications and other PWA capabilities using web standards-based code, and without the need of native wrappers.
+Also, consider [publishing to the Microsoft Store](https://docs.pwabuilder.com/#/builder/windows), where your PWA can use Push Notifications and other PWA capabilities using web standards-based code, and without the need of native wrappers.
   
 </details>
 
@@ -168,7 +169,7 @@ Our template doesn't include support for iOS-specific functionality like Apple P
 
 But that doesn't mean you can't add them. 
 
-To add support for iOS-specific functionality, you'd enable the capability when [creating your Bundle ID](/docs/publish-your-pwa-to-the-ios-app-store#create-your-bundle-id)<span aria-hidden="true">,</span> then update your Xcode project to take advantage of the new capability. See [our FAQ](/docs/ios-faq) for more info. 
+To add support for iOS-specific functionality, you'd enable the capability when [creating your Bundle ID](https://docs.pwabuilder.com/#/builder/app-store?id=_2-create-a-bundle-id), then update your Xcode project to take advantage of the new capability. See [our FAQ](https://docs.pwabuilder.com/#/builder/faq?id=ios) for more info. 
 
 We also be glad to accept PRs enabling such functionality into [our iOS project template code](https://github.com/pwa-builder/pwabuilder-ios/tree/main/Microsoft.PWABuilder.IOS.Web/Resources/ios-project-src)<span aria-hidden="true">.</span>
   
@@ -202,10 +203,10 @@ Since that time, a few members of the PWABuilder open source community successfu
 
 Check out our PWABuilder iOS documentation:
 
-- [PWABuilder iOS platform overview](/docs/ios-platform)
-- [How to build and test your iOS PWA](/docs/build-your-ios-app)
-- [Publishing your PWA to the iOS App Store](/docs/ios-app-submission)
-- [iOS PWAs frequently asked questions (FAQs)](/docs/ios-faq)
+- [PWABuilder iOS platform overview](https://docs.pwabuilder.com/#/builder/app-store)
+- [How to build and test your iOS PWA](https://docs.pwabuilder.com/#/builder/app-store?id=building-your-app)
+- [Publishing your PWA to the iOS App Store](https://docs.pwabuilder.com/#/builder/app-store?id=publishing)
+- [iOS PWAs frequently asked questions (FAQs)](https://docs.pwabuilder.com/#/builder/faq?id=ios)
 
 If you need help or have questions, you can [open an issue on our GitHub repo](https://github.com/pwa-builder/pwabuilder/issues)<span aria-hidden="true">.</span>
 
